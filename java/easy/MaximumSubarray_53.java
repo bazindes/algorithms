@@ -21,5 +21,9 @@ class MaximumSubarray{
         int[]arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         Utils.printArray(arr);
         System.out.println(maximumSubarray(arr));
+
+        int[]arr2 = {1};
+        Utils.printArray(arr2);
+        System.out.println(maximumSubarray(arr2));
     }
 }

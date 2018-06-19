@@ -12,8 +12,10 @@ class Main{
 
         // RemoveElements removeElements = new RemoveElements();
         // removeElements.test();
-        MaximumSubarray maximumSubarray = new MaximumSubarray();
-        maximumSubarray.test();
+        // MaximumSubarray maximumSubarray = new MaximumSubarray();
+        // maximumSubarray.test();
+        PlusOne plusOne = new PlusOne();
+        plusOne.test();
         
     }
 
