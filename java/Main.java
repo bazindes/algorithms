@@ -10,8 +10,10 @@ class Main{
 
     public static void main(String[] args) {
 
-        RemoveElements removeElements = new RemoveElements();
-        removeElements.test();
+        // RemoveElements removeElements = new RemoveElements();
+        // removeElements.test();
+        MaximumSubarray maximumSubarray = new MaximumSubarray();
+        maximumSubarray.test();
         
     }
 
