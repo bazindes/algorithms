@@ -24,3 +24,10 @@ hs_err_pid*
 
 #vscode
 .vscode/
+
+*.pdf
+*.doc
+*.docx
+*.xlsx
+*.xls
+*.ppt*
