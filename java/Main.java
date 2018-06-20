@@ -16,8 +16,10 @@ class Main{
         // maximumSubarray.test();
         // PlusOne plusOne = new PlusOne();
         // plusOne.test();
-        AddBinary addBinary = new AddBinary();
-        addBinary.test();        
+        // AddBinary addBinary = new AddBinary();
+        // addBinary.test();        
+        ClimbingStairs climbingStairs = new ClimbingStairs();
+        climbingStairs.test();
     }
 
 }
