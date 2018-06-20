@@ -14,9 +14,10 @@ class Main{
         // removeElements.test();
         // MaximumSubarray maximumSubarray = new MaximumSubarray();
         // maximumSubarray.test();
-        PlusOne plusOne = new PlusOne();
-        plusOne.test();
-        
+        // PlusOne plusOne = new PlusOne();
+        // plusOne.test();
+        AddBinary addBinary = new AddBinary();
+        addBinary.test();        
     }
 
 }
