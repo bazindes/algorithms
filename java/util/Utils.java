@@ -16,7 +16,7 @@ public class Utils{
 
     public static void printLinkedList(ListNode node){
         System.out.print("| ");
-        while(node.next != null){
+        while(node != null){
             System.out.print(node.val + " | ");
             node = node.next;
         }

@@ -5,13 +5,21 @@
 * @version 1.0
 * @since   2018-06-20
 */
-class RemoveDuplicatesFromSortedList_83{
+class RemoveDuplicatesFromSortedList{
     
     public ListNode remove(ListNode head){
-        ListNode h = head;
-
-
-        return h;
+        ListNode cur = head;
+        ListNode me = head.next;
+        while(me!=null){
+            if(cur.val == me.val){ 
+                me = me.next;
+            }else{
+                cur.next = me;
+                cur = cur.next;
+            }
+        }
+        cur.next = null;
+        return head;
     }
 
     public void test(){
@@ -25,5 +33,7 @@ class RemoveDuplicatesFromSortedList_83{
         ListNode n4 = new ListNode(3);
         n3.next = n4;
         Utils.printLinkedList(n0);
+        System.out.println("");
+        Utils.printLinkedList(remove(n0));
     }
 }

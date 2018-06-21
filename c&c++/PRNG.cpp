@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -9,8 +10,9 @@ unsigned int PRNG(){
 }
 
 int main(void){
+    srand(5323);
     for(int i=0; i<=100; ++i){
-        cout << PRNG() << "\t";
+        cout << rand() << "\t";
         if(i%5 == 0) cout << "\n";
     }
     return 0;
