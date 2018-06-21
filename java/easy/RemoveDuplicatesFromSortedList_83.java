@@ -5,7 +5,7 @@
 * @version 1.0
 * @since   2018-06-20
 */
-class RemoveDuplicatesFromSortedList{
+class RemoveDuplicatesFromSortedList_83{
     
     public ListNode remove(ListNode head){
         ListNode h = head;

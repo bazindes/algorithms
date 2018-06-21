@@ -8,7 +8,7 @@
 class Main{
     public static void main(String[] args) {
 
-        RemoveDuplicatesFromSortedList removeDuplicatesFromSortedList = new RemoveDuplicatesFromSortedList();
+        RemoveDuplicatesFromSortedList_83 removeDuplicatesFromSortedList = new RemoveDuplicatesFromSortedList_83();
         removeDuplicatesFromSortedList.test();
 
         // RemoveElements removeElements = new RemoveElements();
