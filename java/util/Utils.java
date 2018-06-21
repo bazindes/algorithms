@@ -5,7 +5,6 @@
 * @version 1.0
 * @since   2018-06-18
 */
-
 public class Utils{
     public static void printArray(int[] arr){
         System.out.print("| ");
@@ -13,5 +12,13 @@ public class Utils{
             System.out.print(arr[i] + " | ");
         }
         System.out.println();
+    }
+
+    public static void printLinkedList(ListNode node){
+        System.out.print("| ");
+        while(node.next != null){
+            System.out.print(node.val + " | ");
+            node = node.next;
+        }
     }
 }
