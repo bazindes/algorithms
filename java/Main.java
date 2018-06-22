@@ -8,9 +8,10 @@
 class Main{
     public static void main(String[] args) {
 
-        RemoveDuplicatesFromSortedList removeDuplicatesFromSortedList = new RemoveDuplicatesFromSortedList();
-        removeDuplicatesFromSortedList.test();
-
+        MergeSortedArray mergeSortedArray = new MergeSortedArray();
+        mergeSortedArray.test();
+        // RemoveDuplicatesFromSortedList removeDuplicatesFromSortedList = new RemoveDuplicatesFromSortedList();
+        // removeDuplicatesFromSortedList.test();
         // RemoveElements removeElements = new RemoveElements();
         // removeElements.test();
         // MaximumSubarray maximumSubarray = new MaximumSubarray();
