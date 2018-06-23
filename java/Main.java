@@ -8,8 +8,10 @@
 class Main{
     public static void main(String[] args) {
 
-        MergeSortedArray mergeSortedArray = new MergeSortedArray();
-        mergeSortedArray.test();
+        SameTree sameTree = new SameTree();
+        sameTree.test();
+        // MergeSortedArray mergeSortedArray = new MergeSortedArray();
+        // mergeSortedArray.test();
         // RemoveDuplicatesFromSortedList removeDuplicatesFromSortedList = new RemoveDuplicatesFromSortedList();
         // removeDuplicatesFromSortedList.test();
         // RemoveElements removeElements = new RemoveElements();
