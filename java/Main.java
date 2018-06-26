@@ -7,9 +7,11 @@
 */
 class Main{
     public static void main(String[] args) {
-        
-        SymmetricTree symmetricTree = new SymmetricTree();
-        symmetricTree.test();
+
+        EliminationGame eliminationGame = new EliminationGame();
+        eliminationGame.test();
+        // SymmetricTree symmetricTree = new SymmetricTree();
+        // symmetricTree.test();
         // SameTree sameTree = new SameTree();
         // sameTree.test();
         // MergeSortedArray mergeSortedArray = new MergeSortedArray();
