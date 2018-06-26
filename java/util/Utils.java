@@ -13,7 +13,7 @@ public class Utils{
             inOrderPrintTree(root.right);
         }
     }
-
+    
     public static void postOrderPrintTree(TreeNode root){
         if(root!=null){
             inOrderPrintTree(root.left);
@@ -21,7 +21,7 @@ public class Utils{
             System.out.print(root.val + " | ");
         }
     }
-
+    
     public static void inOrderPrintTree(TreeNode root){
         if(root!=null){
             inOrderPrintTree(root.left);

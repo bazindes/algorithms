@@ -8,8 +8,10 @@
 class Main{
     public static void main(String[] args) {
 
-        EliminationGame eliminationGame = new EliminationGame();
-        eliminationGame.test();
+        MaximumDepthOfBinaryTree maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
+        maximumDepthOfBinaryTree.test();
+        // EliminationGame eliminationGame = new EliminationGame();
+        // eliminationGame.test();
         // SymmetricTree symmetricTree = new SymmetricTree();
         // symmetricTree.test();
         // SameTree sameTree = new SameTree();
