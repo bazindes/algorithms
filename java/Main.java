@@ -8,8 +8,9 @@
 class Main{
     public static void main(String[] args) {
 
-        BinaryTreeLevelOrderTraversalII binaryTreeLevelOrderTraversalII = new BinaryTreeLevelOrderTraversalII();
-        binaryTreeLevelOrderTraversalII.test();
+        InnerClassExamples.testHello();
+        // BinaryTreeLevelOrderTraversalII binaryTreeLevelOrderTraversalII = new BinaryTreeLevelOrderTraversalII();
+        // binaryTreeLevelOrderTraversalII.test();
         // MaximumDepthOfBinaryTree maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
         // maximumDepthOfBinaryTree.test();
         // EliminationGame eliminationGame = new EliminationGame();
