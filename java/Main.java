@@ -8,7 +8,9 @@
 class Main{
     public static void main(String[] args) {
 
-        InnerClassExamples.testHello();
+        ConvertSortedArraytoBST convertSortedArraytoBST = new ConvertSortedArraytoBST();
+        convertSortedArraytoBST.test();
+        // InnerClassExamples.testHello();
         // BinaryTreeLevelOrderTraversalII binaryTreeLevelOrderTraversalII = new BinaryTreeLevelOrderTraversalII();
         // binaryTreeLevelOrderTraversalII.test();
         // MaximumDepthOfBinaryTree maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
