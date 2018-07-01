@@ -1,3 +1,4 @@
+package com.baz.app.util;
 /**
 * <h1>java code utils</h1>
 *

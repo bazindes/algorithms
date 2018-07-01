@@ -1,3 +1,5 @@
+package com.baz.app.easy;
+import com.baz.app.util.*;
 /**
 * <h1>Leetcode 27</h1>
 *

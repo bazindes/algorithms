@@ -1,3 +1,5 @@
+package com.baz.app.easy;
+import com.baz.app.util.*;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
