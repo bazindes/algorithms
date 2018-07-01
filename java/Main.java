@@ -8,8 +8,10 @@
 class Main{
     public static void main(String[] args) {
 
-        BalancedBinaryTree balancedBinaryTree = new BalancedBinaryTree();
-        balancedBinaryTree.test();
+        MinimumDepthofBinaryTree minimumDepthofBinaryTree = new MinimumDepthofBinaryTree();
+        minimumDepthofBinaryTree.test();
+        // BalancedBinaryTree balancedBinaryTree = new BalancedBinaryTree();
+        // balancedBinaryTree.test();
         // ConvertSortedArraytoBST convertSortedArraytoBST = new ConvertSortedArraytoBST();
         // convertSortedArraytoBST.test();
         // InnerClassExamples.testHello();
