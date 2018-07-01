@@ -25,6 +25,9 @@ hs_err_pid*
 #vscode
 .vscode/
 
+#maven
+target/
+
 *.pdf
 *.doc
 *.docx

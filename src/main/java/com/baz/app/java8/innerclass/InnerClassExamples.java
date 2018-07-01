@@ -1,3 +1,5 @@
+package com.baz.app.java8.innerclass;
+
 public class InnerClassExamples {
     public static void test() {
       InstanceOuter io = new InstanceOuter(12);

@@ -7,7 +7,7 @@ import com.baz.app.util.*;
 * @version 1.0
 * @since   2018-07-01
 */
-class PathSum{
+public class PathSum{
     public boolean hasPathSum(TreeNode root , int sum){
         boolean re = false;
 

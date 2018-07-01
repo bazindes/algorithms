@@ -7,9 +7,9 @@ package com.baz.app.util;
 * @since   2018-06-22
 */
 public class TreeNode{
-    int val;
-    TreeNode left;
-    TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
     public TreeNode(int val){
         this.val = val;
     }

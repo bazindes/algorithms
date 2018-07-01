@@ -1,5 +1,6 @@
 package com.baz.app.easy;
 import com.baz.app.util.*;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -22,7 +23,7 @@ class MaximumDepthOfBinaryTree{
     public int maxDepthBFS(TreeNode root){
         if(root == null) return 0;
 
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
         queue.offer(root);
         int count = 0;
 
@@ -42,8 +43,8 @@ class MaximumDepthOfBinaryTree{
     public int maxDepthDFS(TreeNode root){
         if(root == null) return 0;
 
-        Stack<TreeNode> stack = new Stack<>();
-        Stack<Integer> value = new Stack<>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        Stack<Integer> value = new Stack<Integer>();
         stack.push(root);
         value.push(1);
         int max = 0;

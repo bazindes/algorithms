@@ -1,3 +1,5 @@
+package com.baz.app.java8.innerclass;
+
 class StaticOuter {
     private static int x = 24;
   

@@ -1,5 +1,6 @@
 package com.baz.app;
-import com.baz.app.*;
+import com.baz.app.easy.*;
+
 /**
 * <h1>Main Class</h1>
 *

@@ -1,3 +1,5 @@
+package com.baz.app.java8.innerclass;
+
 class InstanceOuter {
     public InstanceOuter(int xx) { x = xx; }
   
