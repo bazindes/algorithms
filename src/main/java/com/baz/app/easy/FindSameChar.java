@@ -1,5 +1,4 @@
 package com.baz.app.easy;
-import com.baz.app.util.*;
 class FindSameChar{
     
     // public char findTheDifference(String s, String t) {

@@ -1,8 +1,5 @@
 package com.baz.app.easy;
 import com.baz.app.util.*;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
 
 /**
 * <h1></h1>
@@ -26,12 +23,6 @@ class BalancedBinaryTree{
         int r = maxDepth(node.right);
         if(Math.abs(l-r) > 1) isBalance = false;
         return 1 + Math.max(l, r);
-    }
-
-    private int DFS(TreeNode node){
-        int n = 0;
-        if(node == null) return n;
-        return n;
     }
 
     public void test(){
