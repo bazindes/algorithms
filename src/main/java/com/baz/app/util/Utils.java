@@ -10,15 +10,15 @@ public class Utils{
     public static void preOrderPrintTree(TreeNode root){
         if(root!=null){
             System.out.print(root.val + " | ");
-            inOrderPrintTree(root.left);
-            inOrderPrintTree(root.right);
+            preOrderPrintTree(root.left);
+            preOrderPrintTree(root.right);
         }
     }
     
     public static void postOrderPrintTree(TreeNode root){
         if(root!=null){
-            inOrderPrintTree(root.left);
-            inOrderPrintTree(root.right);
+            postOrderPrintTree(root.left);
+            postOrderPrintTree(root.right);
             System.out.print(root.val + " | ");
         }
     }

@@ -15,12 +15,12 @@ import java.util.Queue;
 class BinaryTreeLevelOrderTraversalII{
 
     public List<List<Integer>> levelOrderBottom(TreeNode root){
-        List<List<Integer>> list = new ArrayList();
-        Queue<TreeNode> temp = new LinkedList();
+        List<List<Integer>> list = new ArrayList<List<Integer>>();
+        Queue<TreeNode> temp = new LinkedList<TreeNode>();
         temp.offer(root);
         while(!temp.isEmpty()){
             int size = temp.size();
-            List<Integer> cur = new ArrayList();
+            List<Integer> cur = new ArrayList<Integer>();
             while(size -- > 0){
                 TreeNode node = temp.poll();
                 cur.add(node.val);
