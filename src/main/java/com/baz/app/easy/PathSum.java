@@ -1,5 +1,8 @@
 package com.baz.app.easy;
 import com.baz.app.util.*;
+
+import java.util.Stack;
+
 /**
 * <h1></h1>
 *
@@ -9,14 +12,32 @@ import com.baz.app.util.*;
 */
 public class PathSum{
     public boolean hasPathSum(TreeNode root , int sum){
-        boolean re = false;
-
-        return re;
+        return dfs(root, sum);
     }
 
-    // private void dfs(TreeNode node, int sum){
-        
-    // }
+     private boolean dfs(TreeNode node, int sum){
+        Stack<TreeNode> stack = new Stack<>();
+        Stack<Integer> vals = new Stack<>();
+        stack.push(node);
+        vals.push(node.val);
+        while(!stack.isEmpty()){
+            TreeNode t = stack.pop();
+            int tempVal = vals.pop();
+            if(t.left == null && t.right ==null){
+                if(sum == tempVal) return true;
+            }else{
+                if(t.left != null){
+                    stack.push(t.left);
+                    vals.push(t.left.val + tempVal);
+                }
+                if(t.right != null){
+                    stack.push(t.right);
+                    vals.push(t.right.val + tempVal);
+                }
+            }
+        }
+        return false;
+     }
 
     public void test(){
         TreeNode t0 = new TreeNode(5);
@@ -37,5 +58,7 @@ public class PathSum{
         t3.right = t7;
         t5.right = t8;
         Utils.preOrderPrintTree(t0);
+        System.out.println();
+        System.out.println(dfs(t0 , 22));
     }
 }

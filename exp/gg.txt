@@ -1,0 +1,1108 @@
+#TitleAcceptanceDifficultyFrequency
+
+760Find Anagram Mappings
+76.3%Easy
+
+
+832Flipping an Image
+69.9%Easy
+
+. 留学申请论坛-一亩三分地
+852Peak Index in a Mountain Array
+69.1%Easy
+
+
+657Judge Route Circle
+68.7%Easy
+
+
+359Logger Rate Limiter
+61.2%Easy
+
+
+346Moving Average from Data Stream
+60.9%Easy
+
+
+266Palindrome Permutation
+58.3%Easy
+
+
+463Island Perimeter
+58.3%Easy
+
+
+766Toeplitz Matrix. 一亩-三分-地，独家发布
+58.1%Easy
+
+
+293Flip Game
+57.5%Easy
+
+. 1point3acres
+521Longest Uncommon Subsequence I
+55.7%Easy
+-google 1point3acres
+
+485Max Consecutive Ones. 1point3acres
+53.8%Easy
+
+.1point3acres网
+800Similar RGB Color
+53.8%Easy
+
+
+812Largest Triangle Area
+53.0%Easy
+
+
+520Detect Capital
+51.9%Easy
+.留学论坛-一亩-三分地
+
+389Find the Difference. from: 1point3acres
+51.6%Easy
+
+. 留学申请论坛-一亩三分地
+448Find All Numbers Disappeared in an Array. Waral 博客有更多文章,
+51.2%Easy
+
+. visit 1point3acres for more.
+788Rotated Digits. From 1point 3acres bbs
+51.0%Easy
+
+
+530Minimum Absolute Difference in BST
+47.9%Easy
+
+
+783Minimum Distance Between BST Nodes
+47.9%Easy
+
+.留学论坛-一亩-三分地
+387First Unique Character in a String
+47.3%Easy
+
+
+447Number of Boomerangs
+47.1%Easy
+
+. 牛人云集,一亩三分地
+506Relative Ranks
+47.1%Easy
+
+
+830Positions of Large Groups.留学论坛-一亩-三分地
+46.7%Easy
+
+
+844Backspace String Compare
+46.6%Easy
+
+
+409Longest Palindrome. From 1point 3acres bbs
+46.2%Easy
+
+
+543Diameter of Binary Tree
+45.1%Easy
+
+. 1point3acres
+401Binary Watch
+44.8%Easy
+-google 1point3acres
+
+551Student Attendance Record I
+44.8%Easy
+
+
+541Reverse String II
+44.0%Easy
+
+
+257Binary Tree Paths. more info on 1point3acres
+42.1%Easy
+
+. from: 1point3acres
+415Add Strings
+41.8%Easy. 1point3acres
+
+
+270Closest Binary Search Tree Value
+41.1%Easy
+
+
+747Largest Number At Least Twice of Others
+41.0%Easy
+. 1point3acres
+
+231Power of Two. 牛人云集,一亩三分地
+40.9%Easy
+
+
+326Power of Three
+40.9%Easy
+
+
+246Strobogrammatic Number
+40.4%Easy
+
+
+66Plus One
+39.9%Easy
+
+-google 1point3acres
+345Reverse Vowels of a String
+39.5%Easy
+. more info on 1point3acres
+
+482License Key Formatting
+39.3%Easy.1point3acres网
+
+
+734Sentence Similarity
+38.9%Easy
+
+
+758Bold Words in String
+38.9%Easy
+. from: 1point3acres
+
+849Maximize Distance to Closest Person
+38.9%Easy
+
+
+459Repeated Substring Pattern
+38.3%Easy
+
+
+643Maximum Average Subarray I. Waral 博客有更多文章,
+37.8%Easy. 牛人云集,一亩三分地
+
+
+501Find Mode in Binary Search Tree
+37.7%Easy
+
+
+374Guess Number Higher or Lower
+37.2%Easy
+
+
+422Valid Word Square
+36.5%Easy
+
+
+276Paint Fence
+35.1%Easy. 围观我们@1point 3 acres
+
+
+20Valid Parentheses 来源一亩.三分地论坛.
+34.3%Easy
+. 留学申请论坛-一亩三分地
+
+840Magic Squares In Grid
+33.9%Easy 来源一亩.三分地论坛.
+. 一亩-三分-地，独家发布
+
+604Design Compressed String Iterator
+33.5%Easy. more info on 1point3acres
+
+
+687Longest Univalue Path
+32.8%Easy
+
+
+155Min Stack
+32.0%Easy
+
+
+686Repeated String Match
+31.5%Easy
+
+
+400Nth Digit
+30.0%Easy
+
+
+475Heaters
+29.8%Easy
+
+
+581Shortest Unsorted Continuous Subarray.1point3acres网
+29.4%Easy
+. Waral 博客有更多文章,
+
+408Valid Word Abbreviation
+28.4%Easy
+
+
+859Buddy Strings
+25.9%Easy
+
+
+665Non-decreasing Array
+20.0%Easy
+
+
+535Encode and Decode TinyURL
+74.0%Medium
+. From 1point 3acres bbs
+. visit 1point3acres for more.
+544Output Contest Matches
+71.4%Medium
+
+. Waral 博客有更多文章,
+280Wiggle Sort
+58.9%Medium
+. From 1point 3acres bbs
+
+841Keys and Rooms.1point3acres网
+58.1%Medium
+. more info on 1point3acres
+
+370Range Addition
+57.4%Medium
+. 1point3acres
+-google 1point3acres
+406Queue Reconstruction by Height
+56.7%Medium
+
+
+531Lonely Pixel I-google 1point3acres
+56.4%Medium
+
+
+484Find Permutation
+55.6%Medium. 牛人云集,一亩三分地
+
+
+362Design Hit Counter
+55.5%Medium
+
+
+369Plus One Linked List
+54.9%Medium
+
+
+739Daily Temperatures
+53.4%Medium
+
+
+281Zigzag Iterator
+53.2%Medium
+
+
+526Beautiful Arrangement
+53.2%Medium
+
+
+451Sort Characters By Frequency
+52.2%Medium
+
+
+748Shortest Completing Word-google 1point3acres
+52.1%Medium
+.本文原创自1point3acres论坛
+
+789Escape The Ghosts
+51.4%Medium
+
+. from: 1point3acres
+667Beautiful Arrangement II. from: 1point3acres
+51.0%Medium
+
+. 牛人云集,一亩三分地
+817Linked List Components
+50.4%Medium
+
+
+6514 Keys Keyboard
+49.7%Medium
+
+
+323Number of Connected Components in an Undirected Graph
+49.2%Medium
+
+
+676Implement Magic Dictionary
+49.1%Medium
+
+
+22Generate Parentheses
+48.9%Medium. 1point 3acres 论坛
+-google 1point3acres
+
+421Maximum XOR of Two Numbers in an Array
+48.3%Medium
+. 1point 3acres 论坛
+
+503Next Greater Element II.1point3acres网
+48.1%Medium
+
+
+769Max Chunks To Make Sorted. from: 1point3acres
+48.0%Medium
+
+
+382Linked List Random Node
+47.6%Medium. 留学申请论坛-一亩三分地
+. 留学申请论坛-一亩三分地
+. Waral 博客有更多文章,
+294Flip Game II
+47.1%Medium
+
+
+756Pyramid Transition Matrix
+47.1%Medium. 牛人云集,一亩三分地
+
+-google 1point3acres
+320Generalized Abbreviation. more info on 1point3acres
+46.6%Medium
+
+. Waral 博客有更多文章,
+348Design Tic-Tac-Toe
+46.3%Medium
+
+
+318Maximum Product of Word Lengths.本文原创自1point3acres论坛
+46.2%Medium
+
+.本文原创自1point3acres论坛
+357Count Numbers with Unique Digits
+46.2%Medium. 牛人云集,一亩三分地
+
+
+230Kth Smallest Element in a BST
+46.1%Medium. visit 1point3acres for more.
+
+
+638Shopping Offers
+45.9%Medium
+
+. 围观我们@1point 3 acres
+286Walls and Gates
+45.8%Medium
+
+
+378Kth Smallest Element in a Sorted Matrix
+45.8%Medium. visit 1point3acres for more.
+
+. 留学申请论坛-一亩三分地
+481Magical String
+45.8%Medium
+
+
+487Max Consecutive Ones II. From 1point 3acres bbs
+45.5%Medium
+
+
+486Predict the Winner
+45.4%Medium
+
+
+533Lonely Pixel II
+45.4%Medium
+.1point3acres网
+
+360Sort Transformed Array
+45.2%Medium
+
+
+498Diagonal Traverse
+45.2%Medium
+. 一亩-三分-地，独家发布
+. From 1point 3acres bbs
+249Group Shifted Strings. 留学申请论坛-一亩三分地
+45.0%Medium
+
+
+583Delete Operation for Two Strings
+44.7%Medium
+.留学论坛-一亩-三分地
+
+351Android Unlock Patterns
+44.6%Medium
+
+. visit 1point3acres for more.
+684Redundant Connection
+44.6%Medium
+
+
+173Binary Search Tree Iterator. 1point3acres
+44.0%Medium
+
+
+494Target Sum
+43.9%Medium
+
+
+490The Maze
+43.8%Medium
+
+
+341Flatten Nested List Iterator
+43.7%Medium
+
+
+524Longest Word in Dictionary through Deleting 来源一亩.三分地论坛.
+43.3%Medium
+.1point3acres网
+
+377Combination Sum IV.1point3acres网
+43.0%Medium
+
+
+549Binary Tree Longest Consecutive Sequence II. 围观我们@1point 3 acres
+42.8%Medium.本文原创自1point3acres论坛
+
+
+399Evaluate Division
+42.7%Medium
+
+
+729My Calendar I. Waral 博客有更多文章,
+42.6%Medium. 留学申请论坛-一亩三分地
+
+
+2593Sum Smaller
+42.3%Medium
+
+
+309Best Time to Buy and Sell Stock with Cooldown
+42.3%Medium
+
+
+394Decode String
+42.1%Medium
+. 1point 3acres 论坛
+
+298Binary Tree Longest Consecutive Sequence
+42.0%Medium
+
+
+816Ambiguous Coordinates
+41.8%Medium. 围观我们@1point 3 acres
+
+
+251Flatten 2D Vector-google 1point3acres
+41.7%Medium
+
+
+681Next Closest Time
+41.6%Medium. 一亩-三分-地，独家发布
+
+
+247Strobogrammatic Number II
+41.3%Medium
+
+. from: 1point3acres
+562Longest Line of Consecutive One in Matrix. 1point3acres
+41.2%Medium
+. 牛人云集,一亩三分地
+
+813Largest Sum of Averages
+41.0%Medium
+
+来源一亩.三分地论坛.
+361Bomb Enemy
+40.7%Medium
+
+
+380Insert Delete GetRandom O(1)
+40.2%Medium
+
+
+737Sentence Similarity II
+40.2%Medium
+
+
+560Subarray Sum Equals K
+39.9%Medium
+
+
+838Push Dominoes
+39.8%Medium
+. 围观我们@1point 3 acres
+
+253Meeting Rooms II
+39.7%Medium
+
+
+162Find Peak Element
+39.4%Medium
+
+
+240Search a 2D Matrix II
+39.2%Medium
+. From 1point 3acres bbs
+
+474Ones and Zeroes
+38.8%Medium
+
+
+505The Maze II
+38.8%Medium
+
+
+261Graph Valid Tree
+38.6%Medium
+
+
+313Super Ugly Number. 留学申请论坛-一亩三分地
+38.6%Medium
+
+
+731My Calendar II. visit 1point3acres for more.
+38.4%Medium
+. Waral 博客有更多文章,
+. 1point3acres
+314Binary Tree Vertical Order Traversal
+38.2%Medium. 留学申请论坛-一亩三分地
+
+
+279Perfect Squares
+38.1%Medium
+
+. Waral 博客有更多文章,
+802Find Eventual Safe States
+38.1%Medium
+
+
+616Add Bold Tag in String
+37.9%Medium
+
+
+833Find And Replace in String
+37.8%Medium
+
+. 留学申请论坛-一亩三分地
+289Game of Life
+37.7%Medium
+.留学论坛-一亩-三分地
+
+388Longest Absolute File Path
+37.6%Medium
+
+
+652Find Duplicate Subtrees
+37.6%Medium. 1point 3acres 论坛
+
+
+331Verify Preorder Serialization of a Binary Tree. visit 1point3acres for more.
+37.4%Medium
+
+
+17Letter Combinations of a Phone Number. 1point 3acres 论坛
+37.2%Medium 来源一亩.三分地论坛.
+
+
+200Number of Islands
+37.2%Medium
+
+
+659Split Array into Consecutive Subsequences
+37.2%Medium. 一亩-三分-地，独家发布
+
+
+779K-th Symbol in Grammar
+37.1%Medium. 一亩-三分-地，独家发布
+. From 1point 3acres bbs
+
+809Expressive Words. From 1point 3acres bbs
+37.1%Medium
+
+
+835Image Overlap
+37.0%Medium
+
+
+379Design Phone Directory
+36.9%Medium
+
+
+792Number of Matching Subsequences. 1point 3acres 论坛
+36.5%Medium. 留学申请论坛-一亩三分地
+
+
+299Bulls and Cows
+36.4%Medium
+
+
+375Guess Number Higher or Lower II
+36.2%Medium
+.本文原创自1point3acres论坛
+
+284Peeking Iterator
+35.9%Medium
+
+
+417Pacific Atlantic Water Flow
+35.1%Medium. 一亩-三分-地，独家发布
+来源一亩.三分地论坛.
+
+393UTF-8 Validation
+34.8%Medium
+
+
+658Find K Closest Elements
+34.8%Medium
+
+
+469Convex Polygon
+34.7%Medium
+
+
+274H-Index.留学论坛-一亩-三分地
+33.9%Medium
+
+
+368Largest Divisible Subset. 留学申请论坛-一亩三分地
+33.9%Medium
+
+来源一亩.三分地论坛.
+54201 Matrix. From 1point 3acres bbs
+33.2%Medium
+. visit 1point3acres for more.
+
+790Domino and Tromino Tiling
+33.1%Medium
+
+
+808Soup Servings. 1point3acres
+33.0%Medium
+
+
+228Summary Ranges
+32.8%Medium
+
+
+545Boundary of Binary Tree. 1point 3acres 论坛
+32.7%Medium
+
+
+56Merge Intervals
+32.5%Medium
+
+
+522Longest Uncommon Subsequence II
+32.1%Medium
+
+
+139Word Break. From 1point 3acres bbs
+31.9%Medium
+
+
+208Implement Trie (Prefix Tree)
+31.9%Medium
+
+
+373Find K Pairs with Smallest Sums
+31.5%Medium
+
+-google 1point3acres
+845Longest Mountain in Array
+30.6%Medium
+
+
+397Integer Replacement
+30.5%Medium
+
+
+356Line Reflection
+30.4%Medium
+
+
+332Reconstruct Itinerary
+30.1%Medium
+
+
+855Exam Room. from: 1point3acres
+29.5%Medium
+
+. Waral 博客有更多文章,
+853Car Fleet
+29.3%Medium
+
+
+31Next Permutation
+29.1%Medium. 1point3acres
+
+
+777Swap Adjacent in LR String
+29.1%Medium
+. From 1point 3acres bbs
+. visit 1point3acres for more.
+310Minimum Height Trees
+29.0%Medium. 1point3acres
+. 1point3acres
+
+418Sentence Screen Fitting. 1point3acres
+28.5%Medium
+
+
+54Spiral Matrix
+27.7%Medium
+
+-google 1point3acres
+353Design Snake Game
+27.5%Medium.1point3acres网
+. 围观我们@1point 3 acres
+
+324Wiggle Sort II
+26.5%Medium
+
+. Waral 博客有更多文章,
+50Pow(x, n)
+26.3%Medium
+. 留学申请论坛-一亩三分地
+
+271Encode and Decode Strings
+25.9%Medium
+
+
+402Remove K Digits
+25.8%Medium
+
+
+837New 21 Game
+25.4%Medium
+
+. 一亩-三分-地，独家发布
+133Clone Graph-google 1point3acres
+25.2%Medium. 1point 3acres 论坛
+. visit 1point3acres for more.
+-google 1point3acres
+163Missing Ranges. 1point3acres
+23.0%Medium
+
+. 1point3acres
+444Sequence Reconstruction
+19.6%Medium
+
+
+166Fraction to Recurring Decimal. visit 1point3acres for more.
+18.3%Medium
+
+. Waral 博客有更多文章,
+288Unique Word Abbreviation
+18.3%Medium
+. 围观我们@1point 3 acres
+
+732My Calendar III
+49.6%Hard
+
+
+765Couples Holding Hands. 1point 3acres 论坛
+48.2%Hard
+
+. 1point3acres
+302Smallest Rectangle Enclosing Black Pixels
+47.0%Hard
+.留学论坛-一亩-三分地
+
+778Swim in Rising Water
+44.5%Hard
+
+
+527Word Abbreviation
+44.2%Hard
+
+. 牛人云集,一亩三分地
+312Burst Balloons
+43.9%Hard-google 1point3acres
+
+. 一亩-三分-地，独家发布
+726Number of Atoms
+43.5%Hard.1point3acres网
+
+. 1point 3acres 论坛
+471Encode String with Shortest Length
+43.4%Hard
+
+
+768Max Chunks To Make Sorted II. from: 1point3acres
+43.3%Hard
+
+
+159Longest Substring with At Most Two Distinct Characters
+43.2%Hard
+-google 1point3acres
+
+425Word Squares
+42.9%Hard
+
+
+689Maximum Sum of 3 Non-Overlapping Subarrays 来源一亩.三分地论坛.
+41.5%Hard
+. 牛人云集,一亩三分地
+. 牛人云集,一亩三分地
+753Cracking the Safe
+40.8%Hard
+
+
+272Closest Binary Search Tree Value II. 一亩-三分-地，独家发布
+40.6%Hard
+
+
+668Kth Smallest Number in Multiplication Table
+40.6%Hard
+
+
+847Shortest Path Visiting All Nodes
+39.9%Hard
+
+
+305Number of Islands II
+39.7%Hard
+
+
+465Optimal Account Balancing
+39.6%Hard
+
+. 1point 3acres 论坛
+514Freedom Trail-google 1point3acres
+39.4%Hard
+
+
+569Median Employee Salary. 一亩-三分-地，独家发布
+38.9%Hard
+
+
+67924 Game
+38.9%Hard
+.留学论坛-一亩-三分地
+
+128Longest Consecutive Sequence
+38.7%Hard
+
+
+340Longest Substring with At Most K Distinct Characters
+38.3%Hard
+
+
+42Trapping Rain Water. 牛人云集,一亩三分地
+38.2%Hard
+. Waral 博客有更多文章,
+
+407Trapping Rain Water II
+37.7%Hard. 留学申请论坛-一亩三分地
+
+
+329Longest Increasing Path in a Matrix
+37.6%Hard
+
+
+782Transform to Chessboard
+37.5%Hard
+
+. from: 1point3acres
+857Minimum Cost to Hire K Workers. From 1point 3acres bbs
+36.8%Hard
+
+
+568Maximum Vacation Days. from: 1point3acres
+36.4%Hard.留学论坛-一亩-三分地
+
+
+297Serialize and Deserialize Binary Tree
+35.5%Hard
+
+.1point3acres网
+315Count of Smaller Numbers After Self
+35.1%Hard. visit 1point3acres for more.
+
+
+317Shortest Distance from All Buildings
+34.9%Hard. From 1point 3acres bbs
+
+
+239Sliding Window Maximum
+34.6%Hard.本文原创自1point3acres论坛
+
+
+839Similar String Groups
+34.5%Hard
+
+
+483Smallest Good Base. Waral 博客有更多文章,
+34.1%Hard
+
+
+363Max Sum of Rectangle No Larger Than K
+33.9%Hard
+
+
+411Minimum Unique Word Abbreviation. 一亩-三分-地，独家发布
+33.8%Hard
+
+
+587Erect the Fence
+33.8%Hard
+
+
+843Guess the Word
+33.6%Hard
+. 一亩-三分-地，独家发布
+. 围观我们@1point 3 acres
+683K Empty Slots. Waral 博客有更多文章,
+33.5%Hard
+
+
+774Minimize Max Distance to Gas Station
+33.0%Hard
+
+. 1point3acres
+330Patching Array
+32.8%Hard. 牛人云集,一亩三分地
+
+
+354Russian Doll Envelopes
+32.6%Hard
+
+
+815Bus Routes
+32.5%Hard. from: 1point3acres
+.本文原创自1point3acres论坛
+
+834Sum of Distances in Tree
+31.8%Hard
+
+
+552Student Attendance Record II
+31.7%Hard
+来源一亩.三分地论坛.
+
+358Rearrange String k Distance Apart
+31.6%Hard
+
+
+727Minimum Window Subsequence
+31.3%Hard
+.本文原创自1point3acres论坛
+
+327Count of Range Sum
+30.9%Hard
+
+
+282Expression Add Operators
+30.8%Hard
+
+
+480Sliding Window Median
+30.8%Hard
+
+. 围观我们@1point 3 acres
+316Remove Duplicate Letters
+30.7%Hard
+
+
+295Find Median from Data Stream. 留学申请论坛-一亩三分地
+30.3%Hard
+
+
+854K-Similar Strings
+29.5%Hard.1point3acres网
+
+
+218The Skyline Problem
+29.4%Hard. 牛人云集,一亩三分地
+. 牛人云集,一亩三分地
+
+57Insert Interval
+29.3%Hard
+-google 1point3acres
+
+224Basic Calculator
+29.1%Hard
+
+
+23Merge k Sorted Lists
+29.0%Hard
+. 1point3acres
+
+391Perfect Rectangle
+27.6%Hard
+
+.1point3acres网
+685Redundant Connection II
+27.6%Hard
+
+
+719Find K-th Smallest Pair Distance. 一亩-三分-地，独家发布
+27.6%Hard
+
+
+818Race Car
+27.5%Hard
+
+. 1point3acres
+336Palindrome Pairs
+27.4%Hard
+
+
+269Alien Dictionary
+26.8%Hard
+
+
+308Range Sum Query 2D - Mutable
+26.8%Hard
+
+
+460LFU Cache
+25.5%Hard. Waral 博客有更多文章,
+. visit 1point3acres for more.
+
+656Coin Path. more info on 1point3acres
+25.5%Hard
+
+
+214Shortest Palindrome
+25.4%Hard
+
+
+212Word Search II.1point3acres网
+25.3%Hard. visit 1point3acres for more.
+
+. 围观我们@1point 3 acres
+644Maximum Average Subarray II
+25.3%Hard
+
+
+140Word Break II
+24.9%Hard
+
+
+321Create Maximum Number-google 1point3acres
+24.9%Hard
+
+
+158Read N Characters Given Read4 II - Call multiple times. 围观我们@1point 3 acres
+24.5%Hard
+
+
+10Regular Expression Matching
+24.3%Hard
+
+
+780Reaching Points
+24.1%Hard
+
+
+4Median of Two Sorted Arrays
+23.4%Hard. 1point 3acres 论坛
+
+
+803Bricks Falling When Hit
+22.6%Hard.1point3acres网
+
+
+44Wildcard Matching
+21.3%Hard
+
+. from: 1point3acres
+493Reverse Pairs
+20.6%Hard
+
+
+146LRU Cache
+20.5%Hard
