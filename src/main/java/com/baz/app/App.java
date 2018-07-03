@@ -11,8 +11,10 @@ import com.baz.app.easy.*;
 class Main{
     public static void main(String[] args) {
 
-        PathSum pathSum = new PathSum();
-        pathSum.test();
+        PascalsTriangle pascalsTriangle = new PascalsTriangle();
+        pascalsTriangle.test();
+//        PathSum pathSum = new PathSum();
+//        pathSum.test();
         // MinimumDepthofBinaryTree minimumDepthofBinaryTree = new MinimumDepthofBinaryTree();
         // minimumDepthofBinaryTree.test();
         // BalancedBinaryTree balancedBinaryTree = new BalancedBinaryTree();
