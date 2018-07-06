@@ -7,6 +7,15 @@ package com.baz.app.util;
 * @since   2018-06-18
 */
 public class Utils{
+    public static void printMatrix(int [][] a , int rows, int cols){
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+                System.out.println();
+        }
+    }
+
     public static void preOrderPrintTree(TreeNode root){
         if(root!=null){
             System.out.print(root.val + " | ");

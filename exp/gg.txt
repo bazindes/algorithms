@@ -1,13 +1,12 @@
 #TitleAcceptanceDifficultyFrequency
 
-760Find Anagram Mappings
+760Find Anagram Mappings  --
 76.3%Easy
 
 
 832Flipping an Image
 69.9%Easy
 
-. 留学申请论坛-一亩三分地
 852Peak Index in a Mountain Array
 69.1%Easy
 

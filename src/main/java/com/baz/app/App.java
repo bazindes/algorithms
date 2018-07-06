@@ -1,5 +1,6 @@
 package com.baz.app;
 import com.baz.app.easy.*;
+import com.baz.app.google.FlippingAnImage;
 
 /**
 * <h1>Main Class</h1>
@@ -11,8 +12,10 @@ import com.baz.app.easy.*;
 class Main{
     public static void main(String[] args) {
 
-        PascalsTriangle pascalsTriangle = new PascalsTriangle();
-        pascalsTriangle.test();
+        FlippingAnImage flippingAnImage = new FlippingAnImage();
+        flippingAnImage.test();
+//        PascalsTriangle pascalsTriangle = new PascalsTriangle();
+//        pascalsTriangle.test();
 //        PathSum pathSum = new PathSum();
 //        pathSum.test();
         // MinimumDepthofBinaryTree minimumDepthofBinaryTree = new MinimumDepthofBinaryTree();
