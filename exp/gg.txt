@@ -3,13 +3,8 @@
 760Find Anagram Mappings  --
 76.3%Easy
 
-
-832Flipping an Image
-69.9%Easy
-
-852Peak Index in a Mountain Array
-69.1%Easy
-
+832Flipping an Image 69.9%Easy +
+852Peak Index in a Mountain Array 69.1%Easy +
 
 657Judge Route Circle
 68.7%Easy
