@@ -12,8 +12,10 @@ import com.baz.app.google.FlippingAnImage;
 class Main{
     public static void main(String[] args) {
 
-        FlippingAnImage flippingAnImage = new FlippingAnImage();
-        flippingAnImage.test();
+        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+        invertBinaryTree.test();
+//        FlippingAnImage flippingAnImage = new FlippingAnImage();
+//        flippingAnImage.test();
 //        PascalsTriangle pascalsTriangle = new PascalsTriangle();
 //        pascalsTriangle.test();
 //        PathSum pathSum = new PathSum();
