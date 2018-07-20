@@ -11,8 +11,8 @@ public class FlipGame {
         for (int i = 0; i<s.length() - 1; i++){
             if(s.substring(i).startsWith("++")){
                 char[] cs = s.toCharArray();
-                cs[i] = '+';
-                cs[i+1] = '+';
+                cs[i] = '-';
+                cs[i+1] = '-';
                 list.add(cs.toString());
             }
         }
