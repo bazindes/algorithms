@@ -1,6 +1,7 @@
 package com.baz.app;
 import com.baz.app.easy.*;
 import com.baz.app.google.FlippingAnImage;
+import com.baz.app.google.SimilarRGBColor;
 
 /**
 * <h1>Main Class</h1>
@@ -12,8 +13,10 @@ import com.baz.app.google.FlippingAnImage;
 class Main{
     public static void main(String[] args) {
 
-        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
-        invertBinaryTree.test();
+        SimilarRGBColor similarRGBColor = new SimilarRGBColor();
+        similarRGBColor.test();
+//        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+//        invertBinaryTree.test();
 //        FlippingAnImage flippingAnImage = new FlippingAnImage();
 //        flippingAnImage.test();
 //        PascalsTriangle pascalsTriangle = new PascalsTriangle();
