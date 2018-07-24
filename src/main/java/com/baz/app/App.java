@@ -2,6 +2,7 @@ package com.baz.app;
 import com.baz.app.easy.*;
 import com.baz.app.google.FlippingAnImage;
 import com.baz.app.google.MinimumAbsoluteDifferenceInBST;
+import com.baz.app.google.MinimumDistanceBetweenBSTNodes;
 import com.baz.app.google.SimilarRGBColor;
 
 /**
@@ -14,9 +15,10 @@ import com.baz.app.google.SimilarRGBColor;
 class Main{
     public static void main(String[] args) {
 
-
-        MinimumAbsoluteDifferenceInBST minimumAbsoluteDifferenceInBST = new MinimumAbsoluteDifferenceInBST();
-        minimumAbsoluteDifferenceInBST.test();
+        MinimumDistanceBetweenBSTNodes minimumDistanceBetweenBSTNodes = new MinimumDistanceBetweenBSTNodes();
+        minimumDistanceBetweenBSTNodes.test();
+//        MinimumAbsoluteDifferenceInBST minimumAbsoluteDifferenceInBST = new MinimumAbsoluteDifferenceInBST();
+//        minimumAbsoluteDifferenceInBST.test();
 //        SimilarRGBColor similarRGBColor = new SimilarRGBColor();
 //        similarRGBColor.test();
 //        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
