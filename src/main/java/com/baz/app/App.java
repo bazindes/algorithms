@@ -1,6 +1,7 @@
 package com.baz.app;
 import com.baz.app.easy.*;
 import com.baz.app.google.FlippingAnImage;
+import com.baz.app.google.MinimumAbsoluteDifferenceInBST;
 import com.baz.app.google.SimilarRGBColor;
 
 /**
@@ -13,8 +14,11 @@ import com.baz.app.google.SimilarRGBColor;
 class Main{
     public static void main(String[] args) {
 
-        SimilarRGBColor similarRGBColor = new SimilarRGBColor();
-        similarRGBColor.test();
+
+        MinimumAbsoluteDifferenceInBST minimumAbsoluteDifferenceInBST = new MinimumAbsoluteDifferenceInBST();
+        minimumAbsoluteDifferenceInBST.test();
+//        SimilarRGBColor similarRGBColor = new SimilarRGBColor();
+//        similarRGBColor.test();
 //        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
 //        invertBinaryTree.test();
 //        FlippingAnImage flippingAnImage = new FlippingAnImage();
