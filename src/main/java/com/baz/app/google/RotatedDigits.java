@@ -7,24 +7,23 @@ public class RotatedDigits {
 
     public int rotatedDigits(int N){
         int num = 0;
-        Set<Character> set = new HashSet<>();
-        set.add('0');
-        set.add('1');
-        set.add('2');
-        set.add('5');
-        set.add('6');
-        set.add('9');
-        out : while (N > 1){
-            if(N % 10 == 0) continue;
-            String n = N + "";
-            in : for (char c : n.toCharArray()){
-                if(!set.contains(c)){
-                    N --;
-                    continue out;
+        int [] dp = new int[N+1];
+        for (int i = 0; i <= N; i++) {
+            if(i<10){
+                if( i==0 || i==1 || i==8) dp[i] = 1;
+                else if( i==2 || i==5 || i==6 || i==9){
+                    dp[i] = 2;
+                    num ++;
+                }
+            }else {
+                int a = dp[i/10];
+                int b = dp[i%10];
+                if(a==1 && b==1) dp[i] = 1;
+                else if(a>=1 && b>=1){
+                    dp[i] = 2;
+                    num ++;
                 }
             }
-            num ++;
-            N--;
         }
         return num;
     }
