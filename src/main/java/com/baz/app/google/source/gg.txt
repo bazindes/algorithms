@@ -24,14 +24,14 @@ solve:
 387 First Unique Character in a String 47.3%Easy +
 447 Number of Boomerangs 47.1%Easy +
 506 Relative Ranks 47.1%Easy +
+543 Diameter of Binary Tree 45.1%Easy +
+830 Positions of Large Groups 46.7%Easy +
+844 Backspace String Compare 46.6%Easy +
+409 Longest Palindrome 46.2%Easy +
 
-830Positions of Large Groups 46.7%Easy +
-844Backspace String Compare 46.6%Easy +
-409Longest Palindrome 46.2%Easy +
 
 unsolve:
 easy:
-543Diameter of Binary Tree 45.1%Easy
 401Binary Watch 44.8%Easy
 551Student Attendance Record I 44.8%Easy
 541Reverse String II 44.0%Easy

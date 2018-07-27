@@ -1,6 +1,7 @@
 package com.baz.app;
 import com.baz.app.easy.*;
 import com.baz.app.google.*;
+import com.baz.app.medium.SearchA2DMatrix;
 
 /**
 * <h1>Main Class</h1>
@@ -12,8 +13,10 @@ import com.baz.app.google.*;
 class Main{
     public static void main(String[] args) {
 
-        DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
-        diameterOfBinaryTree.test();
+        SearchA2DMatrix searchA2DMatrix = new SearchA2DMatrix();
+        searchA2DMatrix.test();
+//        DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
+//        diameterOfBinaryTree.test();
 //        LongestPalindrome longestPalindrome = new LongestPalindrome();
 //        longestPalindrome.test();
 //        BackspaceStringCompare backspaceStringCompare = new BackspaceStringCompare();
