@@ -27,6 +27,7 @@ hs_err_pid*
 
 #maven
 target/
+test/
 
 *.pdf
 *.doc
@@ -34,3 +35,11 @@ target/
 *.xlsx
 *.xls
 *.ppt*
+.idea/.name
+.idea/dataSources.local.xml
+.idea/dataSources/
+.idea/encodings.xml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/workspace.xml
+
