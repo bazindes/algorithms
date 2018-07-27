@@ -12,8 +12,10 @@ import com.baz.app.google.*;
 class Main{
     public static void main(String[] args) {
 
-        LongestPalindrome longestPalindrome = new LongestPalindrome();
-        longestPalindrome.test();
+        DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
+        diameterOfBinaryTree.test();
+//        LongestPalindrome longestPalindrome = new LongestPalindrome();
+//        longestPalindrome.test();
 //        BackspaceStringCompare backspaceStringCompare = new BackspaceStringCompare();
 //        backspaceStringCompare.test();
 //        PositionsOfLargeGroups positionsOfLargeGroups = new PositionsOfLargeGroups();
