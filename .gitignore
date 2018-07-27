@@ -35,11 +35,4 @@ test/
 *.xlsx
 *.xls
 *.ppt*
-.idea/.name
-.idea/dataSources.local.xml
-.idea/dataSources/
-.idea/encodings.xml
-.idea/inspectionProfiles/
-.idea/misc.xml
-.idea/workspace.xml
-
+.idea/
