@@ -12,8 +12,10 @@ import com.baz.app.google.*;
 class Main{
     public static void main(String[] args) {
 
-        PositionsOfLargeGroups positionsOfLargeGroups = new PositionsOfLargeGroups();
-        positionsOfLargeGroups.test();
+        BackspaceStringCompare backspaceStringCompare = new BackspaceStringCompare();
+        backspaceStringCompare.test();
+//        PositionsOfLargeGroups positionsOfLargeGroups = new PositionsOfLargeGroups();
+//        positionsOfLargeGroups.test();
 //        RelativeRanks relativeRanks = new RelativeRanks();
 //        relativeRanks.test();
 //        NumberOfBoomerangs numberOfBoomerangs = new NumberOfBoomerangs();
