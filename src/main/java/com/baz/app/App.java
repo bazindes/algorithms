@@ -12,8 +12,10 @@ import com.baz.app.google.*;
 class Main{
     public static void main(String[] args) {
 
-        NumberOfBoomerangs numberOfBoomerangs = new NumberOfBoomerangs();
-        numberOfBoomerangs.test();
+        RelativeRanks relativeRanks = new RelativeRanks();
+        relativeRanks.test();
+//        NumberOfBoomerangs numberOfBoomerangs = new NumberOfBoomerangs();
+//        numberOfBoomerangs.test();
 //        FirstUniqueCharacterInAString firstUniqueCharacterInAString = new FirstUniqueCharacterInAString();
 //        firstUniqueCharacterInAString.test();
 //        MinimumDistanceBetweenBSTNodes minimumDistanceBetweenBSTNodes = new MinimumDistanceBetweenBSTNodes();
