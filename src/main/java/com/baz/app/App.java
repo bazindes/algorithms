@@ -13,8 +13,10 @@ import com.baz.app.medium.SearchA2DMatrix;
 class Main{
     public static void main(String[] args) {
 
-        SearchA2DMatrix searchA2DMatrix = new SearchA2DMatrix();
-        searchA2DMatrix.test();
+        BinaryWatch binaryWatch = new BinaryWatch();
+        binaryWatch.test();
+//        SearchA2DMatrix searchA2DMatrix = new SearchA2DMatrix();
+//        searchA2DMatrix.test();
 //        DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
 //        diameterOfBinaryTree.test();
 //        LongestPalindrome longestPalindrome = new LongestPalindrome();
