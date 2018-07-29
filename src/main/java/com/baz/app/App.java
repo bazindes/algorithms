@@ -2,6 +2,8 @@ package com.baz.app;
 import com.baz.app.easy.*;
 import com.baz.app.google.*;
 import com.baz.app.medium.SearchA2DMatrix;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
 * <h1>Main Class</h1>
@@ -13,8 +15,12 @@ import com.baz.app.medium.SearchA2DMatrix;
 class Main{
     public static void main(String[] args) {
 
-        BinaryWatch binaryWatch = new BinaryWatch();
-        binaryWatch.test();
+        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
+
+//        BinaryWatch binaryWatch = context.getBean(BinaryWatch.class);
+//        binaryWatch.test();
+//        BinaryWatch binaryWatch = new BinaryWatch();
+//        binaryWatch.test();
 //        SearchA2DMatrix searchA2DMatrix = new SearchA2DMatrix();
 //        searchA2DMatrix.test();
 //        DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
