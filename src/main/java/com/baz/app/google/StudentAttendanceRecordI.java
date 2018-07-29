@@ -10,11 +10,14 @@ public class StudentAttendanceRecordI {
     public boolean checkRecord(String s){
         int a = 0;
         int l = 0;
-        for (char c : s.toCharArray()){
+        for (int i=0; i<s.length(); i++){
+            char c = s.charAt(i);
             if(c == 'A') a ++;
-            if(c == 'L') l ++;
+            if(i > 1){
+                if(c == 'L' && s.charAt(i-1) == 'L' && s.charAt(i-2) == 'L') l ++;
+            }
         }
-        return !(a > 1 || l > 2);
+        return !(a > 1 || l > 0);
     }
 
     public StudentAttendanceRecordI(){
