@@ -57,3 +57,131 @@ string T. However, given S="ab" and T="ba" the function should return 0.
 Assume that:
 the length of ('S' , 'T') is within the range [1..1,000]
 strings S and T consist only of lower-case letters (a-z).
+
+86
+1: DFS, 8
+200: Number of Islands
+399: Evaluate Division
+753: Cracking the Safe
+802: Find Eventual Safe States
+490: The Maze
+494: Target Sum
+499: The maze III
+505: The Maze II
+
+1: DFS 1
+200: Number of Islands
+
+2: DP, 15
+10: Regular Expression Matching
+72: Edit Distance
+91: Decode Ways
+96: Unique Binary Search Trees
+115: Distinct Subsequences
+152: Maximum Product Subarray
+312: Burst Balloons
+361: Bomb Enemy
+418: Sentence Screen Fitting
+465: Optimal Account Balancing
+552: Student Attendance Record II
+727: Minimum Window Subsequence
+750: Number of Corner Rectangles
+805: Split Array With Same Average
+486: Predict the Winner
+
+3: Hash, 9
+36: Valid Sudoku
+205: Isomorphic Strings
+249: Group Shifted Strings
+340: Longest Substring with At Most K Distinct Characters
+438: Find All Anagrams in a String
+560: Subarray Sum Equals K
+721: Accounts Merge
+734: Sentence Similarity
+737: Sentence Similarity II
+
+4: Recursive, 3
+95: Unique Binary Search Tree II
+298: Binary Tree Longest Consecutive Sequence
+337: House Robber III
+
+5: Backtracking, 1
+37: Sudoku Solver
+
+6: Array, 8
+41: First Missing Positive
+59: Spiral Matrix II
+128: Longest Consecutive Sequence
+289: Game of Life
+334: Increasing Triplet Subsequence
+674: Longest Continuous Increasing Subsequence
+731: My Calendar II
+769: Max Chunks To Make Sorted
+
+7: Greedy, 6
+42: Trapping Rain Water
+44: Wildcard Matching
+134: Gas Station
+392: Is Subsequence
+621: Task Scheduler
+659: Split Array into Consecutive Subsequences
+
+8: String, 3
+43: Multiply Strings
+165: Compare Version Numbers
+527: Word Abbreviation
+
+9: Sort, 4
+56: Merge Intervals
+218: The Skyline Problem
+253: Meeting Rooms II
+274: H-index
+
+10: Stack, 4
+150: Evaluate Reverse Polish Notation
+394: Decode String
+739: Daily Temperatures
+496: Next Greater Element I
+
+11: Design, 3
+146: LRU Cache
+359: Logger Rate Limiter
+362: Design Hit Counter
+
+12: Binary Search, 5
+153: Find Minimum in Rotated Sorted Array
+162: Find Peak Element
+222: Count Complete Tree Nodes
+305: Search Insert Position
+540: Single Element in a Sorted Array
+
+13: Maths, 1
+248:Strobogrammatic Number II
+
+14: Heap, 2
+264: Ugly Number II
+295: Find Median from Data Stream
+
+15: BFS, 4
+269: Alien Dictionary
+286: Walls and Gates
+787: Cheapest Flights Within K Stops
+815: Bus Routes
+
+16: Binary Search Tree, 2
+270: Closet Binary Search Tree Value
+773: Sliding Puzzle
+
+17: Tree, 6
+297: Serialize and Deserizlize Binary Tree
+308: Range Sum Query 2D- Mutable
+529: Minesweeper
+652: Find Duplicate Subtrees
+684: Redundant Connection
+685: Redundant Connection II
+
+18: Queue, 1
+1: Moving Average from Data Stream
+
+19: Graph, 1
+765: Couples Holding Hands
