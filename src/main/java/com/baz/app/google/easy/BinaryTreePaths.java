@@ -9,20 +9,26 @@ public class BinaryTreePaths {
 
     public List<String> binaryTreePaths(TreeNode root){
         List<String> list = new ArrayList<>();
-        dfs(root , list);
-        bfs(root , list);
+//        dfs(root , list);
+//        bfs(root , list);
+        list = recursion(root);
         return list;
     }
 
-    private String recursion(TreeNode node){
-        if(node == null) return "";
-        if(node.left != null){
-            return node.val + " " + recursion(node.left) ;
+    private List<String> recursion(TreeNode node){
+        List<String> list = new ArrayList<>();
+        if(node == null) return list;
+        if(node.left == null && node.right == null){
+            list.add(node.val + "");
+            return list;
         }
-        if(node.right != null){
-            return node.val + " " + recursion(node.right) ;
+        for(String s : recursion(node.left)){
+            list.add(node.val + "->" + s);
         }
-        return node.val + "";
+        for(String s : recursion(node.right)){
+            list.add(node.val + "->" + s);
+        }
+        return list;
     }
 
     private void bfs(TreeNode node, List<String> list){
