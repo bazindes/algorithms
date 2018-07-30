@@ -32,10 +32,10 @@ solve:
 401 Binary Watch 44.8%Easy +
 551 Student Attendance Record I 44.8%Easy +
 541Reverse String II 44.0%Easy +
+257Binary Tree Paths 42.1%Easy +
 
 unsolve:
 easy:
-257Binary Tree Paths 42.1%Easy
 415Add Strings 41.8%Easy
 747Largest Number At Least Twice of Others 41.0%Easy
 231Power of Two 40.9%Easy

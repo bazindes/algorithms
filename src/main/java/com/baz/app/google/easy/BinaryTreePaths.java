@@ -96,7 +96,6 @@ public class BinaryTreePaths {
         Utils.inOrderPrintTree(root);
         System.out.println();
         System.out.println(binaryTreePaths(root));
-//        System.out.println(recursion(root));
     }
 
 }
