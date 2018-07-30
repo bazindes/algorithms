@@ -37,12 +37,13 @@ solve:
 747Largest Number At Least Twice of Others 41.0%Easy +
 231Power of Two 40.9%Easy +
 326Power of Three 40.9%Easy +
+66Plus One 39.9%Easy +
 
 unsolve:
 easy:
 270Closest Binary Search Tree Value 41.1%Easy
 246Strobogrammatic Number 40.4%Easy
-66Plus One 39.9%Easy
+
 345Reverse Vowels of a String 39.5%Easy
 482License Key Formatting 39.3%Easy
 734Sentence Similarity 38.9%Easy

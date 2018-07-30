@@ -9,4 +9,5 @@
     <bean id="addStrings" class="com.baz.app.google.easy.AddStrings"></bean>
     <bean id="largestNumberAtLeastTwiceOfOthers" class="com.baz.app.google.easy.LargestNumberAtLeastTwiceOfOthers"></bean>
     <bean id="powerOfTwo" class="com.baz.app.google.easy.PowerOfTwo"></bean>
+    <bean id="reverseVowelsOfAString" class="com.baz.app.google.easy.ReverseVowelsOfAString"></bean>
 </beans>

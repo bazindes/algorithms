@@ -16,8 +16,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        PowerOfTwo powerOfTwo = context.getBean(PowerOfTwo.class);
-        powerOfTwo.test();
+        ReverseVowelsOfAString reverseVowelsOfAString = context.getBean(ReverseVowelsOfAString.class);
+        reverseVowelsOfAString.test();
+//        PowerOfTwo powerOfTwo = context.getBean(PowerOfTwo.class);
+//        powerOfTwo.test();
 //        LargestNumberAtLeastTwiceOfOthers largestNumberAtLeastTwiceOfOthers = context.getBean(LargestNumberAtLeastTwiceOfOthers.class);
 //        largestNumberAtLeastTwiceOfOthers.test();
 //        AddStrings addStrings = context.getBean(AddStrings.class);
