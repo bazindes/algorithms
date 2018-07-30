@@ -36,10 +36,10 @@ solve:
 415Add Strings 41.8%Easy +
 747Largest Number At Least Twice of Others 41.0%Easy +
 231Power of Two 40.9%Easy +
+326Power of Three 40.9%Easy +
 
 unsolve:
 easy:
-326Power of Three 40.9%Easy
 270Closest Binary Search Tree Value 41.1%Easy
 246Strobogrammatic Number 40.4%Easy
 66Plus One 39.9%Easy
