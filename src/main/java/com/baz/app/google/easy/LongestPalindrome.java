@@ -1,4 +1,4 @@
-package com.baz.app.google;
+package com.baz.app.google.easy;
 
 import java.util.HashSet;
 import java.util.Set;

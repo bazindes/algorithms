@@ -1,4 +1,4 @@
-package com.baz.app.google;
+package com.baz.app.google.easy;
 
 import com.baz.app.util.Utils;
 

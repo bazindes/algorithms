@@ -1,6 +1,6 @@
 package com.baz.app.google;
 
-import com.baz.app.google.DiameterOfBinaryTree;
+import com.baz.app.google.easy.DiameterOfBinaryTree;
 import com.baz.app.util.TreeNode;
 import org.junit.Test;
 

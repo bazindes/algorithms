@@ -1,4 +1,4 @@
-package com.baz.app.google;
+package com.baz.app.google.easy;
 
 public class IslandPerimeter {
     public int islandPerimeter(int[][] grid){

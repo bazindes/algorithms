@@ -30,11 +30,11 @@ solve:
 409 Longest Palindrome 46.2%Easy +
 
 401 Binary Watch 44.8%Easy +
-551 Student Attendance Record I 44.8%Easy
+551 Student Attendance Record I 44.8%Easy +
+541Reverse String II 44.0%Easy +
 
 unsolve:
 easy:
-541Reverse String II 44.0%Easy
 257Binary Tree Paths 42.1%Easy
 415Add Strings 41.8%Easy
 747Largest Number At Least Twice of Others 41.0%Easy
