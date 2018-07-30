@@ -4,4 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="binaryWatch" class="com.baz.app.google.BinaryWatch"></bean>
     <bean id="studentAttendanceRecordI" class="com.baz.app.google.StudentAttendanceRecordI"></bean>
+    <bean id="reverseStringII" class="com.baz.app.google.ReverseStringII"></bean>
 </beans>

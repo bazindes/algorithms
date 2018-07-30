@@ -18,6 +18,8 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
+        ReverseStringII reverseStringII = context.getBean(ReverseStringII.class);
+        reverseStringII.test();
 //        BinaryWatch binaryWatch = context.getBean(BinaryWatch.class);
 //        binaryWatch.test();
 //        BinaryWatch binaryWatch = new BinaryWatch();

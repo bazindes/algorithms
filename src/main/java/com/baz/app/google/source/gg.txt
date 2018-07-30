@@ -29,11 +29,11 @@ solve:
 844 Backspace String Compare 46.6%Easy +
 409 Longest Palindrome 46.2%Easy +
 
-401Binary Watch 44.8%Easy +
+401 Binary Watch 44.8%Easy +
+551 Student Attendance Record I 44.8%Easy
 
 unsolve:
 easy:
-551Student Attendance Record I 44.8%Easy
 541Reverse String II 44.0%Easy
 257Binary Tree Paths 42.1%Easy
 415Add Strings 41.8%Easy
