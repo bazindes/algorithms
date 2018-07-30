@@ -1,4 +1,4 @@
-package com.baz.app.easy;
+package com.baz.app.google.easy;
 import com.baz.app.util.*;
 /**
 * <h1></h1>
