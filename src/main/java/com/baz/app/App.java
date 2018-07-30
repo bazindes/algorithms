@@ -1,6 +1,7 @@
 package com.baz.app;
 import com.baz.app.google.easy.AddStrings;
 import com.baz.app.google.easy.BinaryTreePaths;
+import com.baz.app.google.easy.LargestNumberAtLeastTwiceOfOthers;
 import com.baz.app.google.easy.ReverseStringII;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -18,8 +19,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        AddStrings addStrings = context.getBean(AddStrings.class);
-        addStrings.test();
+        LargestNumberAtLeastTwiceOfOthers largestNumberAtLeastTwiceOfOthers = context.getBean(LargestNumberAtLeastTwiceOfOthers.class);
+        largestNumberAtLeastTwiceOfOthers.test();
+//        AddStrings addStrings = context.getBean(AddStrings.class);
+//        addStrings.test();
 //        BinaryTreePaths binaryTreePaths = context.getBean(BinaryTreePaths.class);
 //        binaryTreePaths.test();
 //        ReverseStringII reverseStringII = context.getBean(ReverseStringII.class);

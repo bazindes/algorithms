@@ -7,4 +7,5 @@
     <bean id="reverseStringII" class="com.baz.app.google.easy.ReverseStringII"></bean>
     <bean id="binaryTreePaths" class="com.baz.app.google.easy.BinaryTreePaths"></bean>
     <bean id="addStrings" class="com.baz.app.google.easy.AddStrings"></bean>
+    <bean id="largestNumberAtLeastTwiceOfOthers" class="com.baz.app.google.easy.LargestNumberAtLeastTwiceOfOthers"></bean>
 </beans>
