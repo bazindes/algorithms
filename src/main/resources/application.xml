@@ -5,4 +5,5 @@
     <bean id="binaryWatch" class="com.baz.app.google.easy.BinaryWatch"></bean>
     <bean id="studentAttendanceRecordI" class="com.baz.app.google.easy.StudentAttendanceRecordI"></bean>
     <bean id="reverseStringII" class="com.baz.app.google.easy.ReverseStringII"></bean>
+    <bean id="binaryTreePaths" class="com.baz.app.google.easy.BinaryTreePaths"></bean>
 </beans>

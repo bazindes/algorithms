@@ -1,4 +1,5 @@
 package com.baz.app;
+import com.baz.app.google.easy.BinaryTreePaths;
 import com.baz.app.google.easy.ReverseStringII;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,8 +17,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ReverseStringII reverseStringII = context.getBean(ReverseStringII.class);
-        reverseStringII.test();
+        BinaryTreePaths binaryTreePaths = context.getBean(BinaryTreePaths.class);
+        binaryTreePaths.test();
+//        ReverseStringII reverseStringII = context.getBean(ReverseStringII.class);
+//        reverseStringII.test();
 //        BinaryWatch binaryWatch = context.getBean(BinaryWatch.class);
 //        binaryWatch.test();
 //        BinaryWatch binaryWatch = new BinaryWatch();
