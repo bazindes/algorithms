@@ -9,27 +9,12 @@ public class MagicSquaresInGrid {
         int num = 0;
         for (int i = 0; i < grid.length - 2; i++) {
             for (int j = 0; j < grid[0].length - 2; j++) {
-//                if(check(grid, i, j)){
                 if(isMagic(grid, i, j)){
                     num ++;
                 }
             }
         }
         return num;
-    }
-
-    private boolean check(int[][] grid , int col, int row){
-        Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                set.add(grid[i+col][j+row]);
-            }
-        }
-        int a = grid[col][row]+grid[col+2][row+2];
-        int b = grid[col+2][row]+grid[col][row+2];
-        int c = grid[col+1][row+1]+grid[col+1][row+2];
-        int d = grid[col][row]+grid[col+2][row+1];
-        return set.size() == 9 && (a==b) && (c==d) && (a==c);
     }
 
     private boolean isMagic(int[][] grid, int row, int col) {
