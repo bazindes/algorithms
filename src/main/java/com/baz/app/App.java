@@ -16,8 +16,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        LicenseKeyFormatting licenseKeyFormatting = context.getBean(LicenseKeyFormatting.class);
-        licenseKeyFormatting.test();
+        MaximizeDistanceToClosestPerson maximizeDistanceToClosestPerson = context.getBean(MaximizeDistanceToClosestPerson.class);
+        maximizeDistanceToClosestPerson.test();
+//        LicenseKeyFormatting licenseKeyFormatting = context.getBean(LicenseKeyFormatting.class);
+//        licenseKeyFormatting.test();
 //        ReverseVowelsOfAString reverseVowelsOfAString = context.getBean(ReverseVowelsOfAString.class);
 //        reverseVowelsOfAString.test();
 //        PowerOfTwo powerOfTwo = context.getBean(PowerOfTwo.class);

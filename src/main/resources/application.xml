@@ -11,4 +11,5 @@
     <bean id="powerOfTwo" class="com.baz.app.google.easy.PowerOfTwo"></bean>
     <bean id="reverseVowelsOfAString" class="com.baz.app.google.easy.ReverseVowelsOfAString"></bean>
     <bean id="licenseKeyFormatting" class="com.baz.app.google.easy.LicenseKeyFormatting"></bean>
+    <bean class="com.baz.app.google.easy.MaximizeDistanceToClosestPerson"></bean>
 </beans>

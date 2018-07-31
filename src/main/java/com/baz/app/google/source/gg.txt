@@ -39,15 +39,15 @@ solve:
 326Power of Three 40.9%Easy +
 66Plus One 39.9%Easy +
 345Reverse Vowels of a String 39.5%Easy +
+482License Key Formatting 39.3%Easy +
 
 unsolve:
 easy:
 270Closest Binary Search Tree Value 41.1%Easy
 246Strobogrammatic Number 40.4%Easy
-
-482License Key Formatting 39.3%Easy
 734Sentence Similarity 38.9%Easy
 758Bold Words in String 38.9%Easy
+
 849Maximize Distance to Closest Person 38.9%Easy
 459Repeated Substring Pattern 38.3%Easy
 643Maximum Average Subarray I. 37.8%Easy.
