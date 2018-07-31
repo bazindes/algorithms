@@ -17,8 +17,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        RepeatedSubstringPattern repeatedSubstringPattern = context.getBean(RepeatedSubstringPattern.class);
-        repeatedSubstringPattern.test();
+        MaximumAverageSubarrayI maximumAverageSubarrayI = context.getBean(MaximumAverageSubarrayI.class);
+        maximumAverageSubarrayI.test();
+//        RepeatedSubstringPattern repeatedSubstringPattern = context.getBean(RepeatedSubstringPattern.class);
+//        repeatedSubstringPattern.test();
 //        MaximizeDistanceToClosestPerson maximizeDistanceToClosestPerson = context.getBean(MaximizeDistanceToClosestPerson.class);
 //        maximizeDistanceToClosestPerson.test();
 //        LicenseKeyFormatting licenseKeyFormatting = context.getBean(LicenseKeyFormatting.class);

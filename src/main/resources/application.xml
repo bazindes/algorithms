@@ -13,4 +13,5 @@
     <bean id="licenseKeyFormatting" class="com.baz.app.google.easy.LicenseKeyFormatting"></bean>
     <bean class="com.baz.app.google.easy.MaximizeDistanceToClosestPerson"></bean>
     <bean id="repeatedSubstringPattern" class="com.baz.app.google.easy.RepeatedSubstringPattern"></bean>
+    <bean class="com.baz.app.google.easy.MaximumAverageSubarrayI"></bean>
 </beans>

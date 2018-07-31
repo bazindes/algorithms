@@ -22,6 +22,7 @@ solve:
 530 Minimum Absolute Difference in BST 47.9%Easy +
 783 Minimum Distance Between BST Nodes 47.9%Easy +
 387 First Unique Character in a String 47.3%Easy +
+
 447 Number of Boomerangs 47.1%Easy +
 506 Relative Ranks 47.1%Easy +
 543 Diameter of Binary Tree 45.1%Easy +
@@ -30,16 +31,18 @@ solve:
 409 Longest Palindrome 46.2%Easy +
 401 Binary Watch 44.8%Easy +
 551 Student Attendance Record I 44.8%Easy +
-541Reverse String II 44.0%Easy +
-257Binary Tree Paths 42.1%Easy +
-415Add Strings 41.8%Easy +
-747Largest Number At Least Twice of Others 41.0%Easy +
-231Power of Two 40.9%Easy +
-326Power of Three 40.9%Easy +
-66Plus One 39.9%Easy +
-345Reverse Vowels of a String 39.5%Easy +
-482License Key Formatting 39.3%Easy +
-849Maximize Distance to Closest Person 38.9%Easy +
+541 Reverse String II 44.0%Easy +
+257 Binary Tree Paths 42.1%Easy +
+415 Add Strings 41.8%Easy +
+747 Largest Number At Least Twice of Others 41.0%Easy +
+231 Power of Two 40.9%Easy +
+326 Power of Three 40.9%Easy +
+66 Plus One 39.9%Easy +
+345 Reverse Vowels of a String 39.5%Easy +
+482 License Key Formatting 39.3%Easy +
+849 Maximize Distance to Closest Person 38.9%Easy +
+459 Repeated Substring Pattern 38.3%Easy +
+643 Maximum Average Subarray I. 37.8%Easy +
 
 unsolve:
 easy:
@@ -48,8 +51,6 @@ easy:
 734Sentence Similarity 38.9%Easy
 758Bold Words in String 38.9%Easy
 
-459Repeated Substring Pattern 38.3%Easy
-643Maximum Average Subarray I. 37.8%Easy.
 501Find Mode in Binary Search Tree 37.7%Easy
 374Guess Number Higher or Lower 37.2%Easy
 422Valid Word Square 36.5%Easy
