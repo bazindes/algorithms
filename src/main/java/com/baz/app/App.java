@@ -17,8 +17,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        GuessNumberHigherOrLower guessNumberHigherOrLower = context.getBean(GuessNumberHigherOrLower.class);
-        guessNumberHigherOrLower.test();
+        MagicSquaresInGrid magicSquaresInGrid = context.getBean(MagicSquaresInGrid.class);
+        magicSquaresInGrid.test();
+//        GuessNumberHigherOrLower guessNumberHigherOrLower = context.getBean(GuessNumberHigherOrLower.class);
+//        guessNumberHigherOrLower.test();
 //        FindModeInBinarySearchTree findModeInBinarySearchTree = context.getBean(FindModeInBinarySearchTree.class);
 //        findModeInBinarySearchTree.test();
 //        MaximumAverageSubarrayI maximumAverageSubarrayI = context.getBean(MaximumAverageSubarrayI.class);

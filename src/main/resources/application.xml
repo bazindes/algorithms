@@ -16,4 +16,5 @@
     <bean class="com.baz.app.google.easy.MaximumAverageSubarrayI"></bean>
     <bean class="com.baz.app.google.easy.FindModeInBinarySearchTree"></bean>
     <bean class="com.baz.app.google.easy.GuessNumberHigherOrLower"></bean>
+    <bean class="com.baz.app.google.easy.MagicSquaresInGrid"></bean>
 </beans>
