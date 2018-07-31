@@ -42,6 +42,7 @@ unrecorded:
 849 Maximize Distance to Closest Person 38.9%Easy +
 459 Repeated Substring Pattern 38.3%Easy +
 643 Maximum Average Subarray I. 37.8%Easy +
+501 Find Mode in Binary Search Tree 37.7%Easy +
 
 unsolve:
 easy:
@@ -51,7 +52,6 @@ locked:
 734Sentence Similarity 38.9%Easy
 758Bold Words in String 38.9%Easy
 unlocked:
-501Find Mode in Binary Search Tree 37.7%Easy
 374Guess Number Higher or Lower 37.2%Easy
 422Valid Word Square 36.5%Easy
 276Paint Fence 35.1%Easy.

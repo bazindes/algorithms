@@ -15,4 +15,5 @@
     <bean id="repeatedSubstringPattern" class="com.baz.app.google.easy.RepeatedSubstringPattern"></bean>
     <bean class="com.baz.app.google.easy.MaximumAverageSubarrayI"></bean>
     <bean class="com.baz.app.google.easy.FindModeInBinarySearchTree"></bean>
+    <bean class="com.baz.app.google.easy.GuessNumberHigherOrLower"></bean>
 </beans>
