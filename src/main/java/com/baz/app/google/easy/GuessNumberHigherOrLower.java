@@ -24,9 +24,9 @@ public class GuessNumberHigherOrLower {
         int mid = n/2;
         while (guess(mid)!=0){
             if(1 == guess(mid))
-                mid += mid/2;
+                mid += (mid/2)==0?1:mid/2;
             else
-                mid -= mid/2;
+                mid -= (mid/2)==0?1:mid/2;
         }
         return mid;
     }
