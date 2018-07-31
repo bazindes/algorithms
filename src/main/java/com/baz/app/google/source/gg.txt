@@ -1,5 +1,4 @@
 #TitleAcceptanceDifficultyFrequency
-
 solve:
 760 Find Anagram Mappings 76.3%Easy +
 832 Flipping an Image 69.9%Easy +
@@ -22,7 +21,7 @@ solve:
 530 Minimum Absolute Difference in BST 47.9%Easy +
 783 Minimum Distance Between BST Nodes 47.9%Easy +
 387 First Unique Character in a String 47.3%Easy +
-
+unrecorded:
 447 Number of Boomerangs 47.1%Easy +
 506 Relative Ranks 47.1%Easy +
 543 Diameter of Binary Tree 45.1%Easy +
@@ -46,11 +45,12 @@ solve:
 
 unsolve:
 easy:
+locked:
 270Closest Binary Search Tree Value 41.1%Easy
 246Strobogrammatic Number 40.4%Easy
 734Sentence Similarity 38.9%Easy
 758Bold Words in String 38.9%Easy
-
+unlocked:
 501Find Mode in Binary Search Tree 37.7%Easy
 374Guess Number Higher or Lower 37.2%Easy
 422Valid Word Square 36.5%Easy
