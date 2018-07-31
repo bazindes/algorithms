@@ -12,4 +12,5 @@
     <bean id="reverseVowelsOfAString" class="com.baz.app.google.easy.ReverseVowelsOfAString"></bean>
     <bean id="licenseKeyFormatting" class="com.baz.app.google.easy.LicenseKeyFormatting"></bean>
     <bean class="com.baz.app.google.easy.MaximizeDistanceToClosestPerson"></bean>
+    <bean id="repeatedSubstringPattern" class="com.baz.app.google.easy.RepeatedSubstringPattern"></bean>
 </beans>

@@ -1,5 +1,6 @@
 package com.baz.app;
 import com.baz.app.google.easy.*;
+import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,8 +17,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MaximizeDistanceToClosestPerson maximizeDistanceToClosestPerson = context.getBean(MaximizeDistanceToClosestPerson.class);
-        maximizeDistanceToClosestPerson.test();
+        RepeatedSubstringPattern repeatedSubstringPattern = context.getBean(RepeatedSubstringPattern.class);
+        repeatedSubstringPattern.test();
+//        MaximizeDistanceToClosestPerson maximizeDistanceToClosestPerson = context.getBean(MaximizeDistanceToClosestPerson.class);
+//        maximizeDistanceToClosestPerson.test();
 //        LicenseKeyFormatting licenseKeyFormatting = context.getBean(LicenseKeyFormatting.class);
 //        licenseKeyFormatting.test();
 //        ReverseVowelsOfAString reverseVowelsOfAString = context.getBean(ReverseVowelsOfAString.class);
