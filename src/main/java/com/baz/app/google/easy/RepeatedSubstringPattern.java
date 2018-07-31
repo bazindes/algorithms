@@ -1,8 +1,5 @@
 package com.baz.app.google.easy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class RepeatedSubstringPattern {
 
     public boolean repeatedSubstringPattern(String s){
