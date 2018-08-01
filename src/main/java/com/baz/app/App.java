@@ -22,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        BinaryTreePaths binaryTreePaths = context.getBean(BinaryTreePaths.class);
-        binaryTreePaths.test();
+        ValidPalindrome validPalindrome = context.getBean(ValidPalindrome.class);
+        validPalindrome.test();
+//        BinaryTreePaths binaryTreePaths = context.getBean(BinaryTreePaths.class);
+//        binaryTreePaths.test();
 //        ValidPalindromeII validPalindromeII = context.getBean(ValidPalindromeII.class);
 //        validPalindromeII.test();
 //        FirstBadVersion firstBadVersion = context.getBean(FirstBadVersion.class);

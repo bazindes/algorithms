@@ -24,4 +24,5 @@
     <bean class="com.baz.app.facebook.easy.FirstBadVersion"></bean>
     <bean class="com.baz.app.facebook.easy.ValidPalindromeII"></bean>
     <bean class="com.baz.app.facebook.easy.BinaryTreePaths"></bean>
+    <bean class="com.baz.app.facebook.easy.ValidPalindrome"></bean>
 </beans>
