@@ -43,8 +43,9 @@ unrecorded:
 459 Repeated Substring Pattern 38.3%Easy +
 643 Maximum Average Subarray I. 37.8%Easy +
 501 Find Mode in Binary Search Tree 37.7%Easy +
-374Guess Number Higher or Lower 37.2%Easy +
-20Valid Parentheses 34.3%Easy +
+374 Guess Number Higher or Lower 37.2%Easy +
+20 Valid Parentheses 34.3%Easy +
+840 Magic Squares In Grid 33.9%Easy +
 
 unsolve:
 easy:
@@ -57,7 +58,6 @@ locked:
 276Paint Fence 35.1%Easy.
 
 unlocked:
-840Magic Squares In Grid 33.9%Easy
 604Design Compressed String Iterator 33.5%Easy.
 687Longest Univalue Path 32.8%Easy
 155Min Stack 32.0%Easy

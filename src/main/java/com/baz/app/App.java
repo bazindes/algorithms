@@ -1,8 +1,11 @@
 package com.baz.app;
+import com.baz.app.facebook.easy.MoveZeroes;
 import com.baz.app.google.easy.*;
 import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.awt.event.MouseEvent;
 
 /**
 * <h1>Main Class</h1>
@@ -17,8 +20,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MagicSquaresInGrid magicSquaresInGrid = context.getBean(MagicSquaresInGrid.class);
-        magicSquaresInGrid.test();
+        MoveZeroes moveZeroes = context.getBean(MoveZeroes.class);
+        moveZeroes.test();
+//        MagicSquaresInGrid magicSquaresInGrid = context.getBean(MagicSquaresInGrid.class);
+//        magicSquaresInGrid.test();
 //        GuessNumberHigherOrLower guessNumberHigherOrLower = context.getBean(GuessNumberHigherOrLower.class);
 //        guessNumberHigherOrLower.test();
 //        FindModeInBinarySearchTree findModeInBinarySearchTree = context.getBean(FindModeInBinarySearchTree.class);
