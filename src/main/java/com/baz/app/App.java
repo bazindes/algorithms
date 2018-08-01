@@ -22,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ValidPalindrome validPalindrome = context.getBean(ValidPalindrome.class);
-        validPalindrome.test();
+        TwoSum twoSum = context.getBean(TwoSum.class);
+        twoSum.test();
+//        ValidPalindrome validPalindrome = context.getBean(ValidPalindrome.class);
+//        validPalindrome.test();
 //        BinaryTreePaths binaryTreePaths = context.getBean(BinaryTreePaths.class);
 //        binaryTreePaths.test();
 //        ValidPalindromeII validPalindromeII = context.getBean(ValidPalindromeII.class);
