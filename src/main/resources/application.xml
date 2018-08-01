@@ -27,4 +27,5 @@
     <bean class="com.baz.app.facebook.easy.ValidPalindrome"></bean>
     <bean class="com.baz.app.facebook.easy.TwoSum"></bean>
     <bean class="com.baz.app.facebook.easy.MergeSortedArray"></bean>
+    <bean class="com.baz.app.facebook.easy.RomanToInteger"></bean>
 </beans>
