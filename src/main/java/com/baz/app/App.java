@@ -22,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ReverseLinkedList reverseLinkedList = context.getBean(ReverseLinkedList.class);
-        reverseLinkedList.test();
+        ValidParentheses validParentheses = context.getBean(ValidParentheses.class);
+        validParentheses.test();
+//        ReverseLinkedList reverseLinkedList = context.getBean(ReverseLinkedList.class);
+//        reverseLinkedList.test();
 //        RomanToInteger romanToInteger = context.getBean(RomanToInteger.class);
 //        romanToInteger.test();
 //        MergeSortedArray mergeSortedArray = context.getBean(MergeSortedArray.class);
