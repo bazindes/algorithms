@@ -1,6 +1,7 @@
 package com.baz.app;
 import com.baz.app.facebook.easy.AddBinary;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
+import com.baz.app.facebook.easy.FirstBadVersion;
 import com.baz.app.facebook.easy.MoveZeroes;
 import com.baz.app.google.easy.*;
 import com.sun.org.apache.regexp.internal.RE;
@@ -22,8 +23,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        DiameterOfBinaryTree diameterOfBinaryTree = context.getBean(DiameterOfBinaryTree.class);
-        diameterOfBinaryTree.test();
+        FirstBadVersion firstBadVersion = context.getBean(FirstBadVersion.class);
+        firstBadVersion.test();
+//        DiameterOfBinaryTree diameterOfBinaryTree = context.getBean(DiameterOfBinaryTree.class);
+//        diameterOfBinaryTree.test();
 //        AddBinary addBinary = context.getBean(AddBinary.class);
 //        addBinary.test();
 //        MoveZeroes moveZeroes = context.getBean(MoveZeroes.class);
