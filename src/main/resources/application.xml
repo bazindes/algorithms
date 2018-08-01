@@ -23,4 +23,5 @@
     <bean class="com.baz.app.facebook.easy.DiameterOfBinaryTree"></bean>
     <bean class="com.baz.app.facebook.easy.FirstBadVersion"></bean>
     <bean class="com.baz.app.facebook.easy.ValidPalindromeII"></bean>
+    <bean class="com.baz.app.facebook.easy.BinaryTreePaths"></bean>
 </beans>

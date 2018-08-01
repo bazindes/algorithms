@@ -1,5 +1,6 @@
 package com.baz.app;
 import com.baz.app.facebook.easy.*;
+import com.baz.app.facebook.easy.BinaryTreePaths;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
 import com.baz.app.google.easy.*;
 import com.sun.org.apache.regexp.internal.RE;
@@ -21,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ValidPalindromeII validPalindromeII = context.getBean(ValidPalindromeII.class);
-        validPalindromeII.test();
+        BinaryTreePaths binaryTreePaths = context.getBean(BinaryTreePaths.class);
+        binaryTreePaths.test();
+//        ValidPalindromeII validPalindromeII = context.getBean(ValidPalindromeII.class);
+//        validPalindromeII.test();
 //        FirstBadVersion firstBadVersion = context.getBean(FirstBadVersion.class);
 //        firstBadVersion.test();
 //        DiameterOfBinaryTree diameterOfBinaryTree = context.getBean(DiameterOfBinaryTree.class);
