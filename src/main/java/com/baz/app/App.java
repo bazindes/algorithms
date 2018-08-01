@@ -22,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        TwoSum twoSum = context.getBean(TwoSum.class);
-        twoSum.test();
+        MergeSortedArray mergeSortedArray = context.getBean(MergeSortedArray.class);
+        mergeSortedArray.test();
+//        TwoSum twoSum = context.getBean(TwoSum.class);
+//        twoSum.test();
 //        ValidPalindrome validPalindrome = context.getBean(ValidPalindrome.class);
 //        validPalindrome.test();
 //        BinaryTreePaths binaryTreePaths = context.getBean(BinaryTreePaths.class);

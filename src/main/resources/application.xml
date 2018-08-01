@@ -26,4 +26,5 @@
     <bean class="com.baz.app.facebook.easy.BinaryTreePaths"></bean>
     <bean class="com.baz.app.facebook.easy.ValidPalindrome"></bean>
     <bean class="com.baz.app.facebook.easy.TwoSum"></bean>
+    <bean class="com.baz.app.facebook.easy.MergeSortedArray"></bean>
 </beans>
