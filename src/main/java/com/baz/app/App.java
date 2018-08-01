@@ -22,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        RomanToInteger romanToInteger = context.getBean(RomanToInteger.class);
-        romanToInteger.test();
+        ReverseLinkedList reverseLinkedList = context.getBean(ReverseLinkedList.class);
+        reverseLinkedList.test();
+//        RomanToInteger romanToInteger = context.getBean(RomanToInteger.class);
+//        romanToInteger.test();
 //        MergeSortedArray mergeSortedArray = context.getBean(MergeSortedArray.class);
 //        mergeSortedArray.test();
 //        TwoSum twoSum = context.getBean(TwoSum.class);
