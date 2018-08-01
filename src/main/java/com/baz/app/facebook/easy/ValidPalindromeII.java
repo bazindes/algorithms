@@ -14,6 +14,20 @@ public class ValidPalindromeII {
         return false;
     }
 
+    //beats 100%
+    public boolean validPalindromeRecursive(String s){
+        return helper(s, 0, s.length() -1 , false);
+    }
+
+    private boolean helper(String s, int left, int right, boolean flag){
+        if(left >= right) return true;
+        if(s.charAt(left) == s.charAt(right)){
+            return helper(s, left+1, right-1, flag);
+        }
+        if(flag) return false;
+        return helper(s, left + 1, right, true) || helper(s, left, right-1, true);
+    }
+
     //improvement
     public boolean validPalindrome2(String s){
         int i = 0;
@@ -23,6 +37,7 @@ public class ValidPalindromeII {
             i ++;
             j --;
         }
+
         return check(s, i) || check(s, j);
     }
 
@@ -43,10 +58,10 @@ public class ValidPalindromeII {
 
     public void test(){
         String s = "aba";
-        System.out.println(validPalindrome2(s));
+        System.out.println(validPalindromeRecursive(s));
         s = "abca";
-        System.out.println(validPalindrome2(s));
+        System.out.println(validPalindromeRecursive(s));
         s = "tebbem";
-        System.out.println(validPalindrome2(s));
+        System.out.println(validPalindromeRecursive(s));
     }
 }
