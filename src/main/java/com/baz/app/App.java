@@ -1,8 +1,6 @@
 package com.baz.app;
-import com.baz.app.facebook.easy.AddBinary;
+import com.baz.app.facebook.easy.*;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
-import com.baz.app.facebook.easy.FirstBadVersion;
-import com.baz.app.facebook.easy.MoveZeroes;
 import com.baz.app.google.easy.*;
 import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.context.ApplicationContext;
@@ -23,8 +21,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        FirstBadVersion firstBadVersion = context.getBean(FirstBadVersion.class);
-        firstBadVersion.test();
+        ValidPalindromeII validPalindromeII = context.getBean(ValidPalindromeII.class);
+        validPalindromeII.test();
+//        FirstBadVersion firstBadVersion = context.getBean(FirstBadVersion.class);
+//        firstBadVersion.test();
 //        DiameterOfBinaryTree diameterOfBinaryTree = context.getBean(DiameterOfBinaryTree.class);
 //        diameterOfBinaryTree.test();
 //        AddBinary addBinary = context.getBean(AddBinary.class);
