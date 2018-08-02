@@ -33,4 +33,5 @@
     <bean class="com.baz.app.facebook.easy.CountAndSay"></bean>
     <bean class="com.baz.app.facebook.easy.ImplementStrStr"></bean>
     <bean class="com.baz.app.facebook.easy.GoatLatin"></bean>
+    <bean class="com.baz.app.facebook.easy.LongestContinuousIncreasingSubsequence"></bean>
 </beans>

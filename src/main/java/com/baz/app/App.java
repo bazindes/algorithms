@@ -22,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        GoatLatin goatLatin = context.getBean(GoatLatin.class);
-        goatLatin.test();
+        LongestContinuousIncreasingSubsequence longestContinuousIncreasingSubsequence = context.getBean(LongestContinuousIncreasingSubsequence.class);
+        longestContinuousIncreasingSubsequence.test();
+//        GoatLatin goatLatin = context.getBean(GoatLatin.class);
+//        goatLatin.test();
 //        ImplementStrStr implementStrStr = context.getBean(ImplementStrStr.class);
 //        implementStrStr.test();
 //        CountAndSay countAndSay = context.getBean(CountAndSay.class);
