@@ -22,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        LongestContinuousIncreasingSubsequence longestContinuousIncreasingSubsequence = context.getBean(LongestContinuousIncreasingSubsequence.class);
-        longestContinuousIncreasingSubsequence.test();
+        SqrtX sqrtX = context.getBean(SqrtX.class);
+        sqrtX.test();
+//        LongestContinuousIncreasingSubsequence longestContinuousIncreasingSubsequence = context.getBean(LongestContinuousIncreasingSubsequence.class);
+//        longestContinuousIncreasingSubsequence.test();
 //        GoatLatin goatLatin = context.getBean(GoatLatin.class);
 //        goatLatin.test();
 //        ImplementStrStr implementStrStr = context.getBean(ImplementStrStr.class);

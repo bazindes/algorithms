@@ -34,4 +34,5 @@
     <bean class="com.baz.app.facebook.easy.ImplementStrStr"></bean>
     <bean class="com.baz.app.facebook.easy.GoatLatin"></bean>
     <bean class="com.baz.app.facebook.easy.LongestContinuousIncreasingSubsequence"></bean>
+    <bean class="com.baz.app.facebook.easy.SqrtX"></bean>
 </beans>
