@@ -22,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ValidParentheses validParentheses = context.getBean(ValidParentheses.class);
-        validParentheses.test();
+        CountAndSay countAndSay = context.getBean(CountAndSay.class);
+        countAndSay.test();
+//        ValidParentheses validParentheses = context.getBean(ValidParentheses.class);
+//        validParentheses.test();
 //        ReverseLinkedList reverseLinkedList = context.getBean(ReverseLinkedList.class);
 //        reverseLinkedList.test();
 //        RomanToInteger romanToInteger = context.getBean(RomanToInteger.class);
