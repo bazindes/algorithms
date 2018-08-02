@@ -31,4 +31,5 @@
     <bean class="com.baz.app.facebook.easy.ReverseLinkedList"></bean>
     <bean class="com.baz.app.facebook.easy.ValidParentheses"></bean>
     <bean class="com.baz.app.facebook.easy.CountAndSay"></bean>
+    <bean class="com.baz.app.facebook.easy.ImplementStrStr"></bean>
 </beans>

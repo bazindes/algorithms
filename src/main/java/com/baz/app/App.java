@@ -22,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        CountAndSay countAndSay = context.getBean(CountAndSay.class);
-        countAndSay.test();
+        ImplementStrStr implementStrStr = context.getBean(ImplementStrStr.class);
+        implementStrStr.test();
+//        CountAndSay countAndSay = context.getBean(CountAndSay.class);
+//        countAndSay.test();
 //        ValidParentheses validParentheses = context.getBean(ValidParentheses.class);
 //        validParentheses.test();
 //        ReverseLinkedList reverseLinkedList = context.getBean(ReverseLinkedList.class);
