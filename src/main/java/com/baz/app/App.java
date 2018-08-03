@@ -3,6 +3,7 @@ import com.baz.app.facebook.easy.*;
 import com.baz.app.facebook.easy.BinaryTreePaths;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
 import com.baz.app.facebook.hard.RemoveInvalidParenthese;
+import com.baz.app.facebook.medium.LetterCombinationsOfAPhoneNumber;
 import com.baz.app.facebook.medium.TaskScheduler;
 import com.baz.app.google.easy.*;
 import com.sun.org.apache.regexp.internal.RE;
@@ -24,8 +25,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        TaskScheduler taskScheduler = context.getBean(TaskScheduler.class);
-        taskScheduler.test();
+        LetterCombinationsOfAPhoneNumber letterCombinationsOfAPhoneNumber = context.getBean(LetterCombinationsOfAPhoneNumber.class);
+        letterCombinationsOfAPhoneNumber.test();
+//        TaskScheduler taskScheduler = context.getBean(TaskScheduler.class);
+//        taskScheduler.test();
 //        RemoveInvalidParenthese removeInvalidParenthese = context.getBean(RemoveInvalidParenthese.class);
 //        removeInvalidParenthese.test();
 //        SqrtX sqrtX = context.getBean(SqrtX.class);

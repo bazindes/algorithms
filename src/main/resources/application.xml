@@ -37,4 +37,5 @@
     <bean class="com.baz.app.facebook.easy.SqrtX"></bean>
     <bean class="com.baz.app.facebook.hard.RemoveInvalidParenthese"></bean>
     <bean class="com.baz.app.facebook.medium.TaskScheduler"></bean>
+    <bean class="com.baz.app.facebook.medium.LetterCombinationsOfAPhoneNumber"></bean>
 </beans>
