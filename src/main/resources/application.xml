@@ -38,4 +38,5 @@
     <bean class="com.baz.app.facebook.hard.RemoveInvalidParenthese"></bean>
     <bean class="com.baz.app.facebook.medium.TaskScheduler"></bean>
     <bean class="com.baz.app.facebook.medium.LetterCombinationsOfAPhoneNumber"></bean>
+    <bean class="com.baz.app.facebook.medium.DecodeWays"></bean>
 </beans>
