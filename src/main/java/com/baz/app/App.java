@@ -2,6 +2,7 @@ package com.baz.app;
 import com.baz.app.facebook.easy.*;
 import com.baz.app.facebook.easy.BinaryTreePaths;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
+import com.baz.app.facebook.hard.RemoveInvalidParenthese;
 import com.baz.app.google.easy.*;
 import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.context.ApplicationContext;
@@ -22,8 +23,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        SqrtX sqrtX = context.getBean(SqrtX.class);
-        sqrtX.test();
+        RemoveInvalidParenthese removeInvalidParenthese = context.getBean(RemoveInvalidParenthese.class);
+        removeInvalidParenthese.test();
+//        SqrtX sqrtX = context.getBean(SqrtX.class);
+//        sqrtX.test();
 //        LongestContinuousIncreasingSubsequence longestContinuousIncreasingSubsequence = context.getBean(LongestContinuousIncreasingSubsequence.class);
 //        longestContinuousIncreasingSubsequence.test();
 //        GoatLatin goatLatin = context.getBean(GoatLatin.class);

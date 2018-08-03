@@ -58,6 +58,9 @@ Assume that:
 the length of ('S' , 'T') is within the range [1..1,000]
 strings S and T consist only of lower-case letters (a-z).
 
+卡片游戏， 在有限金额下，造成对方最大损失！ 典型01背包问题
+一道很简单的str问题，是否能去掉S中的char, 得倒T, 问下楼主，第二题是有可能需要去掉S中多个字符变成T的吗, 0个或者多个
+
 86
 1: DFS, 8
 200: Number of Islands

@@ -35,4 +35,5 @@
     <bean class="com.baz.app.facebook.easy.GoatLatin"></bean>
     <bean class="com.baz.app.facebook.easy.LongestContinuousIncreasingSubsequence"></bean>
     <bean class="com.baz.app.facebook.easy.SqrtX"></bean>
+    <bean class="com.baz.app.facebook.hard.RemoveInvalidParenthese"></bean>
 </beans>
