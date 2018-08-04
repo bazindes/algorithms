@@ -50,4 +50,5 @@
     <bean class="com.baz.app.facebook.easy.ExcelSheetColumnTitle"></bean>
     <bean class="com.baz.app.facebook.easy.TwoSumIV"></bean>
     <bean class="com.baz.app.facebook.easy.AverageOfLevelsInBinaryTree"></bean>
+    <bean class="com.baz.app.facebook.easy.LetterCasePermutation"></bean>
 </beans>
