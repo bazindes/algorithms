@@ -40,4 +40,5 @@
     <bean class="com.baz.app.facebook.medium.LetterCombinationsOfAPhoneNumber"></bean>
     <bean class="com.baz.app.facebook.medium.DecodeWays"></bean>
     <bean class="com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree"></bean>
+    <bean class="com.baz.app.facebook.medium.ThreeSum"></bean>
 </beans>

@@ -7,6 +7,7 @@ import com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree;
 import com.baz.app.facebook.medium.DecodeWays;
 import com.baz.app.facebook.medium.LetterCombinationsOfAPhoneNumber;
 import com.baz.app.facebook.medium.TaskScheduler;
+import com.baz.app.facebook.medium.ThreeSum;
 import com.baz.app.google.easy.*;
 import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.context.ApplicationContext;
@@ -27,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        SerializeAndDeserializeBinaryTree serializeAndDeserializeBinaryTree = context.getBean(SerializeAndDeserializeBinaryTree.class);
-        serializeAndDeserializeBinaryTree.test();
+        ThreeSum threeSum = context.getBean(ThreeSum.class);
+        threeSum.test();
+//        SerializeAndDeserializeBinaryTree serializeAndDeserializeBinaryTree = context.getBean(SerializeAndDeserializeBinaryTree.class);
+//        serializeAndDeserializeBinaryTree.test();
 //        DecodeWays decodeWays = context.getBean(DecodeWays.class);
 //        decodeWays.test();
 //        LetterCombinationsOfAPhoneNumber letterCombinationsOfAPhoneNumber = context.getBean(LetterCombinationsOfAPhoneNumber.class);
