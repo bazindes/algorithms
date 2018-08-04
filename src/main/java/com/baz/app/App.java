@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        LetterCasePermutation letterCasePermutation = context.getBean(LetterCasePermutation.class);
-        letterCasePermutation.test();
+        SubTreeOfAnthoerTree subTreeOfAnthoerTree = context.getBean(SubTreeOfAnthoerTree.class);
+        subTreeOfAnthoerTree.test();
+//        LetterCasePermutation letterCasePermutation = context.getBean(LetterCasePermutation.class);
+//        letterCasePermutation.test();
 //        AverageOfLevelsInBinaryTree averageOfLevelsInBinaryTree = context.getBean(AverageOfLevelsInBinaryTree.class);
 //        averageOfLevelsInBinaryTree.test();
 //        TwoSumIV twoSumIV = context.getBean(TwoSumIV.class);

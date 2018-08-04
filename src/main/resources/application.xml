@@ -51,4 +51,5 @@
     <bean class="com.baz.app.facebook.easy.TwoSumIV"></bean>
     <bean class="com.baz.app.facebook.easy.AverageOfLevelsInBinaryTree"></bean>
     <bean class="com.baz.app.facebook.easy.LetterCasePermutation"></bean>
+    <bean class="com.baz.app.facebook.easy.SubTreeOfAnthoerTree"></bean>
 </beans>
