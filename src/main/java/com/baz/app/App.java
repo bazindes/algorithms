@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ThreeSum threeSum = context.getBean(ThreeSum.class);
-        threeSum.test();
+        LowestCommonAncestorOfABinarySearchTree lowestCommonAncestorOfABinarySearchTree = context.getBean(LowestCommonAncestorOfABinarySearchTree.class);
+        lowestCommonAncestorOfABinarySearchTree.test();
+//        ThreeSum threeSum = context.getBean(ThreeSum.class);
+//        threeSum.test();
 //        SerializeAndDeserializeBinaryTree serializeAndDeserializeBinaryTree = context.getBean(SerializeAndDeserializeBinaryTree.class);
 //        serializeAndDeserializeBinaryTree.test();
 //        DecodeWays decodeWays = context.getBean(DecodeWays.class);
