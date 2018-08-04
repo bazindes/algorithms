@@ -46,4 +46,5 @@
     <bean class="com.baz.app.facebook.easy.RemoveDuplicatesFromSortedArray"></bean>
     <bean class="com.baz.app.facebook.easy.PalindromeLinkedList"></bean>
     <bean class="com.baz.app.facebook.easy.SumOfLeftLeaves"></bean>
+    <bean class="com.baz.app.facebook.easy.MissingNumber"></bean>
 </beans>

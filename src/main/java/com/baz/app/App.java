@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        SumOfLeftLeaves sumOfLeftLeaves = context.getBean(SumOfLeftLeaves.class);
-        sumOfLeftLeaves.test();
+        MissingNumber missingNumber = context.getBean(MissingNumber.class);
+        missingNumber.test();
+//        SumOfLeftLeaves sumOfLeftLeaves = context.getBean(SumOfLeftLeaves.class);
+//        sumOfLeftLeaves.test();
 //        PalindromeLinkedList palindromeLinkedList = context.getBean(PalindromeLinkedList.class);
 //        palindromeLinkedList.test();
 //        RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray = context.getBean(RemoveDuplicatesFromSortedArray.class);
