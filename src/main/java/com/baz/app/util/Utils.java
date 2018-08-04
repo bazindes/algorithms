@@ -56,6 +56,14 @@ public class Utils{
         System.out.println();
     }
 
+    public static void printArray(double[] arr){
+        System.out.print("| ");
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " | ");
+        }
+        System.out.println();
+    }
+
     public static void printLinkedList(ListNode node){
         System.out.print("| ");
         while(node != null){

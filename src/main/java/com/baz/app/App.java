@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        TwoSumIV twoSumIV = context.getBean(TwoSumIV.class);
-        twoSumIV.test();
+        AverageOfLevelsInBinaryTree averageOfLevelsInBinaryTree = context.getBean(AverageOfLevelsInBinaryTree.class);
+        averageOfLevelsInBinaryTree.test();
+//        TwoSumIV twoSumIV = context.getBean(TwoSumIV.class);
+//        twoSumIV.test();
 //        ExcelSheetColumnTitle excelSheetColumnTitle = context.getBean(ExcelSheetColumnTitle.class);
 //        excelSheetColumnTitle.test();
 //        MissingNumber missingNumber = context.getBean(MissingNumber.class);
