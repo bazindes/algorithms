@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray = context.getBean(RemoveDuplicatesFromSortedArray.class);
-        removeDuplicatesFromSortedArray.test();
+        PalindromeLinkedList palindromeLinkedList = context.getBean(PalindromeLinkedList.class);
+        palindromeLinkedList.test();
+//        RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray = context.getBean(RemoveDuplicatesFromSortedArray.class);
+//        removeDuplicatesFromSortedArray.test();
 //        HammingDistance hammingDistance = context.getBean(HammingDistance.class);
 //        hammingDistance.test();
 //        LowestCommonAncestorOfABinarySearchTree lowestCommonAncestorOfABinarySearchTree = context.getBean(LowestCommonAncestorOfABinarySearchTree.class);
