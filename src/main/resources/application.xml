@@ -45,4 +45,5 @@
     <bean class="com.baz.app.facebook.easy.HammingDistance"></bean>
     <bean class="com.baz.app.facebook.easy.RemoveDuplicatesFromSortedArray"></bean>
     <bean class="com.baz.app.facebook.easy.PalindromeLinkedList"></bean>
+    <bean class="com.baz.app.facebook.easy.SumOfLeftLeaves"></bean>
 </beans>
