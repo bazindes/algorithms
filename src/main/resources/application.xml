@@ -39,4 +39,5 @@
     <bean class="com.baz.app.facebook.medium.TaskScheduler"></bean>
     <bean class="com.baz.app.facebook.medium.LetterCombinationsOfAPhoneNumber"></bean>
     <bean class="com.baz.app.facebook.medium.DecodeWays"></bean>
+    <bean class="com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree"></bean>
 </beans>

@@ -3,6 +3,7 @@ import com.baz.app.facebook.easy.*;
 import com.baz.app.facebook.easy.BinaryTreePaths;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
 import com.baz.app.facebook.hard.RemoveInvalidParenthese;
+import com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree;
 import com.baz.app.facebook.medium.DecodeWays;
 import com.baz.app.facebook.medium.LetterCombinationsOfAPhoneNumber;
 import com.baz.app.facebook.medium.TaskScheduler;
@@ -26,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        DecodeWays decodeWays = context.getBean(DecodeWays.class);
-        decodeWays.test();
+        SerializeAndDeserializeBinaryTree serializeAndDeserializeBinaryTree = context.getBean(SerializeAndDeserializeBinaryTree.class);
+        serializeAndDeserializeBinaryTree.test();
+//        DecodeWays decodeWays = context.getBean(DecodeWays.class);
+//        decodeWays.test();
 //        LetterCombinationsOfAPhoneNumber letterCombinationsOfAPhoneNumber = context.getBean(LetterCombinationsOfAPhoneNumber.class);
 //        letterCombinationsOfAPhoneNumber.test();
 //        TaskScheduler taskScheduler = context.getBean(TaskScheduler.class);
