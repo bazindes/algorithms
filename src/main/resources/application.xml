@@ -47,4 +47,5 @@
     <bean class="com.baz.app.facebook.easy.PalindromeLinkedList"></bean>
     <bean class="com.baz.app.facebook.easy.SumOfLeftLeaves"></bean>
     <bean class="com.baz.app.facebook.easy.MissingNumber"></bean>
+    <bean class="com.baz.app.facebook.easy.ExcelSheetColumnTitle"></bean>
 </beans>

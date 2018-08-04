@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MissingNumber missingNumber = context.getBean(MissingNumber.class);
-        missingNumber.test();
+        ExcelSheetColumnTitle excelSheetColumnTitle = context.getBean(ExcelSheetColumnTitle.class);
+        excelSheetColumnTitle.test();
+//        MissingNumber missingNumber = context.getBean(MissingNumber.class);
+//        missingNumber.test();
 //        SumOfLeftLeaves sumOfLeftLeaves = context.getBean(SumOfLeftLeaves.class);
 //        sumOfLeftLeaves.test();
 //        PalindromeLinkedList palindromeLinkedList = context.getBean(PalindromeLinkedList.class);
