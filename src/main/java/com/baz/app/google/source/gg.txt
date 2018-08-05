@@ -56,9 +56,9 @@ locked:
 758Bold Words in String 38.9%Easy
 422Valid Word Square 36.5%Easy
 276Paint Fence 35.1%Easy.
+604Design Compressed String Iterator 33.5%Easy.
 
 unlocked:
-604Design Compressed String Iterator 33.5%Easy.
 687Longest Univalue Path 32.8%Easy
 155Min Stack 32.0%Easy
 686Repeated String Match 31.5%Easy

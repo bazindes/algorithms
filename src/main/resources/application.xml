@@ -17,6 +17,7 @@
     <bean class="com.baz.app.google.easy.FindModeInBinarySearchTree"></bean>
     <bean class="com.baz.app.google.easy.GuessNumberHigherOrLower"></bean>
     <bean class="com.baz.app.google.easy.MagicSquaresInGrid"></bean>
+    <bean class="com.baz.app.google.easy.LongestUnivaluePath"></bean>
 
     <bean class="com.baz.app.facebook.easy.MoveZeroes"></bean>
     <bean class="com.baz.app.facebook.easy.AddBinary"></bean>
