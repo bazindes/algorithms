@@ -20,6 +20,7 @@
     <bean class="com.baz.app.google.easy.LongestUnivaluePath"></bean>
     <bean class="com.baz.app.google.easy.MinStack"></bean>
     <bean class="com.baz.app.google.easy.RepeatedStringMatch"></bean>
+    <bean class="com.baz.app.google.easy.NthDigit"></bean>
 
     <bean class="com.baz.app.facebook.easy.MoveZeroes"></bean>
     <bean class="com.baz.app.facebook.easy.AddBinary"></bean>

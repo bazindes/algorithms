@@ -48,10 +48,10 @@ unrecorded:
 840 Magic Squares In Grid 33.9%Easy +
 687 Longest Univalue Path 32.8%Easy +
 155 Min Stack 32.0%Easy +
+686 Repeated String Match 31.5%Easy +
 
 unsolve:
 unlocked:
-686Repeated String Match 31.5%Easy
 400Nth Digit 30.0%Easy
 475Heaters 29.8%Easy
 581Shortest Unsorted Continuous Subarray 29.4%Easy
