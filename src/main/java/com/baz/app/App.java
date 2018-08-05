@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MinStack minStack = context.getBean(MinStack.class);
-        minStack.test();
+        RepeatedStringMatch repeatedStringMatch = context.getBean(RepeatedStringMatch.class);
+        repeatedStringMatch.test();
+//        MinStack minStack = context.getBean(MinStack.class);
+//        minStack.test();
 //        LongestUnivaluePath longestUnivaluePath = context.getBean(LongestUnivaluePath.class);
 //        longestUnivaluePath.test();
 //        SubTreeOfAnthoerTree subTreeOfAnthoerTree = context.getBean(SubTreeOfAnthoerTree.class);

@@ -47,20 +47,10 @@ unrecorded:
 20 Valid Parentheses 34.3%Easy +
 840 Magic Squares In Grid 33.9%Easy +
 687 Longest Univalue Path 32.8%Easy +
+155 Min Stack 32.0%Easy +
 
 unsolve:
-easy:
-locked:
-270Closest Binary Search Tree Value 41.1%Easy
-246Strobogrammatic Number 40.4%Easy
-734Sentence Similarity 38.9%Easy
-758Bold Words in String 38.9%Easy
-422Valid Word Square 36.5%Easy
-276Paint Fence 35.1%Easy.
-604Design Compressed String Iterator 33.5%Easy.
-
 unlocked:
-155Min Stack 32.0%Easy
 686Repeated String Match 31.5%Easy
 400Nth Digit 30.0%Easy
 475Heaters 29.8%Easy
@@ -68,6 +58,16 @@ unlocked:
 408Valid Word Abbreviation 28.4%Easy
 859Buddy Strings 25.9%Easy
 665Non-decreasing Array 20.0%Easy
+
+locked:
+easy:
+270Closest Binary Search Tree Value 41.1%Easy
+246Strobogrammatic Number 40.4%Easy
+734Sentence Similarity 38.9%Easy
+758Bold Words in String 38.9%Easy
+422Valid Word Square 36.5%Easy
+276Paint Fence 35.1%Easy.
+604Design Compressed String Iterator 33.5%Easy.
 
 Medium:
 535Encode and Decode TinyURL 74.0%Medium
