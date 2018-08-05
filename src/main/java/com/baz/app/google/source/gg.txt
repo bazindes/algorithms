@@ -46,6 +46,7 @@ unrecorded:
 374 Guess Number Higher or Lower 37.2%Easy +
 20 Valid Parentheses 34.3%Easy +
 840 Magic Squares In Grid 33.9%Easy +
+687 Longest Univalue Path 32.8%Easy +
 
 unsolve:
 easy:
@@ -59,7 +60,6 @@ locked:
 604Design Compressed String Iterator 33.5%Easy.
 
 unlocked:
-687Longest Univalue Path 32.8%Easy
 155Min Stack 32.0%Easy
 686Repeated String Match 31.5%Easy
 400Nth Digit 30.0%Easy

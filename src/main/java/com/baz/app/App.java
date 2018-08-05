@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        LongestUnivaluePath longestUnivaluePath = context.getBean(LongestUnivaluePath.class);
-        longestUnivaluePath.test();
+        MinStack minStack = context.getBean(MinStack.class);
+        minStack.test();
+//        LongestUnivaluePath longestUnivaluePath = context.getBean(LongestUnivaluePath.class);
+//        longestUnivaluePath.test();
 //        SubTreeOfAnthoerTree subTreeOfAnthoerTree = context.getBean(SubTreeOfAnthoerTree.class);
 //        subTreeOfAnthoerTree.test();
 //        LetterCasePermutation letterCasePermutation = context.getBean(LetterCasePermutation.class);
