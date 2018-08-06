@@ -49,10 +49,10 @@ unrecorded:
 687 Longest Univalue Path 32.8%Easy +
 155 Min Stack 32.0%Easy +
 686 Repeated String Match 31.5%Easy +
+400 Nth Digit 30.0%Easy +
 
 unsolve:
 unlocked:
-400Nth Digit 30.0%Easy
 475Heaters 29.8%Easy
 581Shortest Unsorted Continuous Subarray 29.4%Easy
 408Valid Word Abbreviation 28.4%Easy

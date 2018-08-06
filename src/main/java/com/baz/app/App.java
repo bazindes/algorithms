@@ -28,6 +28,8 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
+        Heaters heaters = context.getBean(Heaters.class);
+        heaters.test();
 //        NthDigit nthDigit = new NthDigit();
 //        nthDigit.test();
 //        RepeatedStringMatch repeatedStringMatch = context.getBean(RepeatedStringMatch.class);
@@ -78,8 +80,8 @@ class App{
 //        goatLatin.test();
 //        ImplementStrStr implementStrStr = context.getBean(ImplementStrStr.class);
 //        implementStrStr.test();
-        CountAndSay countAndSay = context.getBean(CountAndSay.class);
-        countAndSay.test();
+//        CountAndSay countAndSay = context.getBean(CountAndSay.class);
+//        countAndSay.test();
 //        ValidParentheses validParentheses = context.getBean(ValidParentheses.class);
 //        validParentheses.test();
 //        ReverseLinkedList reverseLinkedList = context.getBean(ReverseLinkedList.class);
