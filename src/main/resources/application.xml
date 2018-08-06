@@ -62,4 +62,5 @@
     <bean class="com.baz.app.facebook.easy.SubTreeOfAnthoerTree"></bean>
     <bean class="com.baz.app.facebook.medium.NumberOfIslands"></bean>
     <bean class="com.baz.app.facebook.medium.BinarySearchTreeIterator"></bean>
+    <bean class="com.baz.app.facebook.medium.MergeIntervals"></bean>
 </beans>
