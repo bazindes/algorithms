@@ -9,6 +9,7 @@ import com.baz.app.facebook.medium.LetterCombinationsOfAPhoneNumber;
 import com.baz.app.facebook.medium.TaskScheduler;
 import com.baz.app.facebook.medium.ThreeSum;
 import com.baz.app.google.easy.*;
+import com.baz.app.google.source.NonDecreasingArray;
 import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -28,8 +29,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        BuddyStrings buddyStrings = context.getBean(BuddyStrings.class);
-        buddyStrings.test();
+        NonDecreasingArray nonDecreasingArray = context.getBean(NonDecreasingArray.class);
+        nonDecreasingArray.test();
+//        BuddyStrings buddyStrings = context.getBean(BuddyStrings.class);
+//        buddyStrings.test();
 //        ShortestUnsortedContinuousSubarray shortestUnsortedContinuousSubarray = context.getBean(ShortestUnsortedContinuousSubarray.class);
 //        shortestUnsortedContinuousSubarray.test();
 //        Heaters heaters = context.getBean(Heaters.class);

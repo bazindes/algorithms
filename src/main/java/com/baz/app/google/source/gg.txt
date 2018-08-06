@@ -52,14 +52,11 @@ unrecorded:
 400 Nth Digit 30.0%Easy +
 475 Heaters 29.8%Easy +
 581 Shortest Unsorted Continuous Subarray 29.4%Easy +
+859 Buddy Strings 25.9%Easy +
+665 Non-decreasing Array 20.0%Easy +
 
 unsolve:
-unlocked:
-859Buddy Strings 25.9%Easy
-665Non-decreasing Array 20.0%Easy
-
 locked:
-easy:
 270Closest Binary Search Tree Value 41.1%Easy
 246Strobogrammatic Number 40.4%Easy
 734Sentence Similarity 38.9%Easy
