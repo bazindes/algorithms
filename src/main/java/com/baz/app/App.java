@@ -26,8 +26,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        NumberOfIslands numberOfIslands = context.getBean(NumberOfIslands.class);
-        numberOfIslands.test();
+        BinarySearchTreeIterator binarySearchTreeIterator = context.getBean(BinarySearchTreeIterator.class);
+        binarySearchTreeIterator.test();
+//        NumberOfIslands numberOfIslands = context.getBean(NumberOfIslands.class);
+//        numberOfIslands.test();
 //        NonDecreasingArray nonDecreasingArray = context.getBean(NonDecreasingArray.class);
 //        nonDecreasingArray.test();
 //        BuddyStrings buddyStrings = context.getBean(BuddyStrings.class);
