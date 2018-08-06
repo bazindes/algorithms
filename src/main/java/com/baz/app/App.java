@@ -4,10 +4,7 @@ import com.baz.app.facebook.easy.BinaryTreePaths;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
 import com.baz.app.facebook.hard.RemoveInvalidParenthese;
 import com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree;
-import com.baz.app.facebook.medium.DecodeWays;
-import com.baz.app.facebook.medium.LetterCombinationsOfAPhoneNumber;
-import com.baz.app.facebook.medium.TaskScheduler;
-import com.baz.app.facebook.medium.ThreeSum;
+import com.baz.app.facebook.medium.*;
 import com.baz.app.google.easy.*;
 import com.baz.app.google.source.NonDecreasingArray;
 import com.sun.org.apache.regexp.internal.RE;
@@ -29,8 +26,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        NonDecreasingArray nonDecreasingArray = context.getBean(NonDecreasingArray.class);
-        nonDecreasingArray.test();
+        NumberOfIslands numberOfIslands = context.getBean(NumberOfIslands.class);
+        numberOfIslands.test();
+//        NonDecreasingArray nonDecreasingArray = context.getBean(NonDecreasingArray.class);
+//        nonDecreasingArray.test();
 //        BuddyStrings buddyStrings = context.getBean(BuddyStrings.class);
 //        buddyStrings.test();
 //        ShortestUnsortedContinuousSubarray shortestUnsortedContinuousSubarray = context.getBean(ShortestUnsortedContinuousSubarray.class);
