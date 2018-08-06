@@ -51,11 +51,10 @@ unrecorded:
 686 Repeated String Match 31.5%Easy +
 400 Nth Digit 30.0%Easy +
 475 Heaters 29.8%Easy +
+581 Shortest Unsorted Continuous Subarray 29.4%Easy +
 
 unsolve:
 unlocked:
-581Shortest Unsorted Continuous Subarray 29.4%Easy
-408Valid Word Abbreviation 28.4%Easy
 859Buddy Strings 25.9%Easy
 665Non-decreasing Array 20.0%Easy
 
@@ -68,6 +67,7 @@ easy:
 422Valid Word Square 36.5%Easy
 276Paint Fence 35.1%Easy.
 604Design Compressed String Iterator 33.5%Easy.
+408Valid Word Abbreviation 28.4%Easy
 
 Medium:
 535Encode and Decode TinyURL 74.0%Medium

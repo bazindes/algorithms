@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ShortestUnsortedContinuousSubarray shortestUnsortedContinuousSubarray = context.getBean(ShortestUnsortedContinuousSubarray.class);
-        shortestUnsortedContinuousSubarray.test();
+        BuddyStrings buddyStrings = context.getBean(BuddyStrings.class);
+        buddyStrings.test();
+//        ShortestUnsortedContinuousSubarray shortestUnsortedContinuousSubarray = context.getBean(ShortestUnsortedContinuousSubarray.class);
+//        shortestUnsortedContinuousSubarray.test();
 //        Heaters heaters = context.getBean(Heaters.class);
 //        heaters.test();
 //        NthDigit nthDigit = new NthDigit();
