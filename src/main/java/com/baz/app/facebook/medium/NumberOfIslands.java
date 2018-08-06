@@ -3,7 +3,7 @@ package com.baz.app.facebook.medium;
 public class NumberOfIslands {
 
     /**
-     * DFS Approach O(n^2)
+     * for every position in matrix, use DFS and mark it to '0', O(n^2)
      * */
 
     private int n;
