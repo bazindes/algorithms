@@ -26,8 +26,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MergeIntervals mergeIntervals = context.getBean(MergeIntervals.class);
-        mergeIntervals.test();
+        AddAndSearchWord addAndSearchWord = context.getBean(AddAndSearchWord.class);
+        addAndSearchWord.test(addAndSearchWord);
+//        MergeIntervals mergeIntervals = context.getBean(MergeIntervals.class);
+//        mergeIntervals.test();
 //        BinarySearchTreeIterator binarySearchTreeIterator = context.getBean(BinarySearchTreeIterator.class);
 //        binarySearchTreeIterator.test();
 //        NumberOfIslands numberOfIslands = context.getBean(NumberOfIslands.class);
