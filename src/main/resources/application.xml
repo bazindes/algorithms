@@ -67,4 +67,5 @@
     <bean class="com.baz.app.facebook.medium.MergeIntervals"></bean>
     <bean class="com.baz.app.facebook.medium.AddAndSearchWord"></bean>
     <bean class="com.baz.app.facebook.easy.BestTimeToBuyAndSellAStock"></bean>
+    <bean class="com.baz.app.facebook.medium.ExclusiveTimeOfFunctions"></bean>
 </beans>

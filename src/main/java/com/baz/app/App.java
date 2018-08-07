@@ -27,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        BestTimeToBuyAndSellAStock bestTimeToBuyAndSellAStock = context.getBean(BestTimeToBuyAndSellAStock.class);
-        bestTimeToBuyAndSellAStock.test();
+        ExclusiveTimeOfFunctions exclusiveTimeOfFunctions = context.getBean(ExclusiveTimeOfFunctions.class);
+        exclusiveTimeOfFunctions.test();
+//        BestTimeToBuyAndSellAStock bestTimeToBuyAndSellAStock = context.getBean(BestTimeToBuyAndSellAStock.class);
+//        bestTimeToBuyAndSellAStock.test();
 //        ProjectionAreaOf3DShapes projectionAreaOf3DShapes = context.getBean(ProjectionAreaOf3DShapes.class);
 //        projectionAreaOf3DShapes.test();
 //        AddAndSearchWord addAndSearchWord = context.getBean(AddAndSearchWord.class);
