@@ -8,6 +8,7 @@ import com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree;
 import com.baz.app.facebook.medium.*;
 import com.baz.app.google.easy.*;
 import com.baz.app.google.source.NonDecreasingArray;
+import com.baz.app.medium.ZeroOneKnapSack;
 import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -27,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ExclusiveTimeOfFunctions exclusiveTimeOfFunctions = context.getBean(ExclusiveTimeOfFunctions.class);
-        exclusiveTimeOfFunctions.test();
+        ZeroOneKnapSack zeroOneKnapSack = context.getBean(ZeroOneKnapSack.class);
+        zeroOneKnapSack.test();
+//        ExclusiveTimeOfFunctions exclusiveTimeOfFunctions = context.getBean(ExclusiveTimeOfFunctions.class);
+//        exclusiveTimeOfFunctions.test();
 //        BestTimeToBuyAndSellAStock bestTimeToBuyAndSellAStock = context.getBean(BestTimeToBuyAndSellAStock.class);
 //        bestTimeToBuyAndSellAStock.test();
 //        ProjectionAreaOf3DShapes projectionAreaOf3DShapes = context.getBean(ProjectionAreaOf3DShapes.class);

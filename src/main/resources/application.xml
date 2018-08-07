@@ -3,6 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean class="com.baz.app.easy.ProjectionAreaOf3DShapes"></bean>
+    <bean class="com.baz.app.medium.ZeroOneKnapSack"></bean>
 
     <bean class="com.baz.app.google.easy.BinaryWatch"></bean>
     <bean class="com.baz.app.google.easy.StudentAttendanceRecordI"></bean>
