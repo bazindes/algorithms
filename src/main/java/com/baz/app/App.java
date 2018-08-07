@@ -1,4 +1,5 @@
 package com.baz.app;
+import com.baz.app.easy.ProjectionAreaOf3DShapes;
 import com.baz.app.facebook.easy.*;
 import com.baz.app.facebook.easy.BinaryTreePaths;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
@@ -26,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        AddAndSearchWord addAndSearchWord = context.getBean(AddAndSearchWord.class);
-        addAndSearchWord.test(addAndSearchWord);
+        ProjectionAreaOf3DShapes projectionAreaOf3DShapes = context.getBean(ProjectionAreaOf3DShapes.class);
+        projectionAreaOf3DShapes.test();
+//        AddAndSearchWord addAndSearchWord = context.getBean(AddAndSearchWord.class);
+//        addAndSearchWord.test(addAndSearchWord);
 //        MergeIntervals mergeIntervals = context.getBean(MergeIntervals.class);
 //        mergeIntervals.test();
 //        BinarySearchTreeIterator binarySearchTreeIterator = context.getBean(BinarySearchTreeIterator.class);
