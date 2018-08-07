@@ -27,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ProjectionAreaOf3DShapes projectionAreaOf3DShapes = context.getBean(ProjectionAreaOf3DShapes.class);
-        projectionAreaOf3DShapes.test();
+        BestTimeToBuyAndSellAStock bestTimeToBuyAndSellAStock = context.getBean(BestTimeToBuyAndSellAStock.class);
+        bestTimeToBuyAndSellAStock.test();
+//        ProjectionAreaOf3DShapes projectionAreaOf3DShapes = context.getBean(ProjectionAreaOf3DShapes.class);
+//        projectionAreaOf3DShapes.test();
 //        AddAndSearchWord addAndSearchWord = context.getBean(AddAndSearchWord.class);
 //        addAndSearchWord.test(addAndSearchWord);
 //        MergeIntervals mergeIntervals = context.getBean(MergeIntervals.class);
