@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        FlattenNestedListIterator flattenNestedListIterator = context.getBean(FlattenNestedListIterator.class);
-        flattenNestedListIterator.test(flattenNestedListIterator);
+        CloneGraph cloneGraph = context.getBean(CloneGraph.class);
+        cloneGraph.test();
+//        FlattenNestedListIterator flattenNestedListIterator = context.getBean(FlattenNestedListIterator.class);
+//        flattenNestedListIterator.test(flattenNestedListIterator);
 //        ZeroOneKnapSack zeroOneKnapSack = context.getBean(ZeroOneKnapSack.class);
 //        zeroOneKnapSack.test();
 //        ExclusiveTimeOfFunctions exclusiveTimeOfFunctions = context.getBean(ExclusiveTimeOfFunctions.class);

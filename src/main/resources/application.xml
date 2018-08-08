@@ -70,4 +70,5 @@
     <bean class="com.baz.app.facebook.easy.BestTimeToBuyAndSellAStock"></bean>
     <bean class="com.baz.app.facebook.medium.ExclusiveTimeOfFunctions"></bean>
     <bean class="com.baz.app.facebook.medium.FlattenNestedListIterator"></bean>
+    <bean class="com.baz.app.facebook.medium.CloneGraph"></bean>
 </beans>
