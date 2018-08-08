@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MultiplyStrings multiplyStrings = context.getBean(MultiplyStrings.class);
-        multiplyStrings.test();
+        ValidateBinarySearchTree validateBinarySearchTree = context.getBean(ValidateBinarySearchTree.class);
+        validateBinarySearchTree.test();
+//        MultiplyStrings multiplyStrings = context.getBean(MultiplyStrings.class);
+//        multiplyStrings.test();
 //        KthLargestElementInArray kthLargestElementInArray = context.getBean(KthLargestElementInArray.class);
 //        kthLargestElementInArray.test();
 //        CloneGraph cloneGraph = context.getBean(CloneGraph.class);

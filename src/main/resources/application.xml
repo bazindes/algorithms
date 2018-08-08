@@ -73,4 +73,5 @@
     <bean class="com.baz.app.facebook.medium.CloneGraph"></bean>
     <bean class="com.baz.app.facebook.medium.KthLargestElementInArray"></bean>
     <bean class="com.baz.app.facebook.medium.MultiplyStrings"></bean>
+    <bean class="com.baz.app.facebook.medium.ValidateBinarySearchTree"></bean>
 </beans>
