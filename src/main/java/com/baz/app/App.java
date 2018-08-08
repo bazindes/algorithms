@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        KthLargestElementInArray kthLargestElementInArray = context.getBean(KthLargestElementInArray.class);
-        kthLargestElementInArray.test();
+        MultiplyStrings multiplyStrings = context.getBean(MultiplyStrings.class);
+        multiplyStrings.test();
+//        KthLargestElementInArray kthLargestElementInArray = context.getBean(KthLargestElementInArray.class);
+//        kthLargestElementInArray.test();
 //        CloneGraph cloneGraph = context.getBean(CloneGraph.class);
 //        cloneGraph.test();
 //        FlattenNestedListIterator flattenNestedListIterator = context.getBean(FlattenNestedListIterator.class);

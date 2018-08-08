@@ -72,4 +72,5 @@
     <bean class="com.baz.app.facebook.medium.FlattenNestedListIterator"></bean>
     <bean class="com.baz.app.facebook.medium.CloneGraph"></bean>
     <bean class="com.baz.app.facebook.medium.KthLargestElementInArray"></bean>
+    <bean class="com.baz.app.facebook.medium.MultiplyStrings"></bean>
 </beans>
