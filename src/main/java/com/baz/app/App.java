@@ -7,6 +7,7 @@ import com.baz.app.facebook.hard.RemoveInvalidParenthese;
 import com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree;
 import com.baz.app.facebook.medium.*;
 import com.baz.app.google.easy.*;
+import com.baz.app.google.medium.CardGameII;
 import com.baz.app.google.source.NonDecreasingArray;
 import com.baz.app.medium.ZeroOneKnapSack;
 import com.sun.org.apache.regexp.internal.RE;
@@ -28,8 +29,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        WordBreak wordBreak = context.getBean(WordBreak.class);
-        wordBreak.test();
+        CardGameII cardGameII = context.getBean(CardGameII.class);
+        cardGameII.test();
+//        WordBreak wordBreak = context.getBean(WordBreak.class);
+//        wordBreak.test();
 //        Subsets subsets = context.getBean(Subsets.class);
 //        subsets.test();
 //        ValidateBinarySearchTree validateBinarySearchTree = context.getBean(ValidateBinarySearchTree.class);
