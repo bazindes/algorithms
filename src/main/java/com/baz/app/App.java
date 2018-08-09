@@ -28,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        Subsets subsets = context.getBean(Subsets.class);
-        subsets.test();
+        WordBreak wordBreak = context.getBean(WordBreak.class);
+        wordBreak.test();
+//        Subsets subsets = context.getBean(Subsets.class);
+//        subsets.test();
 //        ValidateBinarySearchTree validateBinarySearchTree = context.getBean(ValidateBinarySearchTree.class);
 //        validateBinarySearchTree.test();
 //        MultiplyStrings multiplyStrings = context.getBean(MultiplyStrings.class);

@@ -75,4 +75,5 @@
     <bean class="com.baz.app.facebook.medium.MultiplyStrings"></bean>
     <bean class="com.baz.app.facebook.medium.ValidateBinarySearchTree"></bean>
     <bean class="com.baz.app.facebook.medium.Subsets"></bean>
+    <bean class="com.baz.app.facebook.medium.WordBreak"></bean>
 </beans>
