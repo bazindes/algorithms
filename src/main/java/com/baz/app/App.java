@@ -30,8 +30,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        InsertInterval insertInterval = context.getBean(InsertInterval.class);
-        insertInterval.test();
+        DecodeString decodeString = context.getBean(DecodeString.class);
+        decodeString.test();
+//        InsertInterval insertInterval = context.getBean(InsertInterval.class);
+//        insertInterval.test();
 //        ProductOfArrayExceptSelf productOfArrayExceptSelf = context.getBean(ProductOfArrayExceptSelf.class);
 //        productOfArrayExceptSelf.test();
 //        CardGameII cardGameII = context.getBean(CardGameII.class);

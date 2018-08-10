@@ -79,4 +79,5 @@
     <bean class="com.baz.app.facebook.medium.WordBreak"></bean>
     <bean class="com.baz.app.facebook.medium.ProductOfArrayExceptSelf"></bean>
     <bean class="com.baz.app.facebook.hard.InsertInterval"></bean>
+    <bean class="com.baz.app.facebook.medium.DecodeString"></bean>
 </beans>
