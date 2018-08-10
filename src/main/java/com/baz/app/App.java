@@ -29,8 +29,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        CardGameII cardGameII = context.getBean(CardGameII.class);
-        cardGameII.test();
+        ProductOfArrayExceptSelf productOfArrayExceptSelf = context.getBean(ProductOfArrayExceptSelf.class);
+        productOfArrayExceptSelf.test();
+//        CardGameII cardGameII = context.getBean(CardGameII.class);
+//        cardGameII.test();
 //        WordBreak wordBreak = context.getBean(WordBreak.class);
 //        wordBreak.test();
 //        Subsets subsets = context.getBean(Subsets.class);
