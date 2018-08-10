@@ -12,7 +12,7 @@ public class InsertInterval {
     public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
         List<Interval> ans = new ArrayList<>();
         int i = 0;
-        while ( i<intervals.size() && intervals.get(i).end <= newInterval.start){
+        while ( i<intervals.size() && intervals.get(i).end < newInterval.start){
             ans.add(intervals.get(i));
             i++;
         }
