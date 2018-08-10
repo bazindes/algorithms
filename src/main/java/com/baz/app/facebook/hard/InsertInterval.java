@@ -34,8 +34,8 @@ public class InsertInterval {
     }
 
     public void test(){
-        List<Interval> its = Arrays.asList(new Interval(1,3) , new Interval(6,9));
-        Interval nit = new Interval(2,5);
+        List<Interval> its = Arrays.asList(new Interval(1,5) );
+        Interval nit = new Interval(5,7);
         insert(its , nit).forEach(i -> System.out.print(i + " "));
         System.out.println();
         its = Arrays.asList(new Interval(1,2) , new Interval(3,5), new Interval(6,7), new Interval(8,10), new Interval(12,16));
