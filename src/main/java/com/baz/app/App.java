@@ -3,6 +3,7 @@ import com.baz.app.easy.ProjectionAreaOf3DShapes;
 import com.baz.app.facebook.easy.*;
 import com.baz.app.facebook.easy.BinaryTreePaths;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
+import com.baz.app.facebook.hard.InsertInterval;
 import com.baz.app.facebook.hard.RemoveInvalidParenthese;
 import com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree;
 import com.baz.app.facebook.medium.*;
@@ -29,8 +30,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ProductOfArrayExceptSelf productOfArrayExceptSelf = context.getBean(ProductOfArrayExceptSelf.class);
-        productOfArrayExceptSelf.test();
+        InsertInterval insertInterval = context.getBean(InsertInterval.class);
+        insertInterval.test();
+//        ProductOfArrayExceptSelf productOfArrayExceptSelf = context.getBean(ProductOfArrayExceptSelf.class);
+//        productOfArrayExceptSelf.test();
 //        CardGameII cardGameII = context.getBean(CardGameII.class);
 //        cardGameII.test();
 //        WordBreak wordBreak = context.getBean(WordBreak.class);
