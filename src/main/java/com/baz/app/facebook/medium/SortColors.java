@@ -24,9 +24,28 @@ public class SortColors {
         }
     }
 
+    //based on AC 012
+    public void sortColorsAC(int[] nums){
+        int i = 0;
+        int j = 0;
+        for (int k = 0; k < nums.length; k++) {
+            int val = nums[k];
+            nums[k] = 2;
+            if(val < 2){
+                nums[j] = 1;
+                j ++;
+            }
+            if(val == 0){
+                nums[i] = 0;
+                i ++;
+            }
+        }
+    }
+
     public void test(){
         int[] nums = {2, 0, 2, 1, 1, 0};
-        sortColors(nums);
+//        sortColors(nums);
+        sortColorsAC(nums);
         Utils.printArray(nums);
     }
 
