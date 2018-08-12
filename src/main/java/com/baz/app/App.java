@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        RecoverBinarySearchTree recoverBinarySearchTree = context.getBean(RecoverBinarySearchTree.class);
-        recoverBinarySearchTree.test();
+        SortColors sortColors = context.getBean(SortColors.class);
+        sortColors.test();
+//        RecoverBinarySearchTree recoverBinarySearchTree = context.getBean(RecoverBinarySearchTree.class);
+//        recoverBinarySearchTree.test();
 //        DecodeString decodeString = context.getBean(DecodeString.class);
 //        decodeString.test();
 //        InsertInterval insertInterval = context.getBean(InsertInterval.class);
