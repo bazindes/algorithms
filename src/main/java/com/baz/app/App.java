@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        SortColors sortColors = context.getBean(SortColors.class);
-        sortColors.test();
+        FriendsOfAppropriateAges friendsOfAppropriateAges = context.getBean(FriendsOfAppropriateAges.class);
+        friendsOfAppropriateAges.test();
+//        SortColors sortColors = context.getBean(SortColors.class);
+//        sortColors.test();
 //        RecoverBinarySearchTree recoverBinarySearchTree = context.getBean(RecoverBinarySearchTree.class);
 //        recoverBinarySearchTree.test();
 //        DecodeString decodeString = context.getBean(DecodeString.class);

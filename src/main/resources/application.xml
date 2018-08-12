@@ -82,4 +82,5 @@
     <bean class="com.baz.app.facebook.medium.DecodeString"></bean>
     <bean class="com.baz.app.facebook.hard.RecoverBinarySearchTree"></bean>
     <bean class="com.baz.app.facebook.medium.SortColors"></bean>
+    <bean class="com.baz.app.facebook.medium.FriendsOfAppropriateAges"></bean>
 </beans>
