@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        FriendsOfAppropriateAges friendsOfAppropriateAges = context.getBean(FriendsOfAppropriateAges.class);
-        friendsOfAppropriateAges.test();
+        SearchInRotatedSortedArray searchInRotatedSortedArray = context.getBean(SearchInRotatedSortedArray.class);
+        searchInRotatedSortedArray.test();
+//        FriendsOfAppropriateAges friendsOfAppropriateAges = context.getBean(FriendsOfAppropriateAges.class);
+//        friendsOfAppropriateAges.test();
 //        SortColors sortColors = context.getBean(SortColors.class);
 //        sortColors.test();
 //        RecoverBinarySearchTree recoverBinarySearchTree = context.getBean(RecoverBinarySearchTree.class);
