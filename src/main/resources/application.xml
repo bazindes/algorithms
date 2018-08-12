@@ -84,4 +84,5 @@
     <bean class="com.baz.app.facebook.medium.SortColors"></bean>
     <bean class="com.baz.app.facebook.medium.FriendsOfAppropriateAges"></bean>
     <bean class="com.baz.app.facebook.medium.SearchInRotatedSortedArray"></bean>
+    <bean class="com.baz.app.facebook.medium.MaximumSwap"></bean>
 </beans>

@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        SearchInRotatedSortedArray searchInRotatedSortedArray = context.getBean(SearchInRotatedSortedArray.class);
-        searchInRotatedSortedArray.test();
+        MaximumSwap maximumSwap = context.getBean(MaximumSwap.class);
+        maximumSwap.test();
+//        SearchInRotatedSortedArray searchInRotatedSortedArray = context.getBean(SearchInRotatedSortedArray.class);
+//        searchInRotatedSortedArray.test();
 //        FriendsOfAppropriateAges friendsOfAppropriateAges = context.getBean(FriendsOfAppropriateAges.class);
 //        friendsOfAppropriateAges.test();
 //        SortColors sortColors = context.getBean(SortColors.class);
