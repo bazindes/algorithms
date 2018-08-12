@@ -4,6 +4,7 @@ import com.baz.app.facebook.easy.*;
 import com.baz.app.facebook.easy.BinaryTreePaths;
 import com.baz.app.facebook.easy.DiameterOfBinaryTree;
 import com.baz.app.facebook.hard.InsertInterval;
+import com.baz.app.facebook.hard.RecoverBinarySearchTree;
 import com.baz.app.facebook.hard.RemoveInvalidParenthese;
 import com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree;
 import com.baz.app.facebook.medium.*;
@@ -30,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        DecodeString decodeString = context.getBean(DecodeString.class);
-        decodeString.test();
+        RecoverBinarySearchTree recoverBinarySearchTree = context.getBean(RecoverBinarySearchTree.class);
+        recoverBinarySearchTree.test();
+//        DecodeString decodeString = context.getBean(DecodeString.class);
+//        decodeString.test();
 //        InsertInterval insertInterval = context.getBean(InsertInterval.class);
 //        insertInterval.test();
 //        ProductOfArrayExceptSelf productOfArrayExceptSelf = context.getBean(ProductOfArrayExceptSelf.class);

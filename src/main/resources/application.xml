@@ -80,4 +80,5 @@
     <bean class="com.baz.app.facebook.medium.ProductOfArrayExceptSelf"></bean>
     <bean class="com.baz.app.facebook.hard.InsertInterval"></bean>
     <bean class="com.baz.app.facebook.medium.DecodeString"></bean>
+    <bean class="com.baz.app.facebook.hard.RecoverBinarySearchTree"></bean>
 </beans>
