@@ -85,4 +85,5 @@
     <bean class="com.baz.app.facebook.medium.FriendsOfAppropriateAges"></bean>
     <bean class="com.baz.app.facebook.medium.SearchInRotatedSortedArray"></bean>
     <bean class="com.baz.app.facebook.medium.MaximumSwap"></bean>
+    <bean class="com.baz.app.facebook.medium.ContinuousSubarraySum"></bean>
 </beans>

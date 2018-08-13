@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MaximumSwap maximumSwap = context.getBean(MaximumSwap.class);
-        maximumSwap.test();
+        ContinuousSubarraySum continuousSubarraySum = context.getBean(ContinuousSubarraySum.class);
+        continuousSubarraySum.test();
+//        MaximumSwap maximumSwap = context.getBean(MaximumSwap.class);
+//        maximumSwap.test();
 //        SearchInRotatedSortedArray searchInRotatedSortedArray = context.getBean(SearchInRotatedSortedArray.class);
 //        searchInRotatedSortedArray.test();
 //        FriendsOfAppropriateAges friendsOfAppropriateAges = context.getBean(FriendsOfAppropriateAges.class);
