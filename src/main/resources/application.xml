@@ -86,4 +86,5 @@
     <bean class="com.baz.app.facebook.medium.SearchInRotatedSortedArray"></bean>
     <bean class="com.baz.app.facebook.medium.MaximumSwap"></bean>
     <bean class="com.baz.app.facebook.medium.ContinuousSubarraySum"></bean>
+    <bean class="com.baz.app.facebook.medium.GroupAnagrams"></bean>
 </beans>

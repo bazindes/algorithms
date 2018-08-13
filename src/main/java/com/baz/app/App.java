@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ContinuousSubarraySum continuousSubarraySum = context.getBean(ContinuousSubarraySum.class);
-        continuousSubarraySum.test();
+        GroupAnagrams groupAnagrams = context.getBean(GroupAnagrams.class);
+        groupAnagrams.test();
+//        ContinuousSubarraySum continuousSubarraySum = context.getBean(ContinuousSubarraySum.class);
+//        continuousSubarraySum.test();
 //        MaximumSwap maximumSwap = context.getBean(MaximumSwap.class);
 //        maximumSwap.test();
 //        SearchInRotatedSortedArray searchInRotatedSortedArray = context.getBean(SearchInRotatedSortedArray.class);
