@@ -89,4 +89,5 @@
     <bean class="com.baz.app.facebook.medium.GroupAnagrams"></bean>
     <bean class="com.baz.app.facebook.medium.WordSearch"></bean>
     <bean class="com.baz.app.facebook.medium.TargetSum"></bean>
+    <bean class="com.baz.app.facebook.medium.IsGraphBipartite"></bean>
 </beans>

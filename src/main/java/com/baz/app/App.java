@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        TargetSum targetSum = context.getBean(TargetSum.class);
-        targetSum.test();
+        IsGraphBipartite isGraphBipartite = context.getBean(IsGraphBipartite.class);
+        isGraphBipartite.test();
+//        TargetSum targetSum = context.getBean(TargetSum.class);
+//        targetSum.test();
 //        WordSearch wordSearch = context.getBean(WordSearch.class);
 //        wordSearch.test();
 //        GroupAnagrams groupAnagrams = context.getBean(GroupAnagrams.class);
