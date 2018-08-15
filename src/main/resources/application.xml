@@ -92,4 +92,5 @@
     <bean class="com.baz.app.facebook.medium.IsGraphBipartite"></bean>
     <bean class="com.baz.app.facebook.medium.RandomPickIndex"></bean>
     <bean class="com.baz.app.facebook.medium.TotalHammingDistance"></bean>
+    <bean class="com.baz.app.facebook.medium.MinimumSizeSubarraySum"></bean>
 </beans>
