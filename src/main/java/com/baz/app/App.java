@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        RandomPickIndex randomPickIndex = context.getBean(RandomPickIndex.class);
-        randomPickIndex.test();
+        TotalHammingDistance totalHammingDistance = context.getBean(TotalHammingDistance.class);
+        totalHammingDistance.test();
+//        RandomPickIndex randomPickIndex = context.getBean(RandomPickIndex.class);
+//        randomPickIndex.test();
 //        IsGraphBipartite isGraphBipartite = context.getBean(IsGraphBipartite.class);
 //        isGraphBipartite.test();
 //        TargetSum targetSum = context.getBean(TargetSum.class);
