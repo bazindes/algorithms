@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        WordSearch wordSearch = context.getBean(WordSearch.class);
-        wordSearch.test();
+        TargetSum targetSum = context.getBean(TargetSum.class);
+        targetSum.test();
+//        WordSearch wordSearch = context.getBean(WordSearch.class);
+//        wordSearch.test();
 //        GroupAnagrams groupAnagrams = context.getBean(GroupAnagrams.class);
 //        groupAnagrams.test();
 //        ContinuousSubarraySum continuousSubarraySum = context.getBean(ContinuousSubarraySum.class);
