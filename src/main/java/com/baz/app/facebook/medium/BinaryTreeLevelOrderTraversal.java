@@ -12,7 +12,8 @@ public class BinaryTreeLevelOrderTraversal {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> list = new ArrayList<>();
-        bfsHelper(root, list);
+//        bfsHelper(root, list);
+        dfsHelper(list, root, 0);
         return list;
     }
 
@@ -37,6 +38,18 @@ public class BinaryTreeLevelOrderTraversal {
             list.add(temp);
         }
 
+    }
+
+
+    private void dfsHelper(List<List<Integer>> list, TreeNode node, int h){
+        if(node == null) return;
+
+        if(h >= list.size()){
+            list.add(h, new ArrayList<>());
+        }
+        list.get(h).add(node.val);
+        dfsHelper(list, node.left, h + 1);
+        dfsHelper(list, node.right, h + 1);
     }
 
 
