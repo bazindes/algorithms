@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        IsGraphBipartite isGraphBipartite = context.getBean(IsGraphBipartite.class);
-        isGraphBipartite.test();
+        RandomPickIndex randomPickIndex = context.getBean(RandomPickIndex.class);
+        randomPickIndex.test();
+//        IsGraphBipartite isGraphBipartite = context.getBean(IsGraphBipartite.class);
+//        isGraphBipartite.test();
 //        TargetSum targetSum = context.getBean(TargetSum.class);
 //        targetSum.test();
 //        WordSearch wordSearch = context.getBean(WordSearch.class);

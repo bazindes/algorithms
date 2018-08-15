@@ -90,4 +90,5 @@
     <bean class="com.baz.app.facebook.medium.WordSearch"></bean>
     <bean class="com.baz.app.facebook.medium.TargetSum"></bean>
     <bean class="com.baz.app.facebook.medium.IsGraphBipartite"></bean>
+    <bean class="com.baz.app.facebook.medium.RandomPickIndex"></bean>
 </beans>
