@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ImplementTrie implementTrie = context.getBean(ImplementTrie.class);
-        implementTrie.test();
+        BinaryTreeLevelOrderTraversal binaryTreeLevelOrderTraversal = context.getBean(BinaryTreeLevelOrderTraversal.class);
+        binaryTreeLevelOrderTraversal.test();
+//        ImplementTrie implementTrie = context.getBean(ImplementTrie.class);
+//        implementTrie.test();
 //        MinimumSizeSubarraySum minimumSizeSubarraySum = context.getBean(MinimumSizeSubarraySum.class);
 //        minimumSizeSubarraySum.test();
 //        TotalHammingDistance totalHammingDistance = context.getBean(TotalHammingDistance.class);

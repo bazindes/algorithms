@@ -94,4 +94,5 @@
     <bean class="com.baz.app.facebook.medium.TotalHammingDistance"></bean>
     <bean class="com.baz.app.facebook.medium.MinimumSizeSubarraySum"></bean>
     <bean class="com.baz.app.facebook.medium.ImplementTrie"></bean>
+    <bean class="com.baz.app.facebook.medium.BinaryTreeLevelOrderTraversal"></bean>
 </beans>
