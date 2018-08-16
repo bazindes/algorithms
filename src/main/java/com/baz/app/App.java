@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        InsertDeleteGetRandom insertDeleteGetRandom = context.getBean(InsertDeleteGetRandom.class);
-        insertDeleteGetRandom.test(insertDeleteGetRandom);
+        SimplifyPath simplifyPath = context.getBean(SimplifyPath.class);
+        simplifyPath.test();
+//        InsertDeleteGetRandom insertDeleteGetRandom = context.getBean(InsertDeleteGetRandom.class);
+//        insertDeleteGetRandom.test(insertDeleteGetRandom);
 //        PalindromicSubStrings palindromicSubStrings = context.getBean(PalindromicSubStrings.class);
 //        palindromicSubStrings.test();
 //        BinaryTreeLevelOrderTraversal binaryTreeLevelOrderTraversal = context.getBean(BinaryTreeLevelOrderTraversal.class);

@@ -97,4 +97,5 @@
     <bean class="com.baz.app.facebook.medium.BinaryTreeLevelOrderTraversal"></bean>
     <bean class="com.baz.app.facebook.medium.PalindromicSubStrings"></bean>
     <bean class="com.baz.app.facebook.medium.InsertDeleteGetRandom"></bean>
+    <bean class="com.baz.app.facebook.medium.SimplifyPath"></bean>
 </beans>
