@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        BrickWall brickWall = context.getBean(BrickWall.class);
-        brickWall.test();
+        SubSetsII subSetsII = context.getBean(SubSetsII.class);
+        subSetsII.test();
+//        BrickWall brickWall = context.getBean(BrickWall.class);
+//        brickWall.test();
 //        SimplifyPath simplifyPath = context.getBean(SimplifyPath.class);
 //        simplifyPath.test();
 //        InsertDeleteGetRandom insertDeleteGetRandom = context.getBean(InsertDeleteGetRandom.class);

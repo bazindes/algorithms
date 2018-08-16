@@ -99,4 +99,5 @@
     <bean class="com.baz.app.facebook.medium.InsertDeleteGetRandom"></bean>
     <bean class="com.baz.app.facebook.medium.SimplifyPath"></bean>
     <bean class="com.baz.app.facebook.medium.BrickWall"></bean>
+    <bean class="com.baz.app.facebook.medium.SubSetsII"></bean>
 </beans>
