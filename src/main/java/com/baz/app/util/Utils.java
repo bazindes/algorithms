@@ -25,7 +25,30 @@ public class Utils{
                 System.out.println();
         }
     }
-
+    public static void printMatrix(Integer [][] a , Integer rows, Integer cols){
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+    public static void printMatrix(int [][] a){
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+    public static void printMatrix(Integer [][] a){
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
     /**
      * preOrder traverse BinaryTree
      * */

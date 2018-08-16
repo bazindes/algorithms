@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        SimplifyPath simplifyPath = context.getBean(SimplifyPath.class);
-        simplifyPath.test();
+        BrickWall brickWall = context.getBean(BrickWall.class);
+        brickWall.test();
+//        SimplifyPath simplifyPath = context.getBean(SimplifyPath.class);
+//        simplifyPath.test();
 //        InsertDeleteGetRandom insertDeleteGetRandom = context.getBean(InsertDeleteGetRandom.class);
 //        insertDeleteGetRandom.test(insertDeleteGetRandom);
 //        PalindromicSubStrings palindromicSubStrings = context.getBean(PalindromicSubStrings.class);
