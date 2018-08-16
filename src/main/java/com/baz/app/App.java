@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        CombinationSumIV combinationSumIV = context.getBean(CombinationSumIV.class);
-        combinationSumIV.test();
+        IncreasingTripletSubsequence increasingTripletSubsequence = context.getBean(IncreasingTripletSubsequence.class);
+        increasingTripletSubsequence.test();
+//        CombinationSumIV combinationSumIV = context.getBean(CombinationSumIV.class);
+//        combinationSumIV.test();
 //        SubSetsII subSetsII = context.getBean(SubSetsII.class);
 //        subSetsII.test();
 //        BrickWall brickWall = context.getBean(BrickWall.class);
