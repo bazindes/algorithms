@@ -1,5 +1,19 @@
+
+1.repeat question
+2.clear question
+3.confirm input data / output result
+4.abstract question
+5.ALGO+DataStructure
+6.time/space
+7.write code
+7.1 keep communication
+7.2 summary code
+8 explain
+9 run test case
+10 think about unit test case
+
 Questions:
 
 1. what if the input string is null or empty?
 2. what if the length of input beyond the condition?
-3.
+

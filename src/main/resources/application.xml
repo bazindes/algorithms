@@ -100,4 +100,5 @@
     <bean class="com.baz.app.facebook.medium.SimplifyPath"></bean>
     <bean class="com.baz.app.facebook.medium.BrickWall"></bean>
     <bean class="com.baz.app.facebook.medium.SubSetsII"></bean>
+    <bean class="com.baz.app.facebook.medium.CombinationSumIV"></bean>
 </beans>
