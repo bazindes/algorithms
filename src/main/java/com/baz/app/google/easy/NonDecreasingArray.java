@@ -1,4 +1,4 @@
-package com.baz.app.google.source;
+package com.baz.app.google.easy;
 
 import java.util.Arrays;
 

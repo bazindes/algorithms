@@ -27,7 +27,7 @@
     <bean class="com.baz.app.google.easy.Heaters"></bean>
     <bean class="com.baz.app.google.easy.ShortestUnsortedContinuousSubarray"></bean>
     <bean class="com.baz.app.google.easy.BuddyStrings"></bean>
-    <bean class="com.baz.app.google.source.NonDecreasingArray"></bean>
+    <bean class="com.baz.app.google.easy.NonDecreasingArray"></bean>
     <bean class="com.baz.app.google.medium.CardGameII"></bean>
 
     <bean class="com.baz.app.facebook.easy.MoveZeroes"></bean>
@@ -107,4 +107,7 @@
     <bean class="com.baz.app.facebook.medium.PowerXToTheN"></bean>
     <bean class="com.baz.app.facebook.medium.CustomSortString"></bean>
     <bean class="com.baz.app.facebook.medium.H_Index"></bean>
+    <bean class="com.baz.app.facebook.medium.RemoveDuplicatesFromSortedArrayII"></bean>
+
+    <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
 </beans>

@@ -1,22 +1,7 @@
 package com.baz.app;
-import com.baz.app.easy.ProjectionAreaOf3DShapes;
-import com.baz.app.facebook.easy.*;
-import com.baz.app.facebook.easy.BinaryTreePaths;
-import com.baz.app.facebook.easy.DiameterOfBinaryTree;
-import com.baz.app.facebook.hard.InsertInterval;
-import com.baz.app.facebook.hard.RecoverBinarySearchTree;
-import com.baz.app.facebook.hard.RemoveInvalidParenthese;
-import com.baz.app.facebook.hard.SerializeAndDeserializeBinaryTree;
-import com.baz.app.facebook.medium.*;
-import com.baz.app.google.easy.*;
-import com.baz.app.google.medium.CardGameII;
-import com.baz.app.google.source.NonDecreasingArray;
-import com.baz.app.medium.ZeroOneKnapSack;
-import com.sun.org.apache.regexp.internal.RE;
+import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.awt.event.MouseEvent;
 
 /**
 * <h1>Main Class</h1>
@@ -31,8 +16,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        H_Index h_index = context.getBean(H_Index.class);
-        h_index.test();
+        MedianOfTwoSortedArray medianOfTwoSortedArray = context.getBean(MedianOfTwoSortedArray.class);
+        medianOfTwoSortedArray.test();
+//        RemoveDuplicatesFromSortedArrayII removeDuplicatesFromSortedArrayII = context.getBean(RemoveDuplicatesFromSortedArrayII.class);
+//        removeDuplicatesFromSortedArrayII.test();
+//        H_Index h_index = context.getBean(H_Index.class);
+//        h_index.test();
 //        CustomSortString customSortString = context.getBean(CustomSortString.class);
 //        customSortString.test();
 //        PowerXToTheN powerXToTheN = context.getBean(PowerXToTheN.class);
