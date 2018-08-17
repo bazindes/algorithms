@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        PowerXToTheN powerXToTheN = context.getBean(PowerXToTheN.class);
-        powerXToTheN.test();
+        CustomSortString customSortString = context.getBean(CustomSortString.class);
+        customSortString.test();
+//        PowerXToTheN powerXToTheN = context.getBean(PowerXToTheN.class);
+//        powerXToTheN.test();
 //        BestTimeToBuyAndSellStockWithTransectionFee bestTimeToBuyAndSellStockWithTransectionFee = context.getBean(BestTimeToBuyAndSellStockWithTransectionFee.class);
 //        bestTimeToBuyAndSellStockWithTransectionFee.test();
 //        CourseScheduleII courseScheduleII = context.getBean(CourseScheduleII.class);
