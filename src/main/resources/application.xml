@@ -103,4 +103,5 @@
     <bean class="com.baz.app.facebook.medium.CombinationSumIV"></bean>
     <bean class="com.baz.app.facebook.medium.IncreasingTripletSubsequence"></bean>
     <bean class="com.baz.app.facebook.medium.CourseScheduleII"></bean>
+    <bean class="com.baz.app.facebook.medium.BestTimeToBuyAndSellStockWithTransectionFee"></bean>
 </beans>
