@@ -106,4 +106,5 @@
     <bean class="com.baz.app.facebook.medium.BestTimeToBuyAndSellStockWithTransectionFee"></bean>
     <bean class="com.baz.app.facebook.medium.PowerXToTheN"></bean>
     <bean class="com.baz.app.facebook.medium.CustomSortString"></bean>
+    <bean class="com.baz.app.facebook.medium.H_Index"></bean>
 </beans>
