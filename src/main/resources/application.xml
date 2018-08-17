@@ -104,4 +104,5 @@
     <bean class="com.baz.app.facebook.medium.IncreasingTripletSubsequence"></bean>
     <bean class="com.baz.app.facebook.medium.CourseScheduleII"></bean>
     <bean class="com.baz.app.facebook.medium.BestTimeToBuyAndSellStockWithTransectionFee"></bean>
+    <bean class="com.baz.app.facebook.medium.PowerXToTheN"></bean>
 </beans>
