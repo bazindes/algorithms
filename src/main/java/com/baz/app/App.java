@@ -4,6 +4,7 @@ import com.baz.app.TwoSigma.hard.RegularExpressionMatching;
 import com.baz.app.facebook.hard.LRUCache;
 import com.baz.app.google.easy.HouseRobber;
 import com.baz.app.google.medium.HouseRobberII;
+import com.baz.app.google.medium.HouseRobberIII;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,8 +21,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        HouseRobberII houseRobberII = context.getBean(HouseRobberII.class);
-        houseRobberII.test();
+        HouseRobberIII houseRobberIII = context.getBean(HouseRobberIII.class);
+        houseRobberIII.test();
+//        HouseRobberII houseRobberII = context.getBean(HouseRobberII.class);
+//        houseRobberII.test();
 //        HouseRobber houseRobber = context.getBean(HouseRobber.class);
 //        houseRobber.test();
 //        RegularExpressionMatching regularExpressionMatching = context.getBean(RegularExpressionMatching.class);
