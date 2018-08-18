@@ -2,6 +2,7 @@ package com.baz.app;
 import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
 import com.baz.app.TwoSigma.hard.RegularExpressionMatching;
 import com.baz.app.facebook.hard.LRUCache;
+import com.baz.app.google.easy.HouseRobber;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -18,8 +19,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        RegularExpressionMatching regularExpressionMatching = context.getBean(RegularExpressionMatching.class);
-        regularExpressionMatching.test();
+        HouseRobber houseRobber = context.getBean(HouseRobber.class);
+        houseRobber.test();
+//        RegularExpressionMatching regularExpressionMatching = context.getBean(RegularExpressionMatching.class);
+//        regularExpressionMatching.test();
 //        LRUCache lruCache = context.getBean(LRUCache.class);
 //        lruCache.test();
 //        MedianOfTwoSortedArray medianOfTwoSortedArray = context.getBean(MedianOfTwoSortedArray.class);
