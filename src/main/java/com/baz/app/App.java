@@ -1,5 +1,6 @@
 package com.baz.app;
 import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
+import com.baz.app.facebook.hard.LRUCache;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,8 +17,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MedianOfTwoSortedArray medianOfTwoSortedArray = context.getBean(MedianOfTwoSortedArray.class);
-        medianOfTwoSortedArray.test();
+        LRUCache lruCache = context.getBean(LRUCache.class);
+        lruCache.test();
+//        MedianOfTwoSortedArray medianOfTwoSortedArray = context.getBean(MedianOfTwoSortedArray.class);
+//        medianOfTwoSortedArray.test();
 //        RemoveDuplicatesFromSortedArrayII removeDuplicatesFromSortedArrayII = context.getBean(RemoveDuplicatesFromSortedArrayII.class);
 //        removeDuplicatesFromSortedArrayII.test();
 //        H_Index h_index = context.getBean(H_Index.class);
