@@ -72,8 +72,8 @@ solve:
 535 Encode and Decode TinyURL 74.0%Medium +
 
 unsolve:
-544Output Contest Matches 71.4%Medium
-280Wiggle Sort 58.9%Medium
+544Output Contest Matches 71.4%Medium -
+280Wiggle Sort 58.9%Medium - 
 841Keys and Rooms. 58.1%Medium
 370Range Addition 57.4%Medium
 406Queue Reconstruction by Height 56.7%Medium
