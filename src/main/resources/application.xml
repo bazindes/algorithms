@@ -30,6 +30,7 @@
     <bean class="com.baz.app.google.easy.NonDecreasingArray"></bean>
     <bean class="com.baz.app.google.medium.CardGameII"></bean>
     <bean class="com.baz.app.google.easy.HouseRobber"></bean>
+    <bean class="com.baz.app.google.medium.HouseRobberII"></bean>
 
     <bean class="com.baz.app.facebook.easy.MoveZeroes"></bean>
     <bean class="com.baz.app.facebook.easy.AddBinary"></bean>
