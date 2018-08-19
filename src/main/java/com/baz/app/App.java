@@ -6,6 +6,7 @@ import com.baz.app.google.easy.HouseRobber;
 import com.baz.app.google.medium.Combinations;
 import com.baz.app.google.medium.HouseRobberII;
 import com.baz.app.google.medium.HouseRobberIII;
+import com.baz.app.google.medium.Permutations;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -22,8 +23,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        Combinations combinations = context.getBean(Combinations.class);
-        combinations.test();
+        Permutations permutations = context.getBean(Permutations.class);
+        permutations.test();
+//        Combinations combinations = context.getBean(Combinations.class);
+//        combinations.test();
 //        HouseRobberIII houseRobberIII = context.getBean(HouseRobberIII.class);
 //        houseRobberIII.test();
 //        HouseRobberII houseRobberII = context.getBean(HouseRobberII.class);
