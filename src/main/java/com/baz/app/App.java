@@ -9,6 +9,7 @@ import com.baz.app.google.medium.HouseRobberIII;
 import com.baz.app.google.medium.Permutations;
 import com.baz.app.medium.CombinationSum;
 import com.baz.app.medium.CombinationSumII;
+import com.baz.app.medium.CombinationSumIII;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -25,8 +26,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        CombinationSumII combinationSumII = context.getBean(CombinationSumII.class);
-        combinationSumII.test();
+        CombinationSumIII combinationSumIII = context.getBean(CombinationSumIII.class);
+        combinationSumIII.test();
+//        CombinationSumII combinationSumII = context.getBean(CombinationSumII.class);
+//        combinationSumII.test();
 //        CombinationSum combinationSum = context.getBean(CombinationSum.class);
 //        combinationSum.test();
 //        Permutations permutations = context.getBean(Permutations.class);
