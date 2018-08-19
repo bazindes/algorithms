@@ -120,4 +120,5 @@
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>
+    <bean class="com.baz.app.TwoSigma.hard.BasicCalculator"></bean>
 </beans>

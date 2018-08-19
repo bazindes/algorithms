@@ -1,4 +1,5 @@
 package com.baz.app;
+import com.baz.app.TwoSigma.hard.BasicCalculator;
 import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
 import com.baz.app.TwoSigma.hard.RegularExpressionMatching;
 import com.baz.app.facebook.hard.LRUCache;
@@ -26,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        CombinationSumIII combinationSumIII = context.getBean(CombinationSumIII.class);
-        combinationSumIII.test();
+        BasicCalculator basicCalculator = context.getBean(BasicCalculator.class);
+        basicCalculator.test();
+//        CombinationSumIII combinationSumIII = context.getBean(CombinationSumIII.class);
+//        combinationSumIII.test();
 //        CombinationSumII combinationSumII = context.getBean(CombinationSumII.class);
 //        combinationSumII.test();
 //        CombinationSum combinationSum = context.getBean(CombinationSum.class);
