@@ -3,6 +3,7 @@ import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
 import com.baz.app.TwoSigma.hard.RegularExpressionMatching;
 import com.baz.app.facebook.hard.LRUCache;
 import com.baz.app.google.easy.HouseRobber;
+import com.baz.app.google.medium.Combinations;
 import com.baz.app.google.medium.HouseRobberII;
 import com.baz.app.google.medium.HouseRobberIII;
 import org.springframework.context.ApplicationContext;
@@ -21,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        HouseRobberIII houseRobberIII = context.getBean(HouseRobberIII.class);
-        houseRobberIII.test();
+        Combinations combinations = context.getBean(Combinations.class);
+        combinations.test();
+//        HouseRobberIII houseRobberIII = context.getBean(HouseRobberIII.class);
+//        houseRobberIII.test();
 //        HouseRobberII houseRobberII = context.getBean(HouseRobberII.class);
 //        houseRobberII.test();
 //        HouseRobber houseRobber = context.getBean(HouseRobber.class);
