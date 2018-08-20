@@ -2,6 +2,7 @@ package com.baz.app;
 import com.baz.app.TwoSigma.hard.BasicCalculator;
 import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
 import com.baz.app.TwoSigma.hard.RegularExpressionMatching;
+import com.baz.app.TwoSigma.medium.FriendCircles;
 import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
 import com.baz.app.TwoSigma.medium.WordLadder;
 import com.baz.app.facebook.easy.ReverseLinkedList;
@@ -27,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MinimumSubSetSum minimumSubSetSum = context.getBean(MinimumSubSetSum.class);
-        minimumSubSetSum.test();
+        FriendCircles friendCircles = context.getBean(FriendCircles.class);
+        friendCircles.test();
+//        MinimumSubSetSum minimumSubSetSum = context.getBean(MinimumSubSetSum.class);
+//        minimumSubSetSum.test();
 //        WordLadder wordLadder = context.getBean(WordLadder.class);
 //        wordLadder.test();
 //        ReverseLinkedListII reverseLinkedListII = context.getBean(ReverseLinkedListII.class);

@@ -14,7 +14,7 @@ public class MinimumSubSetSum {
     }
     private int helper(int leftSum, int rightSum, int start, int[] nums){
         if(start == nums.length){
-            System.out.println(leftSum + " " + rightSum);
+//            System.out.println(leftSum + " " + rightSum);
             return Math.abs(leftSum - rightSum);
         }
         return Math.min(
@@ -24,7 +24,7 @@ public class MinimumSubSetSum {
     }
 
     public void test(){
-        int[] nums = {1,2,3,4,5,3};
+        int[] nums = {1,2,3,4,5};
         System.out.println(minCombineSum(nums));
     }
 
