@@ -2,6 +2,7 @@ package com.baz.app;
 import com.baz.app.TwoSigma.hard.BasicCalculator;
 import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
 import com.baz.app.TwoSigma.hard.RegularExpressionMatching;
+import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
 import com.baz.app.facebook.hard.LRUCache;
 import com.baz.app.google.easy.HouseRobber;
 import com.baz.app.google.medium.Combinations;
@@ -27,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        BasicCalculator basicCalculator = context.getBean(BasicCalculator.class);
-        basicCalculator.test();
+        ReverseLinkedListII reverseLinkedListII = context.getBean(ReverseLinkedListII.class);
+        reverseLinkedListII.test();
+//        BasicCalculator basicCalculator = context.getBean(BasicCalculator.class);
+//        basicCalculator.test();
 //        CombinationSumIII combinationSumIII = context.getBean(CombinationSumIII.class);
 //        combinationSumIII.test();
 //        CombinationSumII combinationSumII = context.getBean(CombinationSumII.class);
