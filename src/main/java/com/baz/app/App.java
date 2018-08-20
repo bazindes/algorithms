@@ -1,4 +1,5 @@
 package com.baz.app;
+import com.baz.app.TwoSigma.easy.IntersectionOfTwoArrays;
 import com.baz.app.TwoSigma.hard.BasicCalculator;
 import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
 import com.baz.app.TwoSigma.hard.RegularExpressionMatching;
@@ -28,8 +29,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        FriendCircles friendCircles = context.getBean(FriendCircles.class);
-        friendCircles.test();
+        IntersectionOfTwoArrays intersectionOfTwoArrays = context.getBean(IntersectionOfTwoArrays.class);
+        intersectionOfTwoArrays.test();
+//        FriendCircles friendCircles = context.getBean(FriendCircles.class);
+//        friendCircles.test();
 //        MinimumSubSetSum minimumSubSetSum = context.getBean(MinimumSubSetSum.class);
 //        minimumSubSetSum.test();
 //        WordLadder wordLadder = context.getBean(WordLadder.class);

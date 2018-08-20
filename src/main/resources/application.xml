@@ -125,4 +125,5 @@
     <bean class="com.baz.app.TwoSigma.medium.ReverseLinkedListII"></bean>
     <bean class="com.baz.app.TwoSigma.medium.WordLadder"></bean>
     <bean class="com.baz.app.TwoSigma.medium.FriendCircles"></bean>
+    <bean class="com.baz.app.TwoSigma.easy.IntersectionOfTwoArrays"></bean>
 </beans>
