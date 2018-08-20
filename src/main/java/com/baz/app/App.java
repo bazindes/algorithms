@@ -7,10 +7,7 @@ import com.baz.app.TwoSigma.medium.WordLadder;
 import com.baz.app.facebook.easy.ReverseLinkedList;
 import com.baz.app.facebook.hard.LRUCache;
 import com.baz.app.google.easy.HouseRobber;
-import com.baz.app.google.medium.Combinations;
-import com.baz.app.google.medium.HouseRobberII;
-import com.baz.app.google.medium.HouseRobberIII;
-import com.baz.app.google.medium.Permutations;
+import com.baz.app.google.medium.*;
 import com.baz.app.medium.CombinationSum;
 import com.baz.app.medium.CombinationSumII;
 import com.baz.app.medium.CombinationSumIII;
@@ -30,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        WordLadder wordLadder = context.getBean(WordLadder.class);
-        wordLadder.test();
+        MinimumSubSetSum minimumSubSetSum = context.getBean(MinimumSubSetSum.class);
+        minimumSubSetSum.test();
+//        WordLadder wordLadder = context.getBean(WordLadder.class);
+//        wordLadder.test();
 //        ReverseLinkedListII reverseLinkedListII = context.getBean(ReverseLinkedListII.class);
 //        reverseLinkedListII.test();
 //        BasicCalculator basicCalculator = context.getBean(BasicCalculator.class);
