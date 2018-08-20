@@ -6,8 +6,8 @@ import com.baz.app.util.Utils;
 public class ReverseLinkedList {
 
     public ListNode reverseList(ListNode head){
-//        return helper(head);
-        return iterativeHelper(head);
+        return helper(head);
+//        return iterativeHelper(head);
     }
 
     private ListNode iterativeHelper(ListNode head){
