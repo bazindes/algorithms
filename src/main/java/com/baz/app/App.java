@@ -7,6 +7,7 @@ import com.baz.app.TwoSigma.medium.FriendCircles;
 import com.baz.app.TwoSigma.medium.LongestChain;
 import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
 import com.baz.app.TwoSigma.medium.WordLadder;
+import com.baz.app.easy.SumOfTwoIntegers;
 import com.baz.app.facebook.easy.ReverseLinkedList;
 import com.baz.app.facebook.hard.LRUCache;
 import com.baz.app.google.easy.HouseRobber;
@@ -30,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        LongestChain longestChain = context.getBean(LongestChain.class);
-        longestChain.test();
+        SumOfTwoIntegers sumOfTwoIntegers = context.getBean(SumOfTwoIntegers.class);
+        sumOfTwoIntegers.test();
+//        LongestChain longestChain = context.getBean(LongestChain.class);
+//        longestChain.test();
 //        IntersectionOfTwoArrays intersectionOfTwoArrays = context.getBean(IntersectionOfTwoArrays.class);
 //        intersectionOfTwoArrays.test();
 //        FriendCircles friendCircles = context.getBean(FriendCircles.class);

@@ -7,6 +7,7 @@
     <bean class="com.baz.app.medium.CombinationSum"></bean>
     <bean class="com.baz.app.medium.CombinationSumII"></bean>
     <bean class="com.baz.app.medium.CombinationSumIII"></bean>
+    <bean class="com.baz.app.easy.SumOfTwoIntegers"></bean>
 
     <bean class="com.baz.app.google.easy.BinaryWatch"></bean>
     <bean class="com.baz.app.google.easy.StudentAttendanceRecordI"></bean>
