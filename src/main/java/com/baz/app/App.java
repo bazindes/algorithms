@@ -10,6 +10,7 @@ import com.baz.app.TwoSigma.medium.WordLadder;
 import com.baz.app.easy.SumOfTwoIntegers;
 import com.baz.app.facebook.easy.ReverseLinkedList;
 import com.baz.app.facebook.hard.LRUCache;
+import com.baz.app.facebook.hard.MinimumWindowSubString;
 import com.baz.app.google.easy.HouseRobber;
 import com.baz.app.google.medium.*;
 import com.baz.app.medium.CombinationSum;
@@ -31,8 +32,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        SumOfTwoIntegers sumOfTwoIntegers = context.getBean(SumOfTwoIntegers.class);
-        sumOfTwoIntegers.test();
+        MinimumWindowSubString minimumWindowSubString = context.getBean(MinimumWindowSubString.class);
+        minimumWindowSubString.test();
+//        SumOfTwoIntegers sumOfTwoIntegers = context.getBean(SumOfTwoIntegers.class);
+//        sumOfTwoIntegers.test();
 //        LongestChain longestChain = context.getBean(LongestChain.class);
 //        longestChain.test();
 //        IntersectionOfTwoArrays intersectionOfTwoArrays = context.getBean(IntersectionOfTwoArrays.class);

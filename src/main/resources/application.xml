@@ -119,6 +119,7 @@
     <bean class="com.baz.app.facebook.medium.H_Index"></bean>
     <bean class="com.baz.app.facebook.medium.RemoveDuplicatesFromSortedArrayII"></bean>
     <bean class="com.baz.app.facebook.hard.LRUCache"></bean>
+    <bean class="com.baz.app.facebook.hard.MinimumWindowSubString"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>
