@@ -1,9 +1,6 @@
 package com.baz.app.TwoSigma.medium;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class LongestChain {
 
@@ -31,6 +28,11 @@ public class LongestChain {
 
     public int longestChain(String[] words){
         int ans = Integer.MIN_VALUE;
+        Arrays.sort(words, new Comparator<String>() {
+            public int compare(String str1, String str2) {
+                return str1.length()-str2.length();
+            }
+        });
         Map<String , Integer> map = new HashMap<>();
         for(String s : words){
             if(map.containsKey(s)) continue;

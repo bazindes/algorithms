@@ -38,7 +38,8 @@ public class FriendCircles {
 
     private int find (int[] roots, int id) {
         while (id != roots[id]) {
-            id = roots[roots[id]];
+            roots[id] = roots[roots[id]];
+            id = roots[id];
         }
         return id;
     }
@@ -51,5 +52,39 @@ public class FriendCircles {
         };
         System.out.println(findCircleNum(fs));
     }
+
+
+    public class Unionfind {
+         int[] ids;
+         int count;
+         public Unionfind(int num) {
+             this.ids = new int[num];
+             this.count = num;
+             for (int i=0; i<num; i++) {
+                 ids[i] = i;
+             }
+         }
+
+         public int findId(int i) {
+             return ids[i];
+         }
+
+         public boolean isConnected(int i, int j) {
+             return findId(i)==findId(j);
+         }
+
+         public boolean union(int i, int j) {
+             if (!isConnected(i, j)) {
+                 for (int k=0; k<ids.length; k++) {
+                     if (ids[k] == findId(j)) {
+                         ids[k] = findId(i);
+                     }
+                 }
+                 count--;
+                 return true;
+             }
+             return false;
+         }
+     }
 
 }
