@@ -123,6 +123,7 @@
     <bean class="com.baz.app.facebook.hard.MinimumWindowSubString"></bean>
     <bean class="com.baz.app.facebook.medium.LongestIncreasingSubSequence"></bean>
     <bean class="com.baz.app.facebook.medium.LongestSubstringWithoutRepeatingCharacters"></bean>
+    <bean class="com.baz.app.facebook.medium.ContainerWithMostWater"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>
