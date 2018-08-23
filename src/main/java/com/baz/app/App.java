@@ -12,6 +12,7 @@ import com.baz.app.facebook.easy.ReverseLinkedList;
 import com.baz.app.facebook.hard.LRUCache;
 import com.baz.app.facebook.hard.MinimumWindowSubString;
 import com.baz.app.facebook.medium.LongestIncreasingSubSequence;
+import com.baz.app.facebook.medium.LongestSubstringWithoutRepeatingCharacters;
 import com.baz.app.google.easy.HouseRobber;
 import com.baz.app.google.hard.Calculator;
 import com.baz.app.google.medium.*;
@@ -34,8 +35,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        LongestIncreasingSubSequence longestIncreasingSubSequence = context.getBean(LongestIncreasingSubSequence.class);
-        longestIncreasingSubSequence.test();
+        LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = context.getBean(LongestSubstringWithoutRepeatingCharacters.class);
+        longestSubstringWithoutRepeatingCharacters.test();
+//        LongestIncreasingSubSequence longestIncreasingSubSequence = context.getBean(LongestIncreasingSubSequence.class);
+//        longestIncreasingSubSequence.test();
 //        Calculator calculator = context.getBean(Calculator.class);
 //        calculator.test();
 //        MinimumWindowSubString minimumWindowSubString = context.getBean(MinimumWindowSubString.class);
