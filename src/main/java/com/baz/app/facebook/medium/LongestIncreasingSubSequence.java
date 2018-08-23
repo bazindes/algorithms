@@ -28,20 +28,20 @@ public class LongestIncreasingSubSequence {
         int taken = 0;
         if(nums[curPos] > prev)
             taken = 1 + helper(nums, nums[curPos], curPos + 1);
-        int notTaken = helper(nums, nums[curPos], curPos + 1);
+        int notTaken = helper(nums, prev, curPos + 1);
         return Math.max(taken , notTaken);
     }
 
     //DP O(n^2) O(n)
     public int lengthOfLIS(int[] nums) {
         if(nums == null || nums.length == 0) return 0;
-        int ans = Integer.MIN_VALUE;
+        int ans = 1;
         int[] dp = new int[nums.length];
         dp[0] = 1;
         for (int i = 1; i < nums.length; i++) {
             int maxVal = 0;
             for (int j = 0; j < i; j++) {
-                if(nums[j] > nums[i]){
+                if(nums[i] > nums[j]){
                     maxVal = Math.max(dp[j] , maxVal);
                 }
             }
