@@ -15,6 +15,7 @@ import com.baz.app.facebook.medium.ContainerWithMostWater;
 import com.baz.app.facebook.medium.LongestIncreasingSubSequence;
 import com.baz.app.facebook.medium.LongestSubstringWithoutRepeatingCharacters;
 import com.baz.app.google.easy.HouseRobber;
+import com.baz.app.google.easy.NumberOfConnectedComponents;
 import com.baz.app.google.hard.Calculator;
 import com.baz.app.google.medium.*;
 import com.baz.app.medium.CombinationSum;
@@ -36,8 +37,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ContainerWithMostWater containerWithMostWater = context.getBean(ContainerWithMostWater.class);
-        containerWithMostWater.test();
+        NumberOfConnectedComponents numberOfConnectedComponents = context.getBean(NumberOfConnectedComponents.class);
+        numberOfConnectedComponents.test();
+//        ContainerWithMostWater containerWithMostWater = context.getBean(ContainerWithMostWater.class);
+//        containerWithMostWater.test();
 //        LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = context.getBean(LongestSubstringWithoutRepeatingCharacters.class);
 //        longestSubstringWithoutRepeatingCharacters.test();
 //        LongestIncreasingSubSequence longestIncreasingSubSequence = context.getBean(LongestIncreasingSubSequence.class);

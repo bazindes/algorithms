@@ -40,6 +40,7 @@
     <bean class="com.baz.app.google.medium.Permutations"></bean>
     <bean class="com.baz.app.google.medium.MinimumSubSetSum"></bean>
     <bean class="com.baz.app.google.hard.Calculator"></bean>
+    <bean class="com.baz.app.google.easy.NumberOfConnectedComponents"></bean>
 
     <bean class="com.baz.app.facebook.easy.MoveZeroes"></bean>
     <bean class="com.baz.app.facebook.easy.AddBinary"></bean>
