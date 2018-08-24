@@ -11,10 +11,7 @@ import com.baz.app.easy.SumOfTwoIntegers;
 import com.baz.app.facebook.easy.ReverseLinkedList;
 import com.baz.app.facebook.hard.LRUCache;
 import com.baz.app.facebook.hard.MinimumWindowSubString;
-import com.baz.app.facebook.medium.CoinChange;
-import com.baz.app.facebook.medium.ContainerWithMostWater;
-import com.baz.app.facebook.medium.LongestIncreasingSubSequence;
-import com.baz.app.facebook.medium.LongestSubstringWithoutRepeatingCharacters;
+import com.baz.app.facebook.medium.*;
 import com.baz.app.google.easy.HouseRobber;
 import com.baz.app.google.easy.NumberOfConnectedComponents;
 import com.baz.app.google.hard.Calculator;
@@ -38,8 +35,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        CoinChange coinChange = context.getBean(CoinChange.class);
-        coinChange.test();
+        RotateImage rotateImage = context.getBean(RotateImage.class);
+        rotateImage.test();
+//        CoinChange coinChange = context.getBean(CoinChange.class);
+//        coinChange.test();
 //        NumberOfConnectedComponents numberOfConnectedComponents = context.getBean(NumberOfConnectedComponents.class);
 //        numberOfConnectedComponents.test();
 //        ContainerWithMostWater containerWithMostWater = context.getBean(ContainerWithMostWater.class);
