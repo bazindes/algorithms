@@ -3,34 +3,63 @@ package com.baz.app.facebook.hard;
 import com.baz.app.util.ListNode;
 import com.baz.app.util.Utils;
 
+import java.util.PriorityQueue;
+
 public class MergeKSortedList {
 
     public ListNode mergeKLists(ListNode[] lists) {
-        ListNode ans = new ListNode(0);
-        ListNode temp = ans;
-        temp.next = helper(lists);
-        while (temp.next != null){
-            temp = temp.next;
-            temp.next = helper(lists);
-        }
-        return ans;
+        return helper(lists, 0, lists.length - 1);
+//        return helper(lists);
     }
 
+    //O(n * k) O(nk)
     public ListNode helper(ListNode[] lists){
-        if(lists.length == 0){
+        if(lists == null || lists.length == 0){
             return null;
         }
-        int min = Integer.MAX_VALUE;
-        for (ListNode node : lists){
-            min = Math.min(min, node.val);
+
+        PriorityQueue<ListNode> priorityQueue = new PriorityQueue<>(lists.length , (l1, l2) -> l1.val - l2.val);
+        ListNode ans = new ListNode(0);
+        ListNode temp = ans;
+
+        for (ListNode l : lists){
+            priorityQueue.add(l);
         }
-        for (ListNode node : lists){
-            if(node.val == min){
-                node = node.next;
-                break;
-            }
+
+        while (!priorityQueue.isEmpty()){
+            temp.next = priorityQueue.poll();
+            temp = temp.next;
+
+            if(temp.next != null)
+                priorityQueue.add(temp.next);
         }
-        return new ListNode(min);
+
+        return ans.next;
+    }
+
+    //Recursion Solution O(nklogn)
+    public ListNode helper(ListNode[] lists, int start, int end){
+        if(start == end) return lists[start];
+        if(start < end){
+            int mid = start + (end - start) / 2;
+            ListNode temp1 = helper(lists, start, mid);
+            ListNode temp2 = helper(lists, mid + 1, end);
+            return merge(temp1, temp2);
+        }else {
+            return null;
+        }
+    }
+
+    private ListNode merge(ListNode node1, ListNode node2){
+        if(node1 == null) return node2;
+        if(node2 == null) return node1;
+        if(node1.val < node2.val){
+            node1.next = merge(node1.next, node2);
+            return node1;
+        }else {
+            node2.next = merge(node1, node2.next);
+            return node2;
+        }
     }
 
     public void test(){
@@ -50,6 +79,8 @@ public class MergeKSortedList {
         ListNode[] lists = {r00, r10, r20};
 
         Utils.printLinkedList(mergeKLists(lists));
+        System.out.println();
+        Utils.printLinkedList(helper(lists, 0, lists.length-1));
 
     }
 
