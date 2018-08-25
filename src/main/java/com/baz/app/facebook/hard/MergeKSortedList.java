@@ -23,7 +23,8 @@ public class MergeKSortedList {
         ListNode temp = ans;
 
         for (ListNode l : lists){
-            priorityQueue.add(l);
+            if(l != null)
+                priorityQueue.add(l);
         }
 
         while (!priorityQueue.isEmpty()){
