@@ -42,7 +42,7 @@ class EliminationGame{
     //     System.out.println();
     // }
 
-    // public void test(){
+    // public void helper(){
     //     System.out.println(lastRemaining(9));
     // }
 }
