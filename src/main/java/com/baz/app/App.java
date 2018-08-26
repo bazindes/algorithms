@@ -15,6 +15,7 @@ import com.baz.app.facebook.hard.MinimumWindowSubString;
 import com.baz.app.facebook.medium.*;
 import com.baz.app.google.easy.HouseRobber;
 import com.baz.app.google.easy.NumberOfConnectedComponents;
+import com.baz.app.google.easy.ShortestUnsortedContinuousSubarray;
 import com.baz.app.google.hard.Calculator;
 import com.baz.app.google.medium.*;
 import com.baz.app.medium.CombinationSum;
@@ -36,8 +37,8 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MergeKSortedList mergeKSortedList = context.getBean(MergeKSortedList.class);
-        mergeKSortedList.test();
+//        MergeKSortedList mergeKSortedList = context.getBean(MergeKSortedList.class);
+//        mergeKSortedList.test();
 //        MyCalendarII myCalendarII = context.getBean(MyCalendarII.class);
 //        myCalendarII.test(myCalendarII);
 //        RotateImage rotateImage = context.getBean(RotateImage.class);
@@ -192,8 +193,8 @@ class App{
 //        nonDecreasingArray.helper();
 //        BuddyStrings buddyStrings = context.getBean(BuddyStrings.class);
 //        buddyStrings.helper();
-//        ShortestUnsortedContinuousSubarray shortestUnsortedContinuousSubarray = context.getBean(ShortestUnsortedContinuousSubarray.class);
-//        shortestUnsortedContinuousSubarray.helper();
+        ShortestUnsortedContinuousSubarray shortestUnsortedContinuousSubarray = context.getBean(ShortestUnsortedContinuousSubarray.class);
+        shortestUnsortedContinuousSubarray.test();
 //        Heaters heaters = context.getBean(Heaters.class);
 //        heaters.helper();
 //        NthDigit nthDigit = new NthDigit();
