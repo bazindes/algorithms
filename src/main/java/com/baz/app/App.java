@@ -9,6 +9,7 @@ import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
 import com.baz.app.TwoSigma.medium.WordLadder;
 import com.baz.app.easy.SumOfTwoIntegers;
 import com.baz.app.facebook.easy.ReverseLinkedList;
+import com.baz.app.facebook.easy.ReverseString;
 import com.baz.app.facebook.hard.LRUCache;
 import com.baz.app.facebook.hard.MergeKSortedList;
 import com.baz.app.facebook.hard.MinimumWindowSubString;
@@ -37,6 +38,8 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
+        ReverseString reverseString = context.getBean(ReverseString.class);
+        reverseString.test();
 //        MergeKSortedList mergeKSortedList = context.getBean(MergeKSortedList.class);
 //        mergeKSortedList.test();
 //        MyCalendarII myCalendarII = context.getBean(MyCalendarII.class);
@@ -193,8 +196,8 @@ class App{
 //        nonDecreasingArray.helper();
 //        BuddyStrings buddyStrings = context.getBean(BuddyStrings.class);
 //        buddyStrings.helper();
-        ShortestUnsortedContinuousSubarray shortestUnsortedContinuousSubarray = context.getBean(ShortestUnsortedContinuousSubarray.class);
-        shortestUnsortedContinuousSubarray.test();
+//        ShortestUnsortedContinuousSubarray shortestUnsortedContinuousSubarray = context.getBean(ShortestUnsortedContinuousSubarray.class);
+//        shortestUnsortedContinuousSubarray.test();
 //        Heaters heaters = context.getBean(Heaters.class);
 //        heaters.helper();
 //        NthDigit nthDigit = new NthDigit();
