@@ -130,6 +130,7 @@
     <bean class="com.baz.app.facebook.medium.MyCalendarII"></bean>
     <bean class="com.baz.app.facebook.hard.MergeKSortedList"></bean>
     <bean class="com.baz.app.facebook.easy.ReverseString"></bean>
+    <bean class="com.baz.app.facebook.hard.IntegerToEnglishWords"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>
