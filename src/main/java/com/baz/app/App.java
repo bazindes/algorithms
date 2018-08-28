@@ -36,8 +36,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        GroupAnagrams groupAnagrams = context.getBean(GroupAnagrams.class);
-        groupAnagrams.test();
+        FirstMissingPositive firstMissingPositive = context.getBean(FirstMissingPositive.class);
+        firstMissingPositive.test();
+//        TopKFrequentElements topKFrequentElements = context.getBean(TopKFrequentElements.class);
+//        topKFrequentElements.test();
+//        GroupAnagrams groupAnagrams = context.getBean(GroupAnagrams.class);
+//        groupAnagrams.test();
 //        ReverseWrodsInAString reverseWrodsInAString = context.getBean(ReverseWrodsInAString.class);
 //        reverseWrodsInAString.test();
 //        WordBreak wordBreak = context.getBean(WordBreak.class);
