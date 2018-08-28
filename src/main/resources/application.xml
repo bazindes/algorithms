@@ -134,6 +134,8 @@
     <bean class="com.baz.app.facebook.hard.IntegerToEnglishWords"></bean>
     <bean class="com.baz.app.facebook.hard.RegularExpressionMatching"></bean>
     <bean class="com.baz.app.facebook.medium.StringToInteger"></bean>
+    <bean class="com.baz.app.facebook.easy.FizzBuzz"></bean>
+    <bean class="com.baz.app.facebook.medium.ReverseWrodsInAString"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

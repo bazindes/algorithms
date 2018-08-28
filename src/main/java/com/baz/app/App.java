@@ -7,6 +7,7 @@ import com.baz.app.TwoSigma.medium.LongestChain;
 import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
 import com.baz.app.TwoSigma.medium.WordLadder;
 import com.baz.app.easy.SumOfTwoIntegers;
+import com.baz.app.facebook.easy.FizzBuzz;
 import com.baz.app.facebook.easy.ReverseLinkedList;
 import com.baz.app.facebook.easy.ReverseString;
 import com.baz.app.facebook.hard.*;
@@ -35,8 +36,18 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        StringToInteger stringToInteger = context.getBean(StringToInteger.class);
-        stringToInteger.test();
+        ReverseWrodsInAString reverseWrodsInAString = context.getBean(ReverseWrodsInAString.class);
+        reverseWrodsInAString.test();
+//        WordBreak wordBreak = context.getBean(WordBreak.class);
+//        wordBreak.test();
+//        LetterCombinationsOfAPhoneNumber letterCombinationsOfAPhoneNumber = context.getBean(LetterCombinationsOfAPhoneNumber.class);
+//        letterCombinationsOfAPhoneNumber.test();
+//        FizzBuzz fizzBuzz = context.getBean(FizzBuzz.class);
+//        fizzBuzz.test();
+//        ProductOfArrayExceptSelf productOfArrayExceptSelf = context.getBean(ProductOfArrayExceptSelf.class);
+//        productOfArrayExceptSelf.test();
+//        StringToInteger stringToInteger = context.getBean(StringToInteger.class);
+//        stringToInteger.test();
 //        MachineTasks machineTasks = context.getBean(MachineTasks.class);
 //        machineTasks.test();
 //        RegularExpressionMatching regularExpressionMatching = context.getBean(RegularExpressionMatching.class);
