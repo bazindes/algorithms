@@ -36,8 +36,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ReverseWrodsInAString reverseWrodsInAString = context.getBean(ReverseWrodsInAString.class);
-        reverseWrodsInAString.test();
+        GroupAnagrams groupAnagrams = context.getBean(GroupAnagrams.class);
+        groupAnagrams.test();
+//        ReverseWrodsInAString reverseWrodsInAString = context.getBean(ReverseWrodsInAString.class);
+//        reverseWrodsInAString.test();
 //        WordBreak wordBreak = context.getBean(WordBreak.class);
 //        wordBreak.test();
 //        LetterCombinationsOfAPhoneNumber letterCombinationsOfAPhoneNumber = context.getBean(LetterCombinationsOfAPhoneNumber.class);

@@ -4,6 +4,69 @@ import java.util.*;
 
 public class GroupAnagrams {
 
+    /**
+     * Given an array of strings, group anagrams together.
+     * Example:
+     * Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+     * Output:
+     * [
+     *   ["ate","eat","tea"],
+     *   ["nat","tan"],
+     *   ["bat"]
+     * ]
+     * Note:
+     * All inputs will be in lowercase.
+     * The order of your output does not matter.
+     */
+
+    //O(n * klogk) O(n)
+    public List<List<String>> groupAnagramsMap(String[] strs) {
+        List<List<String>> list = new ArrayList<>();
+        if(strs == null || strs.length == 0) return list;
+        Map<String, List<String>> map = new HashMap<>();
+        for(String s : strs){
+            char[]cs = s.toCharArray();
+            Arrays.sort(cs);
+            String key = new String(cs);
+            if(map.containsKey(key)){
+                map.get(key).add(s);
+            }else {
+                map.put(key, new ArrayList<String>(){{add(s);}});
+            }
+        }
+        for(List<String> l : map.values()){
+            list.add(l);
+        }
+        return list;
+    }
+
+    //O(N*M) O(N)
+    //Hashing solution
+    public List<List<String>> anagrams(String[] strs) {
+        List<List<String>> list = new ArrayList<>();
+        if(strs == null || strs.length == 0) return list;
+        int[] PRIMES = new int[]{2, 3, 5, 7, 11 ,13, 17, 19, 23, 29, 31, 37, 41, 43,
+                47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 107};
+        Map<Integer, List<String>> map = new HashMap<>();
+        int result = -1;
+        for(String s: strs){
+            int mapping = 1;
+            for (int i = 0; i < s.length(); i++) {
+                mapping *= PRIMES[s.charAt(i) - 'a'];
+            }
+            List<String> cur = map.get(mapping);
+            if(cur == null){
+                cur = new ArrayList<>();
+                map.put(mapping, cur);
+            }
+            cur.add(s);
+        }
+        for(List<String> l : map.values())
+            list.add(l);
+        return list;
+    }
+
+    //
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> list = new ArrayList<>();
         if(strs == null || strs.length == 0) return list;
@@ -38,7 +101,7 @@ public class GroupAnagrams {
     public void test(){
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
 //        strs = new String[]{"", ""};
-        groupAnagrams(strs).forEach(
+        anagrams(strs).forEach(
                 i -> {
                  i.forEach( s -> System.out.print(s + " "));
                     System.out.println();
