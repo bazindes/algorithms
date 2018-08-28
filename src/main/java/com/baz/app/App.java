@@ -2,7 +2,6 @@ package com.baz.app;
 import com.baz.app.TwoSigma.easy.IntersectionOfTwoArrays;
 import com.baz.app.TwoSigma.hard.BasicCalculator;
 import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
-import com.baz.app.TwoSigma.hard.RegularExpressionMatching;
 import com.baz.app.TwoSigma.medium.FriendCircles;
 import com.baz.app.TwoSigma.medium.LongestChain;
 import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
@@ -10,10 +9,7 @@ import com.baz.app.TwoSigma.medium.WordLadder;
 import com.baz.app.easy.SumOfTwoIntegers;
 import com.baz.app.facebook.easy.ReverseLinkedList;
 import com.baz.app.facebook.easy.ReverseString;
-import com.baz.app.facebook.hard.IntegerToEnglishWords;
-import com.baz.app.facebook.hard.LRUCache;
-import com.baz.app.facebook.hard.MergeKSortedList;
-import com.baz.app.facebook.hard.MinimumWindowSubString;
+import com.baz.app.facebook.hard.*;
 import com.baz.app.facebook.medium.*;
 import com.baz.app.google.easy.HouseRobber;
 import com.baz.app.google.easy.NumberOfConnectedComponents;
@@ -39,8 +35,14 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        IntegerToEnglishWords integerToEnglishWords = context.getBean(IntegerToEnglishWords.class);
-        integerToEnglishWords.test();
+        StringToInteger stringToInteger = context.getBean(StringToInteger.class);
+        stringToInteger.test();
+//        MachineTasks machineTasks = context.getBean(MachineTasks.class);
+//        machineTasks.test();
+//        RegularExpressionMatching regularExpressionMatching = context.getBean(RegularExpressionMatching.class);
+//        regularExpressionMatching.test();
+//        IntegerToEnglishWords integerToEnglishWords = context.getBean(IntegerToEnglishWords.class);
+//        integerToEnglishWords.test();
 //        ReverseString reverseString = context.getBean(ReverseString.class);
 //        reverseString.test();
 //        MergeKSortedList mergeKSortedList = context.getBean(MergeKSortedList.class);

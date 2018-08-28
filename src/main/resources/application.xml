@@ -41,6 +41,7 @@
     <bean class="com.baz.app.google.medium.MinimumSubSetSum"></bean>
     <bean class="com.baz.app.google.hard.Calculator"></bean>
     <bean class="com.baz.app.google.easy.NumberOfConnectedComponents"></bean>
+    <bean class="com.baz.app.google.medium.MachineTasks"></bean>
 
     <bean class="com.baz.app.facebook.easy.MoveZeroes"></bean>
     <bean class="com.baz.app.facebook.easy.AddBinary"></bean>
@@ -131,6 +132,8 @@
     <bean class="com.baz.app.facebook.hard.MergeKSortedList"></bean>
     <bean class="com.baz.app.facebook.easy.ReverseString"></bean>
     <bean class="com.baz.app.facebook.hard.IntegerToEnglishWords"></bean>
+    <bean class="com.baz.app.facebook.hard.RegularExpressionMatching"></bean>
+    <bean class="com.baz.app.facebook.medium.StringToInteger"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>
