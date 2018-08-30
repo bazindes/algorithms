@@ -36,8 +36,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        FirstMissingPositive firstMissingPositive = context.getBean(FirstMissingPositive.class);
-        firstMissingPositive.test();
+        MeetingRoomsII meetingRoomsII = context.getBean(MeetingRoomsII.class);
+        meetingRoomsII.test();
+//        FirstMissingPositive firstMissingPositive = context.getBean(FirstMissingPositive.class);
+//        firstMissingPositive.test();
 //        TopKFrequentElements topKFrequentElements = context.getBean(TopKFrequentElements.class);
 //        topKFrequentElements.test();
 //        GroupAnagrams groupAnagrams = context.getBean(GroupAnagrams.class);
