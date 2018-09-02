@@ -1,5 +1,7 @@
 package com.baz.app.facebook.medium;
 
+import com.baz.app.util.Utils;
+
 public class NextPermutation {
 
     /**
@@ -14,7 +16,41 @@ public class NextPermutation {
      */
 
     public void nextPermutation(int[] nums) {
+        //corner case
+        if(nums == null || nums.length == 0) return;
 
+        //general code
+        int j = nums.length - 1;
+        for (; j > 0 ; j--) {
+            if(nums[j] > nums[j - 1])
+                break;
+        }
+        j --;
+        int i = j;
+        for (; i < nums.length; i++) {
+            if(nums[i] < nums[j])
+                break;
+        }
+        if(i == nums.length) i --;
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+
+        j ++;
+        i = nums.length - 1;
+        while (i != j){
+            int t = nums[i];
+            nums[i] = nums[j];
+            nums[j] = t;
+            j ++;
+            i --;
+        }
+    }
+
+    public void test(){
+        int[]nums = {1, 2, 3};
+        nextPermutation(nums);
+        Utils.printArray(nums);
     }
 
 }

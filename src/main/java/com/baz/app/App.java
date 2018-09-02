@@ -36,8 +36,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        LongestIncreasingSubSequence longestIncreasingSubSequence = context.getBean(LongestIncreasingSubSequence.class);
-        longestIncreasingSubSequence.test();
+        NextPermutation nextPermutation = context.getBean(NextPermutation.class);
+        nextPermutation.test();
+//        ValidNumber validNumber = context.getBean(ValidNumber.class);
+//        validNumber.test();
+//        LongestIncreasingSubSequence longestIncreasingSubSequence = context.getBean(LongestIncreasingSubSequence.class);
+//        longestIncreasingSubSequence.test();
 //        MeetingRoomsII meetingRoomsII = context.getBean(MeetingRoomsII.class);
 //        meetingRoomsII.test();
 //        FirstMissingPositive firstMissingPositive = context.getBean(FirstMissingPositive.class);
