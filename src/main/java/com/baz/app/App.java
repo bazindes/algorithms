@@ -36,10 +36,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
+        LongestPalindromicSubstring longestPalindromicSubstring = context.getBean(LongestPalindromicSubstring.class);
+        longestPalindromicSubstring.test();
 //        SpiralMatrix spiralMatrix = context.getBean(SpiralMatrix.class);
 //        spiralMatrix.test();
-        NextPermutation nextPermutation = context.getBean(NextPermutation.class);
-        nextPermutation.test();
+//        NextPermutation nextPermutation = context.getBean(NextPermutation.class);
+//        nextPermutation.test();
 //        ValidNumber validNumber = context.getBean(ValidNumber.class);
 //        validNumber.test();
 //        LongestIncreasingSubSequence longestIncreasingSubSequence = context.getBean(LongestIncreasingSubSequence.class);
