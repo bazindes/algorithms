@@ -36,6 +36,8 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
+//        SpiralMatrix spiralMatrix = context.getBean(SpiralMatrix.class);
+//        spiralMatrix.test();
         NextPermutation nextPermutation = context.getBean(NextPermutation.class);
         nextPermutation.test();
 //        ValidNumber validNumber = context.getBean(ValidNumber.class);

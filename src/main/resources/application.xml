@@ -141,6 +141,7 @@
     <bean class="com.baz.app.facebook.medium.MeetingRoomsII"></bean>
     <bean class="com.baz.app.facebook.hard.ValidNumber"></bean>
     <bean class="com.baz.app.facebook.medium.NextPermutation"></bean>
+    <bean class="com.baz.app.facebook.medium.SpiralMatrix"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

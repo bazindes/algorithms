@@ -18,33 +18,36 @@ public class NextPermutation {
     public void nextPermutation(int[] nums) {
         //corner case
         if(nums == null || nums.length == 0) return;
-
         //general code
-        int j = nums.length - 1;
-        for (; j > 0 ; j--) {
-            if(nums[j] > nums[j - 1])
-                break;
+        int i = nums.length - 2;
+        while ( i >=0 && nums[i - 1] >= nums[i]){
+            i --;
         }
-        j --;
-        int i = j;
-        for (; i < nums.length; i++) {
-            if(nums[i] < nums[j])
-                break;
+
+        if(i >= 0){
+            int j = nums.length - 1;
+            while (j >= 0 && nums[j] <= nums[i]){
+                j --;
+            }
+            swap(nums, i , j);
         }
-        if(i == nums.length) i --;
+
+        resverse(nums, i + 1);
+    }
+
+    private void resverse(int[] nums, int start){
+        int end = nums.length - 1;
+        while (start < end){
+            swap(nums, start, end);
+            start ++;
+            end --;
+        }
+    }
+
+    private void swap(int[] nums, int i, int j){
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
-
-        j ++;
-        i = nums.length - 1;
-        while (i != j){
-            int t = nums[i];
-            nums[i] = nums[j];
-            nums[j] = t;
-            j ++;
-            i --;
-        }
     }
 
     public void test(){
