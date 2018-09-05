@@ -12,14 +12,7 @@ import com.baz.app.facebook.easy.ReverseLinkedList;
 import com.baz.app.facebook.easy.ReverseString;
 import com.baz.app.facebook.hard.*;
 import com.baz.app.facebook.medium.*;
-import com.baz.app.google.easy.HouseRobber;
-import com.baz.app.google.easy.NumberOfConnectedComponents;
-import com.baz.app.google.easy.ShortestUnsortedContinuousSubarray;
-import com.baz.app.google.hard.Calculator;
-import com.baz.app.google.medium.*;
-import com.baz.app.medium.CombinationSum;
-import com.baz.app.medium.CombinationSumII;
-import com.baz.app.medium.CombinationSumIII;
+import com.baz.app.facebook.medium.Permutations;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -36,8 +29,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        LongestPalindromicSubstring longestPalindromicSubstring = context.getBean(LongestPalindromicSubstring.class);
-        longestPalindromicSubstring.test();
+        Permutations permutations = context.getBean(Permutations.class);
+        permutations.test();
+//        ReorderList reorderList = context.getBean(ReorderList.class);
+//        reorderList.test();
+//        LongestPalindromicSubstring longestPalindromicSubstring = context.getBean(LongestPalindromicSubstring.class);
+//        longestPalindromicSubstring.test();
 //        SpiralMatrix spiralMatrix = context.getBean(SpiralMatrix.class);
 //        spiralMatrix.test();
 //        NextPermutation nextPermutation = context.getBean(NextPermutation.class);
