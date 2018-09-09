@@ -8,6 +8,7 @@
     <bean class="com.baz.app.medium.CombinationSumII"></bean>
     <bean class="com.baz.app.medium.CombinationSumIII"></bean>
     <bean class="com.baz.app.easy.SumOfTwoIntegers"></bean>
+    <bean class="com.baz.app.easy.SortLinkedList"></bean>
 
     <bean class="com.baz.app.google.easy.BinaryWatch"></bean>
     <bean class="com.baz.app.google.easy.StudentAttendanceRecordI"></bean>
@@ -145,6 +146,7 @@
     <bean class="com.baz.app.facebook.medium.LongestPalindromicSubstring"></bean>
     <bean class="com.baz.app.facebook.medium.ReorderList"></bean>
     <bean class="com.baz.app.facebook.medium.Permutations"></bean>
+    <bean class="com.baz.app.facebook.medium.RemoveNthNodeFromEndofList"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

@@ -6,6 +6,7 @@ import com.baz.app.TwoSigma.medium.FriendCircles;
 import com.baz.app.TwoSigma.medium.LongestChain;
 import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
 import com.baz.app.TwoSigma.medium.WordLadder;
+import com.baz.app.easy.SortLinkedList;
 import com.baz.app.easy.SumOfTwoIntegers;
 import com.baz.app.facebook.easy.FizzBuzz;
 import com.baz.app.facebook.easy.ReverseLinkedList;
@@ -29,8 +30,16 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        Permutations permutations = context.getBean(Permutations.class);
-        permutations.test();
+        DecodeWays decodeWays = context.getBean(DecodeWays.class);
+        decodeWays.test();
+//        RemoveNthNodeFromEndofList removeNthNodeFromEndofList = context.getBean(RemoveNthNodeFromEndofList.class);
+//        removeNthNodeFromEndofList.test();
+//        IntegerToEnglishWords integerToEnglishWords = context.getBean(IntegerToEnglishWords.class);
+//        integerToEnglishWords.test();
+//        SortLinkedList sortLinkedList = context.getBean(SortLinkedList.class);
+//        sortLinkedList.test();
+//        Permutations permutations = context.getBean(Permutations.class);
+//        permutations.test();
 //        ReorderList reorderList = context.getBean(ReorderList.class);
 //        reorderList.test();
 //        LongestPalindromicSubstring longestPalindromicSubstring = context.getBean(LongestPalindromicSubstring.class);

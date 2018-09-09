@@ -25,7 +25,7 @@ public class IntegerToEnglishWords {
 
     private final String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
     private final String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
-    private final String[] THOUSANDS = {"", "Thousand", "Million", "Billion"};
+    private final String[] THOUSANDS = {"", "Thousand,", "Million,", "Billion,"};
 
     public String numberToWords(int num) {
         if(num == 0)
@@ -50,12 +50,12 @@ public class IntegerToEnglishWords {
         }else if (num < 100){
             return TENS[num/10] + " " + helper(num % 10);
         }else {
-            return LESS_THAN_20[num / 100] + " Hundred " + helper(num % 100);
+            return LESS_THAN_20[num / 100] + " Hundred and " + helper(num % 100);
         }
     }
 
     public void test(){
-        int a = 134;
+        int a = 1111134;
         System.out.println(numberToWords(a));
     }
 
