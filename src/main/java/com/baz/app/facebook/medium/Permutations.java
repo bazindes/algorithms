@@ -41,6 +41,7 @@ public class Permutations {
                 List<Integer> cur = ans.pollFirst();
                 for (int j = 0; j <= cur.size(); j++) {
                     List<Integer> temp = new ArrayList<>(cur);
+//                    temp.add(i);
                     temp.add(j , i);
                     ans.add(temp);
                 }

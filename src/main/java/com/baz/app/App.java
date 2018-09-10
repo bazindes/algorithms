@@ -9,6 +9,7 @@ import com.baz.app.TwoSigma.medium.WordLadder;
 import com.baz.app.easy.SortLinkedList;
 import com.baz.app.easy.SumOfTwoIntegers;
 import com.baz.app.facebook.easy.FizzBuzz;
+import com.baz.app.facebook.easy.PlusOne;
 import com.baz.app.facebook.easy.ReverseLinkedList;
 import com.baz.app.facebook.easy.ReverseString;
 import com.baz.app.facebook.hard.*;
@@ -30,8 +31,14 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        DevideTwoIntegers devideTwoIntegers = context.getBean(DevideTwoIntegers.class);
-        devideTwoIntegers.test();
+        ReverseNodesInKGroup reverseNodesInKGroup = context.getBean(ReverseNodesInKGroup.class);
+        reverseNodesInKGroup.test();
+//        PlusOne plusOne = context.getBean(PlusOne.class);
+//        plusOne.test();
+//        Permutations permutations = context.getBean(Permutations.class);
+//        permutations.test();
+//        DevideTwoIntegers devideTwoIntegers = context.getBean(DevideTwoIntegers.class);
+//        devideTwoIntegers.test();
 //        DecodeWays decodeWays = context.getBean(DecodeWays.class);
 //        decodeWays.test();
 //        RemoveNthNodeFromEndofList removeNthNodeFromEndofList = context.getBean(RemoveNthNodeFromEndofList.class);
