@@ -30,8 +30,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        DecodeWays decodeWays = context.getBean(DecodeWays.class);
-        decodeWays.test();
+        DevideTwoIntegers devideTwoIntegers = context.getBean(DevideTwoIntegers.class);
+        devideTwoIntegers.test();
+//        DecodeWays decodeWays = context.getBean(DecodeWays.class);
+//        decodeWays.test();
 //        RemoveNthNodeFromEndofList removeNthNodeFromEndofList = context.getBean(RemoveNthNodeFromEndofList.class);
 //        removeNthNodeFromEndofList.test();
 //        IntegerToEnglishWords integerToEnglishWords = context.getBean(IntegerToEnglishWords.class);

@@ -147,6 +147,7 @@
     <bean class="com.baz.app.facebook.medium.ReorderList"></bean>
     <bean class="com.baz.app.facebook.medium.Permutations"></bean>
     <bean class="com.baz.app.facebook.medium.RemoveNthNodeFromEndofList"></bean>
+    <bean class="com.baz.app.facebook.medium.DevideTwoIntegers"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>
