@@ -31,8 +31,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ReverseNodesInKGroup reverseNodesInKGroup = context.getBean(ReverseNodesInKGroup.class);
-        reverseNodesInKGroup.test();
+        GenerateParentheses generateParentheses = context.getBean(GenerateParentheses.class);
+        generateParentheses.test();
+//        ReverseNodesInKGroup reverseNodesInKGroup = context.getBean(ReverseNodesInKGroup.class);
+//        reverseNodesInKGroup.test();
 //        PlusOne plusOne = context.getBean(PlusOne.class);
 //        plusOne.test();
 //        Permutations permutations = context.getBean(Permutations.class);
