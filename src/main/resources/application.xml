@@ -151,6 +151,7 @@
     <bean class="com.baz.app.facebook.easy.PlusOne"></bean>
     <bean class="com.baz.app.facebook.hard.ReverseNodesInKGroup"></bean>
     <bean class="com.baz.app.facebook.medium.GenerateParentheses"></bean>
+    <bean class="com.baz.app.facebook.hard.BasicCalculator"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

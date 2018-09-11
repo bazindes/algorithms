@@ -1,6 +1,5 @@
 package com.baz.app;
 import com.baz.app.TwoSigma.easy.IntersectionOfTwoArrays;
-import com.baz.app.TwoSigma.hard.BasicCalculator;
 import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
 import com.baz.app.TwoSigma.medium.FriendCircles;
 import com.baz.app.TwoSigma.medium.LongestChain;
@@ -31,8 +30,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        GenerateParentheses generateParentheses = context.getBean(GenerateParentheses.class);
-        generateParentheses.test();
+        BasicCalculator basicCalculator = context.getBean(BasicCalculator.class);
+        basicCalculator.test();
+//        GenerateParentheses generateParentheses = context.getBean(GenerateParentheses.class);
+//        generateParentheses.test();
 //        ReverseNodesInKGroup reverseNodesInKGroup = context.getBean(ReverseNodesInKGroup.class);
 //        reverseNodesInKGroup.test();
 //        PlusOne plusOne = context.getBean(PlusOne.class);
