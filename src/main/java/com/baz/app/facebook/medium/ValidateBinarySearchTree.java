@@ -47,6 +47,20 @@ public class ValidateBinarySearchTree {
         return true;
     }
 
+    //O(n) O(1)
+    public boolean isValidBSTConstSpace(TreeNode root){
+        return constSpaceHelper(root, null, null);
+    }
+
+    private boolean constSpaceHelper(TreeNode node, Integer left, Integer right){
+        if(node == null) return true;
+
+        if(left != null && node.val <= left || right != null && node.val >= right)
+            return false;
+
+        return constSpaceHelper(node.left, left, node.val) && constSpaceHelper(node.right, node.val, right);
+    }
+
     public void test(){
         TreeNode root = new TreeNode(2);
         TreeNode l1 = new TreeNode(1);
@@ -54,7 +68,7 @@ public class ValidateBinarySearchTree {
         root.left = l1;
         root.right = r1;
         System.out.println(isValidBST(root));
-        System.out.println(isValidBSTIterative(root));
+        System.out.println(isValidBSTConstSpace(root));
 
         TreeNode _root = new TreeNode(5);
         TreeNode _l1 = new TreeNode(1);
@@ -66,7 +80,7 @@ public class ValidateBinarySearchTree {
         _r1.left = _r1l2;
         _r1.right = _r1r2;
         System.out.println(isValidBST(_root));
-        System.out.println(isValidBSTIterative(_root));
+        System.out.println(isValidBSTConstSpace(_root));
     }
 
 }

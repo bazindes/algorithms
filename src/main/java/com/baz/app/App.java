@@ -30,8 +30,14 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        BasicCalculator basicCalculator = context.getBean(BasicCalculator.class);
-        basicCalculator.test();
+        TopKFrequentWords topKFrequentWords = context.getBean(TopKFrequentWords.class);
+        topKFrequentWords.test();
+//        BinaryTreeMaximumPathSum binaryTreeMaximumPathSum = context.getBean(BinaryTreeMaximumPathSum.class);
+//        binaryTreeMaximumPathSum.test();
+//        ValidateBinarySearchTree validateBinarySearchTree = context.getBean(ValidateBinarySearchTree.class);
+//        validateBinarySearchTree.test();
+//        BasicCalculator basicCalculator = context.getBean(BasicCalculator.class);
+//        basicCalculator.test();
 //        GenerateParentheses generateParentheses = context.getBean(GenerateParentheses.class);
 //        generateParentheses.test();
 //        ReverseNodesInKGroup reverseNodesInKGroup = context.getBean(ReverseNodesInKGroup.class);
