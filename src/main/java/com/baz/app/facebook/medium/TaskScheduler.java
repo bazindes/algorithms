@@ -36,12 +36,10 @@ public class TaskScheduler {
                     sb.append(e.getKey());
                     e.setValue(e.getValue() - 1);
                     left --;
-                    continue;
                 }else {
                     sb.append(e.getKey());
                     e.setValue(e.getValue() - 1);
                     left --;
-                    continue;
                 }
             }
         }
@@ -90,10 +88,51 @@ public class TaskScheduler {
         return ans;
     }
 
+    //O(n) O(1)
+    public int leastIntervalUsingPQ(char[] tasks, int n){
+        if(tasks == null || tasks.length == 0) return 0;
+
+        int[] map = new int[26];
+        for (char c : tasks)
+            map[c - 'A'] ++;
+
+        //use pq, in order to pick largest task for each round
+        PriorityQueue<Integer> pq = new PriorityQueue<>(26, Collections.reverseOrder());
+        for (int f : map){
+            if (f > 0)
+                pq.add(f);
+        }
+
+        int ans = 0;
+        while (!pq.isEmpty()){
+            int i = 0;
+            List<Integer> temp = new ArrayList<>();
+
+            while (i <= n){
+                if(!pq.isEmpty()){
+                    if(pq.peek() > 1)
+                        temp.add(pq.poll() - 1);
+                    else
+                        pq.poll();
+                }
+                ans ++;
+                if(pq.isEmpty() && temp.size() == 0)
+                    break;
+                i ++;
+            }
+
+            for (int x : temp){
+                pq.offer(x);
+            }
+        }
+
+        return ans;
+    }
+
     public void test(){
         char[] cs = {'A','A','A','B','B','B'};
         System.out.println(leastInterval(cs, 2));
-        System.out.println(leastIntervalUsingSort(cs, 2));
+        System.out.println(leastIntervalUsingPQ(cs, 2));
     }
 
 }

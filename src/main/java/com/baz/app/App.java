@@ -30,8 +30,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        TopKFrequentWords topKFrequentWords = context.getBean(TopKFrequentWords.class);
-        topKFrequentWords.test();
+        TaskScheduler taskScheduler = context.getBean(TaskScheduler.class);
+        taskScheduler.test();
+//        TopKFrequentWords topKFrequentWords = context.getBean(TopKFrequentWords.class);
+//        topKFrequentWords.test();
 //        BinaryTreeMaximumPathSum binaryTreeMaximumPathSum = context.getBean(BinaryTreeMaximumPathSum.class);
 //        binaryTreeMaximumPathSum.test();
 //        ValidateBinarySearchTree validateBinarySearchTree = context.getBean(ValidateBinarySearchTree.class);

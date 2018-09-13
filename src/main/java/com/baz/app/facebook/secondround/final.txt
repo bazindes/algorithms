@@ -1,5 +1,5 @@
-621 Task Scheduler 42.7%	Medium 
-56 Merge Intervals 33.0%	Medium 
+621 Task Scheduler 42.7% Medium: O(n) O(1), using PriorityQueue
+56 Merge Intervals 33.0% Medium: O(nlogn) O(1/n), sort
 350 Intersection of Two Arrays II 44.7%	Easy 
 15 3Sum 22.1%	Medium 
 10 Regular Expression Matching 24.4%	Hard 
@@ -17,7 +17,8 @@
 91 Decode Ways 20.9%	Medium 
 138 Copy List with Random Pointer 25.7%	Medium 
 283 Move Zeroes 52.3%	Easy 
-236 Lowest Common Ancestor of a Binary Tree 31.6%	Medium 
+236 Lowest Common Ancestor of a Binary Tree 31.6%	Medium
+
 253 Meeting Rooms II 40.1%	Medium 
 133 Clone Graph 25.2%	Medium 
 49 Group Anagrams 41.1%	Medium 
