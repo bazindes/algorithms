@@ -1,8 +1,8 @@
 621 Task Scheduler 42.7% Medium: O(n) O(1), using PriorityQueue
 56 Merge Intervals 33.0% Medium: O(nlogn) O(1/n), sort
 350 Intersection of Two Arrays II 44.7%	Easy: O(n) O(n), sort, using hashmap
-15 3Sum 22.1%	Medium 
-10 Regular Expression Matching 24.4%	Hard 
+15 3Sum 22.1% Medium: O(n^2) O(1/n), sort and two pointers
+10 Regular Expression Matching 24.4% Hard
 674 Longest Continuous Increasing Subsequence 42.9%	Easy 
 121 Best Time to Buy and Sell Stock 44.2%	Easy 
 314 Binary Tree Vertical Order Traversal 38.6%	Medium 
@@ -41,7 +41,8 @@
 297 Serialize and Deserialize Binary Tree 36.5%	Hard 
 102 Binary Tree Level Order Traversal 44.5%	Medium 
 325 Maximum Size Subarray Sum Equals k 43.4%	Medium 
-378 Kth Smallest Element in a Sorted Matrix 46.2%	Medium 
+378 Kth Smallest Element in a Sorted Matrix 46.2%	Medium
+
 348 Design Tic-Tac-Toe 46.9%	Medium 
 4 Median of Two Sorted Arrays 23.8%	Hard 
 278 First Bad Version 27.0%	Easy 
@@ -62,7 +63,8 @@
 122 Best Time to Buy and Sell Stock II 49.1%	Easy 
 341 Flatten Nested List Iterator 44.3%	Medium 
 44 Wildcard Matching 21.6%	Hard 
-20 Valid Parentheses 34.6%	Easy 
+20 Valid Parentheses 34.6%	Easy
+
 270 Closest Binary Search Tree Value 41.6%	Easy 
 57 Insert Interval 29.7%	Hard 
 67 Add Binary 35.6%	Easy 
@@ -83,7 +85,8 @@
 124 Binary Tree Maximum Path Sum 27.9%	Hard 
 543 Diameter of Binary Tree 45.1%	Easy 
 22 Generate Parentheses 50.1%	Medium 
-346 Moving Average from Data Stream 62.1%	Easy 
+346 Moving Average from Data Stream 62.1%	Easy
+
 468 Validate IP Address 20.5%	Medium 
 105 Construct Binary Tree from Preorder and Inorder Traversal 36.4%	Medium 
 206 Reverse Linked List 49.2%	Easy 
@@ -104,7 +107,8 @@
 227 Basic Calculator II 31.0%	Medium 
 785 Is Graph Bipartite? 39.7%	Medium 
 50 Pow(x, n) 26.5%	Medium 
-825 Friends Of Appropriate Ages 31.9%	Medium 
+825 Friends Of Appropriate Ages 31.9%	Medium
+
 53 Maximum Subarray 41.2%	Easy 
 176 Second Highest Salary 24.2%	Easy 
 381 Insert Delete GetRandom O(1) - Duplicates allowed 30.0%	Hard 
@@ -125,7 +129,8 @@
 129 Sum Root to Leaf Numbers 39.3%	Medium 
 46 Permutations 49.8%	Medium 
 445 Add Two Numbers II 47.3%	Medium 
-360 Sort Transformed Array 45.5%	Medium 
+360 Sort Transformed Array 45.5%	Medium
+
 246 Strobogrammatic Number 40.7%	Easy 
 721 Accounts Merge 35.3%	Medium 
 52 N-Queens II 48.5%	Hard 
@@ -146,7 +151,8 @@
 689 Maximum Sum of 3 Non-Overlapping Subarrays 41.9%	Hard 
 39 Combination Sum 43.5%	Medium 
 140 Word Break II 25.3%	Hard 
-141 Linked List Cycle 34.7%	Easy 
+141 Linked List Cycle 34.7%	Easy
+
 791 Custom Sort String 59.5%	Medium 
 47 Permutations II 36.7%	Medium 
 498 Diagonal Traverse 44.5%	Medium 
@@ -167,7 +173,8 @@
 824 Goat Latin 54.8%	Easy 
 398 Random Pick Index 46.0%	Medium 
 123 Best Time to Buy and Sell Stock III 31.3%	Hard 
-844 Backspace String Compare 44.0%	Easy 
+844 Backspace String Compare 44.0%	Easy
+
 490 The Maze 44.1%	Medium 
 393 UTF-8 Validation 34.9%	Medium 
 24 Swap Nodes in Pairs 40.7%	Medium 

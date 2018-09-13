@@ -42,7 +42,7 @@ public class RegularExpressionMatching {
      * Output: false
      */
 
-
+    //O(SP) O(SP)
     public boolean isMatch(String s, String p) {
         if(s == null || p == null) return false;
         boolean[][]dp = new boolean[s.length() + 1][p.length() + 1];
@@ -74,13 +74,38 @@ public class RegularExpressionMatching {
         return dp[s.length()][p.length()];
     }
 
+    //O(TP) O(TP)
+    public boolean isMatchDPBU(String text, String pattern){
+        //corner case
+        if(pattern == null || "".equals(pattern)) return true;
+        if(text == null || "".equals(text)) return text == pattern;
+
+        boolean[][] dp = new boolean[text.length() + 1][pattern.length() + 1];
+        dp[text.length()][pattern.length()] = true;
+
+        for (int i = text.length(); i >= 0 ; i--) {
+            for (int j = pattern.length() - 1; j >= 0 ; j--) {
+                boolean firstMatch = ( i < text.length() && (pattern.charAt(j) == text.charAt(i) || pattern.charAt(j) == '.'));
+
+                if(j + 1 < pattern.length() && pattern.charAt(j + 1) == '*'){
+                    dp[i][j] = dp[i][j + 2] || firstMatch && dp[i + 1][j];
+                }else {
+                    dp[i][j] = firstMatch && dp[i + 1][j + 1];
+                }
+            }
+        }
+
+        return dp[0][0];
+
+    }
+
 
     public void test(){
-        System.out.println(isMatch("aa" , "a"));
-        System.out.println(isMatch("aa" , "a*"));
-        System.out.println(isMatch("ab" , ".*"));
-        System.out.println(isMatch("aab" , "c*a*b"));
-        System.out.println(isMatch("mississippi" , "mis*is*p*."));
+        System.out.println(isMatchDPBU("aa" , "a"));
+        System.out.println(isMatchDPBU("aa" , "a*"));
+        System.out.println(isMatchDPBU("ab" , ".*"));
+        System.out.println(isMatchDPBU("aab" , "c*a*b"));
+        System.out.println(isMatchDPBU("mississippi" , "mis*is*p*."));
     }
 
 }
