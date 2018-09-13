@@ -54,6 +54,7 @@ public class ThreeSum {
         return list;
     }
 
+    //O(n^2) O(n/1)
     public List<List<Integer>> threeSumBySort(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);

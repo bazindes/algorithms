@@ -1,6 +1,6 @@
 621 Task Scheduler 42.7% Medium: O(n) O(1), using PriorityQueue
 56 Merge Intervals 33.0% Medium: O(nlogn) O(1/n), sort
-350 Intersection of Two Arrays II 44.7%	Easy 
+350 Intersection of Two Arrays II 44.7%	Easy: O(n) O(n), sort, using hashmap
 15 3Sum 22.1%	Medium 
 10 Regular Expression Matching 24.4%	Hard 
 674 Longest Continuous Increasing Subsequence 42.9%	Easy 
