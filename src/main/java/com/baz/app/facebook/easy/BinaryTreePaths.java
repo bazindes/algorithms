@@ -9,6 +9,20 @@ import java.util.Stack;
 
 public class BinaryTreePaths {
 
+    /**
+     * Given a binary tree, return all root-to-leaf paths.
+     * Note: A leaf is a node with no children.
+     * Example:
+     * Input:
+     *    1
+     *  /   \
+     * 2     3
+     *  \
+     *   5
+     * Output: ["1->2->5", "1->3"]
+     * Explanation: All root-to-leaf paths are: 1->2->5, 1->3
+     */
+
     //Recursion
     public List<String> binaryTreePathsRecursive(TreeNode root){
         List<String> list = new ArrayList<>();
@@ -45,21 +59,21 @@ public class BinaryTreePaths {
         Stack<TreeNode> nodesStack = new Stack<>();
         Stack<String> pathStack = new Stack<>();
         nodesStack.push(node);
-        pathStack.push("");
+        pathStack.push(node.val + "");
 
         while (!nodesStack.isEmpty()){
             TreeNode n = nodesStack.pop();
             String curPath = pathStack.pop();
             if(n.left == null && n.right == null){
-                list.add(curPath + n.val);
+                list.add(curPath);
             }else {
                 if(n.left != null){
                     nodesStack.push(n.left);
-                    pathStack.push(curPath + n.val + "->");
+                    pathStack.push(curPath + "->" + n.left.val);
                 }
                 if (n.right != null) {
                     nodesStack.push(n.right);
-                    pathStack.push(curPath + n.val + "->");
+                    pathStack.push(curPath + "->" + n.right.val);
                 }
             }
         }

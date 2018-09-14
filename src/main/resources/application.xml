@@ -154,6 +154,9 @@
     <bean class="com.baz.app.facebook.hard.BasicCalculator"></bean>
     <bean class="com.baz.app.facebook.hard.BinaryTreeMaximumPathSum"></bean>
     <bean class="com.baz.app.facebook.medium.TopKFrequentWords"></bean>
+    <bean class="com.baz.app.facebook.medium.MedianOfTwoSortedArray"></bean>
+    <bean class="com.baz.app.facebook.hard.NQueens"></bean>
+    <bean class="com.baz.app.facebook.medium.BinaryTreeVerticalOrderTraversal"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

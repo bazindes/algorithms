@@ -1,23 +1,23 @@
-621 Task Scheduler 42.7% Medium: O(n) O(1), using PriorityQueue
-56 Merge Intervals 33.0% Medium: O(nlogn) O(1/n), sort
+** 621 Task Scheduler 42.7% Medium: O(n) O(1), using PriorityQueue
+*** 56 Merge Intervals 33.0% Medium: O(nlogn) O(1/n), sort
 350 Intersection of Two Arrays II 44.7%	Easy: O(n) O(n), sort, using hashmap
-15 3Sum 22.1% Medium: O(n^2) O(1/n), sort and two pointers
-10 Regular Expression Matching 24.4% Hard
-674 Longest Continuous Increasing Subsequence 42.9%	Easy 
-121 Best Time to Buy and Sell Stock 44.2%	Easy 
-314 Binary Tree Vertical Order Traversal 38.6%	Medium 
-257 Binary Tree Paths 42.9%	Easy 
-51 N-Queens 35.1%	Hard 
-42 Trapping Rain Water 39.1%	Hard 
-173 Binary Search Tree Iterator 44.5%	Medium 
+** 15 3Sum 22.1% Medium: O(n^2) O(1/n), sort and two pointers
+*** 10 Regular Expression Matching 24.4% Hard: O(TP) O(TP), DP
+674 Longest Continuous Increasing Subsequence 42.9%	Easy: O(n) O(1), continuous
+** 121 Best Time to Buy and Sell Stock 44.2% Easy: O(n) O(1), one transaction maxPrice - minPricePrevious
+* 314 Binary Tree Vertical Order Traversal 38.6% Medium: O(n) O(n), BFS, use another queue to store vertical level
+257 Binary Tree Paths 42.9%	Easy: O(n) O(n/1), DFS or Recursion, use a stack to store path until now
+51 N-Queens 35.1% Hard: O(n*n!) O(n)
+42 Trapping Rain Water 39.1% Hard
+173 Binary Search Tree Iterator 44.5% Medium
 151 Reverse Words in a String 15.7%	Medium 
-43 Multiply Strings 28.6%	Medium 
-38 Count and Say 37.8%	Easy 
-273 Integer to English Words 23.1%	Hard 
-91 Decode Ways 20.9%	Medium 
+43 Multiply Strings 28.6% Medium
+38 Count and Say 37.8% Easy
+273 Integer to English Words 23.1% Hard
+91 Decode Ways 20.9% Medium
 138 Copy List with Random Pointer 25.7%	Medium 
-283 Move Zeroes 52.3%	Easy 
-236 Lowest Common Ancestor of a Binary Tree 31.6%	Medium
+283 Move Zeroes 52.3% Easy
+236 Lowest Common Ancestor of a Binary Tree 31.6% Medium
 
 253 Meeting Rooms II 40.1%	Medium 
 133 Clone Graph 25.2%	Medium 

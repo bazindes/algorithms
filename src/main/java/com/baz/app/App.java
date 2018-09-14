@@ -7,10 +7,7 @@ import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
 import com.baz.app.TwoSigma.medium.WordLadder;
 import com.baz.app.easy.SortLinkedList;
 import com.baz.app.easy.SumOfTwoIntegers;
-import com.baz.app.facebook.easy.FizzBuzz;
-import com.baz.app.facebook.easy.PlusOne;
-import com.baz.app.facebook.easy.ReverseLinkedList;
-import com.baz.app.facebook.easy.ReverseString;
+import com.baz.app.facebook.easy.*;
 import com.baz.app.facebook.hard.*;
 import com.baz.app.facebook.medium.*;
 import com.baz.app.facebook.medium.Permutations;
@@ -30,8 +27,16 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        RegularExpressionMatching regularExpressionMatching = context.getBean(RegularExpressionMatching.class);
-        regularExpressionMatching.test();
+        BinaryTreeVerticalOrderTraversal binaryTreeVerticalOrderTraversal = context.getBean(BinaryTreeVerticalOrderTraversal.class);
+        binaryTreeVerticalOrderTraversal.test();
+//        NQueens nQueens = context.getBean(NQueens.class);
+//        nQueens.test();
+//        MedianOfTwoSortedArray medianOfTwoSortedArray = context.getBean(MedianOfTwoSortedArray.class);
+//        medianOfTwoSortedArray.test();
+//        BinaryTreePaths binaryTreePaths = context.getBean(BinaryTreePaths.class);
+//        binaryTreePaths.test();
+//        RegularExpressionMatching regularExpressionMatching = context.getBean(RegularExpressionMatching.class);
+//        regularExpressionMatching.test();
 //        TaskScheduler taskScheduler = context.getBean(TaskScheduler.class);
 //        taskScheduler.test();
 //        TopKFrequentWords topKFrequentWords = context.getBean(TopKFrequentWords.class);
