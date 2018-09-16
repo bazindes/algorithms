@@ -7,16 +7,16 @@
 ** 121 Best Time to Buy and Sell Stock 44.2% Easy: O(n) O(1), one transaction maxPrice - minPricePrevious
 * 314 Binary Tree Vertical Order Traversal 38.6% Medium: O(n) O(n), BFS, use another queue to store vertical level
 257 Binary Tree Paths 42.9%	Easy: O(n) O(n/1), DFS or Recursion, use a stack to store path until now
-51 N-Queens 35.1% Hard: O(n*n!) O(n)
-42 Trapping Rain Water 39.1% Hard
-173 Binary Search Tree Iterator 44.5% Medium
-151 Reverse Words in a String 15.7%	Medium 
-43 Multiply Strings 28.6% Medium
-38 Count and Say 37.8% Easy
-273 Integer to English Words 23.1% Hard
+51 N-Queens 35.1% Hard: O(n*n!) O(n), backtracking
+* 42 Trapping Rain Water 39.1% Hard: O(n) O(n), DP, from left and right find max array
+* 173 Binary Search Tree Iterator 44.5% Medium: O(1) O(n), using stack to store left children
+151 Reverse Words in a String 15.7%	Medium: O(n) O(n), reverse str char by char, and then reverse word
+43 Multiply Strings 28.6% Medium: O(m * n) O(m + n), m,n are the two inputs, p1=i+j, p2=p1+1,
+38 Count and Say 37.8% Easy: O(2^n) O(n/1), split count and say
+273 Integer to English Words 23.1% Hard: O(1) O(1), every 3 digits helper once
 91 Decode Ways 20.9% Medium
-138 Copy List with Random Pointer 25.7%	Medium 
-283 Move Zeroes 52.3% Easy
+138 Copy List with Random Pointer 25.7%	Medium
+283 Move Zeroes 52.3% Easy, O(n) O(1), two pointers
 236 Lowest Common Ancestor of a Binary Tree 31.6% Medium
 
 253 Meeting Rooms II 40.1%	Medium 

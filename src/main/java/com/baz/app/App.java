@@ -27,8 +27,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        BinaryTreeVerticalOrderTraversal binaryTreeVerticalOrderTraversal = context.getBean(BinaryTreeVerticalOrderTraversal.class);
-        binaryTreeVerticalOrderTraversal.test();
+        PalindromePairs palindromePairs = context.getBean(PalindromePairs.class);
+        palindromePairs.test();
+//        CountAndSay countAndSay = context.getBean(CountAndSay.class);
+//        countAndSay.test();
+//        BinaryTreeVerticalOrderTraversal binaryTreeVerticalOrderTraversal = context.getBean(BinaryTreeVerticalOrderTraversal.class);
+//        binaryTreeVerticalOrderTraversal.test();
 //        NQueens nQueens = context.getBean(NQueens.class);
 //        nQueens.test();
 //        MedianOfTwoSortedArray medianOfTwoSortedArray = context.getBean(MedianOfTwoSortedArray.class);

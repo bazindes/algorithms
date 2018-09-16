@@ -53,7 +53,7 @@ public class CountAndSay {
 
     public void test(){
 //        System.out.println(count("1211"));
-        System.out.println(countAndSay2(100));
+        System.out.println(countAndSay2(10));
 //        System.out.println(coungAndSay(4000));
     }
 
