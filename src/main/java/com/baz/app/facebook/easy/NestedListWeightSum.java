@@ -71,6 +71,25 @@ public class NestedListWeightSum {
         return sum;
     }
 
+    //O(m) O(n)
+    public int depthSum2(List<NestedInteger> nestedList){
+        return helper(nestedList, 1);
+    }
+
+    private int helper(List<NestedInteger> list, int level){
+        if(list == null || list.size() == 0) return 0;
+        int sum = 0;
+        for (NestedInteger ni : list){
+            if(ni.isInteger()){
+                sum += ni.getInteger() * level;
+            }else {
+                sum += helper(ni.getList(), level + 1);
+            }
+        }
+        return sum;
+    }
+
+
     public void test(){
         NestedInteger n0 = new NestedInteger();
         NestedInteger n1 = new NestedInteger(1);
@@ -86,6 +105,7 @@ public class NestedListWeightSum {
         list.add(n1);
         list.add(n4);
         System.out.println(depthSum(list));
+        System.out.println(depthSum2(list));
     }
 
 }
