@@ -84,7 +84,7 @@ public class DecodeWays {
     }
 
     public void test(){
-        String s = "12";
+        String s = "2300111";
         System.out.println(numDecodings(s));
         System.out.println(numDecodingways(s));
         s= "226";

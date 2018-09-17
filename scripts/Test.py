@@ -1,8 +1,8 @@
 import os
 
 try:
-    m = set('saaasDDD')
-    print(*m)
+    d = {'x': 1, 'u':2}
+        # print x,y
     # with open('../src/main/java/com/baz/app/facebook/secondround/six_month.txt') as file:
     #     l = file.readlines()
     #     i = len(l)
@@ -23,4 +23,4 @@ try:
     #             tar.write(a + '\n')
 
 except EOFError as e:
-    print(e)
+    pass

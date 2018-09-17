@@ -14,8 +14,8 @@
 43 Multiply Strings 28.6% Medium: O(m * n) O(m + n), m,n are the two inputs, p1=i+j, p2=p1+1,
 38 Count and Say 37.8% Easy: O(2^n) O(n/1), split count and say
 273 Integer to English Words 23.1% Hard: O(1) O(1), every 3 digits helper once
-91 Decode Ways 20.9% Medium
-138 Copy List with Random Pointer 25.7%	Medium
+91 Decode Ways 20.9% Medium: O(n) O(1), DP, check from end
+138 Copy List with Random Pointer 25.7%	Medium: O(n) O(1), append new created node to original node
 283 Move Zeroes 52.3% Easy, O(n) O(1), two pointers
 236 Lowest Common Ancestor of a Binary Tree 31.6% Medium
 

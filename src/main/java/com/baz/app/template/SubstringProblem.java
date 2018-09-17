@@ -1,6 +1,6 @@
 package com.baz.app.template;
 
-public class GeneralTemplateToSubstringProblem {
+public class SubstringProblem {
 
     /**
      *

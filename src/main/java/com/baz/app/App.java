@@ -27,8 +27,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        PalindromePairs palindromePairs = context.getBean(PalindromePairs.class);
-        palindromePairs.test();
+        FindAllAnagramsInAString findAllAnagramsInAString = context.getBean(FindAllAnagramsInAString.class);
+        findAllAnagramsInAString.test();
+//        DecodeWays decodeWays = context.getBean(DecodeWays.class);
+//        decodeWays.test();
+//        PalindromePairs palindromePairs = context.getBean(PalindromePairs.class);
+//        palindromePairs.test();
 //        CountAndSay countAndSay = context.getBean(CountAndSay.class);
 //        countAndSay.test();
 //        BinaryTreeVerticalOrderTraversal binaryTreeVerticalOrderTraversal = context.getBean(BinaryTreeVerticalOrderTraversal.class);
