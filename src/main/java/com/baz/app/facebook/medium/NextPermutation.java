@@ -15,6 +15,7 @@ public class NextPermutation {
      * 1,1,5 → 1,5,1
      */
 
+    // O(n) O(1)
     public void nextPermutation(int[] nums) {
         //corner case
         if(nums == null || nums.length == 0) return;

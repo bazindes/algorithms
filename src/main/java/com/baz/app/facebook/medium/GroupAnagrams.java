@@ -66,7 +66,7 @@ public class GroupAnagrams {
         return list;
     }
 
-    //
+    // O(nk) O(n)
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> list = new ArrayList<>();
         if(strs == null || strs.length == 0) return list;

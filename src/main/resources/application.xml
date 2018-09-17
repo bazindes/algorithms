@@ -159,6 +159,7 @@
     <bean class="com.baz.app.facebook.medium.BinaryTreeVerticalOrderTraversal"></bean>
     <bean class="com.baz.app.facebook.hard.PalindromePairs"></bean>
     <bean class="com.baz.app.facebook.easy.FindAllAnagramsInAString"></bean>
+    <bean class="com.baz.app.facebook.easy.NestedListWeightSum"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

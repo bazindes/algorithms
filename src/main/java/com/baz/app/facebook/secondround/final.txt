@@ -20,9 +20,9 @@
 * 236 Lowest Common Ancestor of a Binary Tree 31.6% Medium: O(n) O(n), Recursion, as long as we find the p or q, return it otherwise return null, if two children are not null, return cur≤
 
 253 Meeting Rooms II 40.1% Medium: O(nlogn) O(n), sorting or use minHeap
-133 Clone Graph 25.2% Medium:
-49 Group Anagrams 41.1%	Medium:
-31 Next Permutation 29.3% Medium:
+133 Clone Graph 25.2% Medium: O(V+E) O(V+E), recursion or iterative, use map to store previous created node
+49 Group Anagrams 41.1%	Medium: O(nk) O(n) k is length of word, generate same id for anagrams
+31 Next Permutation 29.3% Medium: O(n) O(1), find the peak of descending order from right side, then swap the element on the left of peak and the element just bigger than it in right side, then reverse from peak
 339 Nested List Weight Sum 64.6% Easy:
 518 Coin Change 2 37.6%	Medium:
 29 Divide Two Integers 15.7% Medium:
