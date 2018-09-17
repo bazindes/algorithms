@@ -19,7 +19,7 @@
 283 Move Zeroes 52.3% Easy: O(n) O(1), two pointers
 * 236 Lowest Common Ancestor of a Binary Tree 31.6% Medium: O(n) O(n), Recursion, as long as we find the p or q, return it otherwise return null, if two children are not null, return cur≤
 
-253 Meeting Rooms II 40.1% Medium:
+253 Meeting Rooms II 40.1% Medium: O(nlogn) O(n), sorting or use minHeap
 133 Clone Graph 25.2% Medium:
 49 Group Anagrams 41.1%	Medium:
 31 Next Permutation 29.3% Medium:
