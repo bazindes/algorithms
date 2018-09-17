@@ -16,11 +16,11 @@
 273 Integer to English Words 23.1% Hard: O(1) O(1), every 3 digits helper once
 91 Decode Ways 20.9% Medium: O(n) O(1), DP, check from end
 138 Copy List with Random Pointer 25.7%	Medium: O(n) O(1), append new created node to original node
-283 Move Zeroes 52.3% Easy, O(n) O(1), two pointers
-236 Lowest Common Ancestor of a Binary Tree 31.6% Medium
+283 Move Zeroes 52.3% Easy: O(n) O(1), two pointers
+236 Lowest Common Ancestor of a Binary Tree 31.6% Medium: O(n) O(n), Recursion, as long as we find the p or q, return it otherwise return null, if two children are not null, return cur≤
 
-253 Meeting Rooms II 40.1%	Medium 
-133 Clone Graph 25.2%	Medium 
+253 Meeting Rooms II 40.1% Medium:
+133 Clone Graph 25.2% Medium
 49 Group Anagrams 41.1%	Medium 
 31 Next Permutation 29.3%	Medium 
 339 Nested List Weight Sum 64.6%	Easy 
