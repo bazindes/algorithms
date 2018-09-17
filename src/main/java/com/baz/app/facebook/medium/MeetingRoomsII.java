@@ -57,13 +57,65 @@ public class MeetingRoomsII {
         return max;
     }
 
+    //O(nlogn) O(n)
+    public int numOfRoomsUsingPQ(Interval[] intervals){
+        if(intervals == null || intervals.length == 0) return 0;
+
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>(intervals.length);
+        Arrays.sort(intervals, (x, y) -> x.start - y.start);
+
+        minHeap.add(intervals[0].end);
+
+        for (int i = 1; i < intervals.length; i++) {
+            if(intervals[i].start >= minHeap.peek()){
+                minHeap.poll();
+            }
+            minHeap.add(intervals[i].end);
+        }
+
+        return minHeap.size();
+
+    }
+
+    //O(nlogn) O(n)
+    public int numberOfRoomsSorting(Interval[] intervals){
+        if(intervals == null || intervals.length == 0) return 0;
+        int[] starts = new int[intervals.length];
+        int[] ends = new int[intervals.length];
+
+        for (int i = 0; i < intervals.length; i++) {
+            starts[i] = intervals[i].start;
+            ends[i] = intervals[i].end;
+        }
+
+        Arrays.sort(starts);
+        Arrays.sort(ends);
+
+        int begin = 0;
+        int end = 0;
+        int usedRooms = 0;
+        int maxRooms = 0;
+
+        while (begin < intervals.length){
+            if(starts[begin] >= ends[end]){
+                usedRooms -= 1;
+                end ++;
+            }
+            usedRooms ++;
+            begin ++;
+            maxRooms = Math.max(maxRooms, usedRooms);
+        }
+
+        return maxRooms;
+    }
+
     public void test(){
         Interval i1 = new Interval(9 ,10);
         Interval i2 = new Interval(4 ,9);
         Interval i3 = new Interval(4 ,17);
         Interval[] intervals = {i1, i2, i3};
 
-        System.out.println(numOfRooms(intervals));
+        System.out.println(numberOfRoomsSorting(intervals));
     }
 
 }

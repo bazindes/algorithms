@@ -27,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        FindAllAnagramsInAString findAllAnagramsInAString = context.getBean(FindAllAnagramsInAString.class);
-        findAllAnagramsInAString.test();
+        MeetingRoomsII meetingRoomsII = context.getBean(MeetingRoomsII.class);
+        meetingRoomsII.test();
+//        FindAllAnagramsInAString findAllAnagramsInAString = context.getBean(FindAllAnagramsInAString.class);
+//        findAllAnagramsInAString.test();
 //        DecodeWays decodeWays = context.getBean(DecodeWays.class);
 //        decodeWays.test();
 //        PalindromePairs palindromePairs = context.getBean(PalindromePairs.class);

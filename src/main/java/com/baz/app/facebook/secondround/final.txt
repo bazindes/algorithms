@@ -13,35 +13,35 @@
 151 Reverse Words in a String 15.7%	Medium: O(n) O(n), reverse str char by char, and then reverse word
 43 Multiply Strings 28.6% Medium: O(m * n) O(m + n), m,n are the two inputs, p1=i+j, p2=p1+1,
 38 Count and Say 37.8% Easy: O(2^n) O(n/1), split count and say
-273 Integer to English Words 23.1% Hard: O(1) O(1), every 3 digits helper once
-91 Decode Ways 20.9% Medium: O(n) O(1), DP, check from end
+** 273 Integer to English Words 23.1% Hard: O(1) O(1), every 3 digits helper once
+* 91 Decode Ways 20.9% Medium: O(n) O(1), DP, check from end
 138 Copy List with Random Pointer 25.7%	Medium: O(n) O(1), append new created node to original node
 283 Move Zeroes 52.3% Easy: O(n) O(1), two pointers
-236 Lowest Common Ancestor of a Binary Tree 31.6% Medium: O(n) O(n), Recursion, as long as we find the p or q, return it otherwise return null, if two children are not null, return cur≤
+* 236 Lowest Common Ancestor of a Binary Tree 31.6% Medium: O(n) O(n), Recursion, as long as we find the p or q, return it otherwise return null, if two children are not null, return cur≤
 
 253 Meeting Rooms II 40.1% Medium:
-133 Clone Graph 25.2% Medium
-49 Group Anagrams 41.1%	Medium 
-31 Next Permutation 29.3%	Medium 
-339 Nested List Weight Sum 64.6%	Easy 
-518 Coin Change 2 37.6%	Medium 
-29 Divide Two Integers 15.7%	Medium 
-114 Flatten Binary Tree to Linked List 38.4%	Medium 
-301 Remove Invalid Parentheses 36.5%	Hard 
-1 Two Sum 38.8%	Easy 
-98 Validate Binary Search Tree 24.4%	Medium 
-395 Longest Substring with At Least K Repeating Characters 36.2%	Medium 
-88 Merge Sorted Array 33.2%	Easy 
-242 Valid Anagram 48.8%	Easy 
-642 Design Search Autocomplete System 31.4%	Hard 
-18 4Sum 28.3%	Medium 
-139 Word Break 32.5%	Medium 
-560 Subarray Sum Equals K 40.0%	Medium 
-212 Word Search II 25.8%	Hard 
-297 Serialize and Deserialize Binary Tree 36.5%	Hard 
-102 Binary Tree Level Order Traversal 44.5%	Medium 
-325 Maximum Size Subarray Sum Equals k 43.4%	Medium 
-378 Kth Smallest Element in a Sorted Matrix 46.2%	Medium
+133 Clone Graph 25.2% Medium:
+49 Group Anagrams 41.1%	Medium:
+31 Next Permutation 29.3% Medium:
+339 Nested List Weight Sum 64.6% Easy:
+518 Coin Change 2 37.6%	Medium:
+29 Divide Two Integers 15.7% Medium:
+114 Flatten Binary Tree to Linked List 38.4% Medium:
+301 Remove Invalid Parentheses 36.5% Hard:
+1 Two Sum 38.8%	Easy: O(n) O(n), use map store (val, index)
+98 Validate Binary Search Tree 24.4% Medium:
+395 Longest Substring with At Least K Repeating Characters 36.2% Medium:
+88 Merge Sorted Array 33.2%	Easy:
+242 Valid Anagram 48.8%	Easy:
+642 Design Search Autocomplete System 31.4%	Hard:
+18 4Sum 28.3% Medium:
+139 Word Break 32.5% Medium:
+560 Subarray Sum Equals K 40.0%	Medium:
+212 Word Search II 25.8% Hard:
+297 Serialize and Deserialize Binary Tree 36.5%	Hard:
+102 Binary Tree Level Order Traversal 44.5%	Medium:
+325 Maximum Size Subarray Sum Equals k 43.4% Medium:
+378 Kth Smallest Element in a Sorted Matrix 46.2% Medium:
 
 348 Design Tic-Tac-Toe 46.9%	Medium 
 4 Median of Two Sorted Arrays 23.8%	Hard 
