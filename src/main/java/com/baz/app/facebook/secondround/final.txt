@@ -24,9 +24,9 @@
 49 Group Anagrams 41.1%	Medium: O(nk) O(n) k is length of word, generate same id for anagrams
 31 Next Permutation 29.3% Medium: O(n) O(1), find the peak of descending order from right side, then swap the element on the left of peak and the element just bigger than it in right side, then reverse from peak
 339 Nested List Weight Sum 64.6% Easy: O(n) O(n), use recursion
-518 Coin Change 2 37.6%	Medium:
-29 Divide Two Integers 15.7% Medium:
-114 Flatten Binary Tree to Linked List 38.4% Medium:
+518 Coin Change 2 37.6%	Medium: O(nm) O(nm/m), DP, dp[i][j] = dp[i-1][j] + (j>coins[i-1]?dp[i][j-coins[i-1]]:0)
+29 Divide Two Integers 15.7% Medium: O(logn) O(logn), recursive , take care of edge case and overflow
+114 Flatten Binary Tree to Linked List 38.4% Medium: O(n) O(n), recursion set right child to prev, set left child to null, set cur to prev
 301 Remove Invalid Parentheses 36.5% Hard:
 1 Two Sum 38.8%	Easy: O(n) O(n), use map store (val, index)
 98 Validate Binary Search Tree 24.4% Medium:
@@ -187,8 +187,9 @@
 493 Reverse Pairs 21.0%	Hard 
 622 Design Circular Queue 36.0%	Medium 
 160 Intersection of Two Linked Lists 30.8%	Easy 
-371 Sum of Two Integers 50.8%	Easy 109 
-Convert Sorted List to Binary Search Tree 37.2%	Medium 708 
-Insert into a Cyclic Sorted List  21.2%	Medium 862 
-Shortest Subarray with Sum at Least K 18.3%	Hard 886 
-Possible Bipartition 38.0%	Medium 432 
+371 Sum of Two Integers 50.8%	Easy
+109 Convert Sorted List to Binary Search Tree 37.2%	Medium
+708 Insert into a Cyclic Sorted List  21.2%	Medium
+862 Shortest Subarray with Sum at Least K 18.3%	Hard
+886 Possible Bipartition 38.0%	Medium
+432

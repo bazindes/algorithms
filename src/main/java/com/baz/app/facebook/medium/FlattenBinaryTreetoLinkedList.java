@@ -29,6 +29,7 @@ public class FlattenBinaryTreetoLinkedList {
      *           6
      */
 
+    //O(n) O(n)
     public void flatten(TreeNode root) {
         if(root == null) return;
 
@@ -45,6 +46,17 @@ public class FlattenBinaryTreetoLinkedList {
             temp = temp.right;
         }
         temp.right = right;
+    }
+
+    //O(n) O(n)
+    private TreeNode prev = null;
+    public void flatten2(TreeNode root){
+        if(root == null) return;
+        flatten2(root.left);
+        flatten2(root.right);
+        root.right = prev;
+        root.left = null;
+        prev = root;
     }
 
     public void test(){

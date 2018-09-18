@@ -20,17 +20,20 @@ public class DevideTwoIntegers {
      */
 
     public int divide(int dividend, int divisor) {
+        //Reduce the problem to positive long integer to make it easier.
+        //Use long to avoid integer overflow cases.
         int sign = 1;
         if( (dividend < 0 && divisor > 0) || (dividend > 0 && divisor < 0) )
             sign = -1;
         long dd = Math.abs(dividend);
         long ds = Math.abs(divisor);
-
+        //Take care the edge cases.
         if(ds == 0) return Integer.MAX_VALUE;
         if(dd == 0 || dd < ds) return 0;
 
         long lans = helper(dd, ds);
         int ans = 0;
+        //Handle overflow.
         if(lans > Integer.MAX_VALUE){
             ans = sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
         }else {
@@ -42,16 +45,19 @@ public class DevideTwoIntegers {
 
 
     private long helper(long dd, long ds){
+        // Recursion exit condition
         if(dd < ds) return 0;
 
+        //  Find the largest multiple so that (divisor * multiple <= dividend),
+        //  whereas we are moving with stride 1, 2, 4, 8, 16...2^n for performance reason.
+        //  Think this as a binary search.
         long sum = ds;
         long mul = 1;
-
         while (sum + sum <= dd){
             sum += sum;
             mul += mul;
         }
-
+        //Look for additional value for the multiple from the reminder (dividend - sum) recursively
         return mul + helper(dd - sum, ds);
     }
 

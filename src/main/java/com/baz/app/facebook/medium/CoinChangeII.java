@@ -1,5 +1,8 @@
 package com.baz.app.facebook.medium;
 
+import java.util.Arrays;
+import java.util.Set;
+
 public class CoinChangeII {
 
     /**
@@ -29,9 +32,8 @@ public class CoinChangeII {
      * Input: amount = 10, coins = [10]
      * Output: 1
      */
-
+    //O(n^m)
     int n = 0;
-
     public int change(int amount, int[] coins) {
         if(coins == null || coins.length == 0) return 0;
         helper(amount, coins);
@@ -52,9 +54,39 @@ public class CoinChangeII {
         }
     }
 
+    //O(nm) O(nm)
+    public int changeBottomUp(int amount, int[] coins){
+        if(coins == null || coins.length == 0) return 0;
+        int[][] dp = new int[coins.length + 1][amount + 1];
+        dp[0][0] = 1;
+
+        for (int i = 1; i <= coins.length; i++) {
+            dp[i][0] = 1;
+            for (int j = 1; j <= amount; j++) {
+                dp[i][j] = dp[i - 1][j] + (j >= coins[i - 1] ? dp[i][j - coins[i - 1]] : 0);
+            }
+        }
+
+        return dp[coins.length][amount];
+    }
+
+    public int changeImprove(int amount, int[]coins){
+        if(coins == null || coins.length == 0) return 0;
+        int[]dp = new int[amount + 1];
+        dp[0] = 1;
+        for (int coin : coins){
+            for (int i = coin; i <= amount; i++) {
+                dp[i] += dp[i - coin];
+            }
+        }
+
+        return dp[amount];
+    }
+
     public void test(){
         int[]coins = {1, 2, 5};
-        System.out.println(change(5, coins));
+        System.out.println(changeBottomUp(5, coins));
+        System.out.println(changeImprove(5, coins));
     }
 
 }
