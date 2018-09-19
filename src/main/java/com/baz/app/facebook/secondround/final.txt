@@ -29,10 +29,10 @@
 114 Flatten Binary Tree to Linked List 38.4% Medium: O(n) O(n), recursion set right child to prev, set left child to null, set cur to prev
 301 Remove Invalid Parentheses 36.5% Hard:
 1 Two Sum 38.8%	Easy: O(n) O(n), use map store (val, index)
-98 Validate Binary Search Tree 24.4% Medium:
-395 Longest Substring with At Least K Repeating Characters 36.2% Medium:
-88 Merge Sorted Array 33.2%	Easy:
-242 Valid Anagram 48.8%	Easy:
+98 Validate Binary Search Tree 24.4% Medium: O(n) O(n), iterative or recursion
+395 Longest Substring with At Least K Repeating Characters 36.2% Medium: D&C O(nlogn)
+88 Merge Sorted Array 33.2%	Easy: O(n) O(1), two pointers merge from end
+242 Valid Anagram 48.8%	Easy: O(n) O(1), use hashmap or int[]
 642 Design Search Autocomplete System 31.4%	Hard:
 18 4Sum 28.3% Medium:
 139 Word Break 32.5% Medium:

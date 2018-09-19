@@ -27,8 +27,9 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        CoinChangeII coinChangeII = context.getBean(CoinChangeII.class);
-        coinChangeII.test();
+
+//        CoinChangeII coinChangeII = context.getBean(CoinChangeII.class);
+//        coinChangeII.test();
 //        NestedListWeightSum nestedListWeightSum = context.getBean(NestedListWeightSum.class);
 //        nestedListWeightSum.test();
 //        MeetingRoomsII meetingRoomsII = context.getBean(MeetingRoomsII.class);
