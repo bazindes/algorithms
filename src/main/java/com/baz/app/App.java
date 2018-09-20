@@ -27,7 +27,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-
+        KthLargestElementInArray kthLargestElementInArray = context.getBean(KthLargestElementInArray.class);
+        kthLargestElementInArray.test();
+//        FourSum fourSum = context.getBean(FourSum.class);
+//        fourSum.test();
+//        NestedLinkedList nestedLinkedList = context.getBean(NestedLinkedList.class);
+//        nestedLinkedList.test();
 //        CoinChangeII coinChangeII = context.getBean(CoinChangeII.class);
 //        coinChangeII.test();
 //        NestedListWeightSum nestedListWeightSum = context.getBean(NestedListWeightSum.class);
