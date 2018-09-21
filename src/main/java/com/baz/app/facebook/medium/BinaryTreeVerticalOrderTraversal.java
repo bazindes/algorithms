@@ -66,6 +66,7 @@ public class BinaryTreeVerticalOrderTraversal {
      * ]
      */
 
+    //BFS O(n) O(n)
     public List<List<Integer>> verticalOrder(TreeNode root){
         List<List<Integer>> ans = new ArrayList<>();
         if(root == null) return ans;

@@ -27,8 +27,18 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        KthLargestElementInArray kthLargestElementInArray = context.getBean(KthLargestElementInArray.class);
-        kthLargestElementInArray.test();
+        LongestCommonPrefix longestCommonPrefix = context.getBean(LongestCommonPrefix.class);
+        longestCommonPrefix.test();
+//        AddBinary addBinary = context.getBean(AddBinary.class);
+//        addBinary.test();
+//        LongestConsecutiveSequence longestConsecutiveSequence = context.getBean(LongestConsecutiveSequence.class);
+//        longestConsecutiveSequence.test();
+//        LongestContinuousIncreasingSubsequence longestContinuousIncreasingSubsequence = context.getBean(LongestContinuousIncreasingSubsequence.class);
+//        longestContinuousIncreasingSubsequence.test();
+//        WordSearchII wordSearchII = context.getBean(WordSearchII.class);
+//        wordSearchII.test();
+//        KthLargestElementInArray kthLargestElementInArray = context.getBean(KthLargestElementInArray.class);
+//        kthLargestElementInArray.test();
 //        FourSum fourSum = context.getBean(FourSum.class);
 //        fourSum.test();
 //        NestedLinkedList nestedLinkedList = context.getBean(NestedLinkedList.class);

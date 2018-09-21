@@ -163,6 +163,9 @@
     <bean class="com.baz.app.facebook.medium.CoinChangeII"></bean>
     <bean class="com.baz.app.facebook.easy.NestedLinkedList"></bean>
     <bean class="com.baz.app.facebook.medium.FourSum"></bean>
+    <bean class="com.baz.app.facebook.medium.WordSearchII"></bean>
+    <bean class="com.baz.app.facebook.hard.LongestConsecutiveSequence"></bean>
+    <bean class="com.baz.app.facebook.easy.LongestCommonPrefix"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

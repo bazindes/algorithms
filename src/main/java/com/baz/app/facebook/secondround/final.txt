@@ -38,8 +38,8 @@
 139 Word Break 32.5% Medium: O(n^2) O(n), separate into two words as long as both of them are in dict, break
 560 Subarray Sum Equals K 40.0%	Medium:
 212 Word Search II 25.8% Hard:
-297 Serialize and Deserialize Binary Tree 36.5%	Hard:
-102 Binary Tree Level Order Traversal 44.5%	Medium:
+297 Serialize and Deserialize Binary Tree 36.5%	Hard: O(n) O(n), recursion
+102 Binary Tree Level Order Traversal 44.5%	Medium: O(n) O(n), BFS
 325 Maximum Size Subarray Sum Equals k 43.4% Medium:
 378 Kth Smallest Element in a Sorted Matrix 46.2% Medium:
 

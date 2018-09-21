@@ -37,22 +37,7 @@ public class ProductOfArrayExceptSelf {
         return ans;
     }
 
-    /**
-     *DP solution
-     * */
-    public int[] dpSolution(int[] nums){
-        int pro = 1;
-        for (int i = 0; i < nums.length; i++) {
-            pro *= nums[i];
-        }
-        int[] ans = new int[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            ans[i] = pro/nums[i];
-        }
-        return ans;
-    }
-
-    //Iterative solution
+    //Iterative solution O(n) O(1)
     public int[] productExceptSelfIter(int[] nums) {
         int pro = 1;
         int n = 0;
@@ -82,11 +67,32 @@ public class ProductOfArrayExceptSelf {
         return ans;
     }
 
+    //O(n) O(1)
+    public int[] productExceptSelf2(int[] nums) {
+
+        int len = nums.length;
+        int [] output = new int[len];
+
+        int leftMult = 1, rightMult = 1;
+
+        for(int i = len-1; i >= 0; i--){
+            output[i] = rightMult;
+            rightMult *= nums[i];
+        }
+        for(int j = 0; j < len; j++){
+            output[j] *= leftMult;
+            leftMult *= nums[j];
+
+        }
+
+        return output;
+
+    }
+
     public void test(){
         int[] nums = {1,2,3,4};
         Utils.printArray(productExceptSelf(nums));
         Utils.printArray(productExceptSelfIter(nums));
-        Utils.printArray(dpSolution(nums));
     }
 
 }
