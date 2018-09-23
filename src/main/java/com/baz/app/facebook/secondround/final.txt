@@ -27,7 +27,7 @@
 518 Coin Change 2 37.6%	Medium: O(nm) O(nm/m), DP, dp[i][j] = dp[i-1][j] + (j>coins[i-1]?dp[i][j-coins[i-1]]:0)
 29 Divide Two Integers 15.7% Medium: O(logn) O(logn), recursive , take care of edge case and overflow
 114 Flatten Binary Tree to Linked List 38.4% Medium: O(n) O(n), recursion set right child to prev, set left child to null, set cur to prev
-301 Remove Invalid Parentheses 36.5% Hard:
+*** 301 Remove Invalid Parentheses 36.5% Hard:
 1 Two Sum 38.8%	Easy: O(n) O(n), use map store (val, index)
 98 Validate Binary Search Tree 24.4% Medium: O(n) O(n), iterative or recursion
 395 Longest Substring with At Least K Repeating Characters 36.2% Medium: D&C O(nlogn)
@@ -40,7 +40,7 @@
 212 Word Search II 25.8% Hard: O(nm) O(nm), Trie + DFS
 297 Serialize and Deserialize Binary Tree 36.5%	Hard: O(n) O(n), recursion
 102 Binary Tree Level Order Traversal 44.5%	Medium: O(n) O(n), BFS
-325 Maximum Size Subarray Sum Equals k 43.4% Medium:
+325 Maximum Size Subarray Sum Equals k 43.4% Medium: O(n) O(n), use hashmap store subarray sum and index
 378 Kth Smallest Element in a Sorted Matrix 46.2% Medium: O(nlogk) O(k), minHeap
 
 348 Design Tic-Tac-Toe 46.9% Medium
