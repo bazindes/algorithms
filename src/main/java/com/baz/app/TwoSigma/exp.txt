@@ -1,0 +1,210 @@
+Phone
+What's your most challenging project?
+Hash Table
+
+What is a hash table? When to use? Why use it?
+
+
+Given a (key, value) pair, hash table is data structure which converts the key to an index and then store the value somewhere using that index.
+Generally, we can think of it a as a mapping from key to value.
+
+
+Hash function generates index of buckets or slots using key.
+
+Ideally, it maps key to a unique bucket.  The best situation is it provides a uniform distribution of hash values.
+
+
+Operations cost:
+- Constant, amortized O(1)
+- worst case O(n) for search & deletion (add flag to fix it)
+
+Size:
+- power of 2
+- prime number, good for even poorly designed hash function
+
+Resizing (resize + insert again O(n) in average (n/2)
+- Load factor = (# of entries) / (# of buckets)
+- keep size within a good range (not too many collision, not too large wasted memory)
+
+
+Open Addressing (close hashing) is method of collision resolution in hash tables. It’s resolved by probing. Probing includes linear probing, quadratic probing and double hashing.
+
+Linear probing:
+Search: Find next available slot.
+Insert:
+Delete (Trouble):
+- Iterate through the following slots until find an empty slot or move one back to this slot (recursively).
+- Or use flag
+
+Problems happen when there’s primary clustering. It means two records are mapped to the same index which causes one of them to move. And afterwards collisions increases during inserting more key value pair into hash table. A tendency that a collision will cause more nearby collisions.
+
+With poorly designed hash function, i.e., hash function that would not make inputs uniformly distributed, linear probing could be slower than quadratic probing and double hashing.
+
+Someone implement hash table and it is slow, why?
+- poor hash function.
+- bad open addressing strategy
+
+
+
+Use hash table to store data, but there is much more data than the machine's RAM, how to deal with that? 
+add one more machine, rehash and reconstruct the hash table
+
+
+Process vs Threads
+
+In computing, a process is an instance of a computer program that is being executed. It contains the program code and its current activity. Depending on the operating system (OS), a process may be made up of multiple threads of execution that execute instructions concurrently.
+In computer science, a thread of execution is the smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system.
+
+
+Each process provides the resources needed to execute a program. A process has a virtual address space, executable code, open handles to system objects, a security context, a unique process identifier, environment variables, a priority class, minimum and maximum working set sizes, and at least one thread of execution. Each process is started with a single thread, often called the primary thread, but can create additional threads from any of its threads.
+A thread is the entity within a process that can be scheduled for execution. All threads of a process share its virtual address space and system resources. In addition, each thread maintains exception handlers, a scheduling priority, thread local storage, a unique thread identifier, and a set of structures the system will use to save the thread context until it is scheduled.
+
+
+Typical difference is, processes run in separated memory while threads run in shared memory.
+processes are typically independent, while threads exist as subsets of a process
+processes carry considerably more state information than threads, whereas multiple threads within a process share process state as well as memory and other resources
+processes have separate address spaces, whereas threads share their address space
+processes interact only through system-provided inter-process communication mechanisms
+context switching between threads in the same process is typically faster than context switching between processes.
+
+
+How to communicate? IPC vs ITC (Inter-Process Communication vs Inter-Thread Communications)
+IPC:
+- File
+A record stored on disk, or a record synthesized on demand by a file server, which can be accessed by multiple processes.
+
+- Socket.
+A data stream sent over a network interface, either to a different process on the same computer or to another computer on the network. Typically byte-oriented, sockets rarely preserve message boundaries. Data written through a socket requires formatting to preserve message boundaries.
+
+- Message Queue.
+A data stream similar to a socket, but which usually preserves message boundaries. Typically implemented by the operating system, they allow multiple processes to read and write to the message queue without being directly connected to each other.
+
+Publish/Subscribe, Observer
+
+- Pipe
+A unidirectional data channel. Data written to the write end of the pipe is buffered by the operating system until it is read from the read end of the pipe. Two-way data streams between processes can be achieved by creating two pipes utilizing standard input and output.
+
+Like when we are using arrow symbol in command line.
+
+- Shared memory
+Multiple processes are given access to the same block of memory which creates a shared buffer for the processes to communicate with each other.
+
+- Semaphore
+A simple structure that synchronizes multiple processes acting on shared resources.
+
+
+ITC:
+- Synchronization primitives, like locks and semaphores.
+- Through Events: wait, notify.
+
+- Shared memory, cause typically they all live in the same process
+Each thread has a private stack, which it can quickly add and remove items from. This makes stack based memory fast, but if you use too much stack memory, as occurs in infinite recursion, you will get a stack overflow.
+
+All threads share a common heap. Since all threads share the same heap, access to the allocator/deallocator must be synchronized. There are various methods and libraries for avoiding allocator contention.
+
+Some languages allow you to create private pools of memory, or individual heaps, which you can assign to a single thread.
+
+every thread would be allocated its own memory space in stack while typically there is only one heap within one process. This means heap space is shared among all threads. Since it is global, it is faster in speed. But also, this causes synchronization issues, which could possibly slow the whole system down.
+
+Some languages or OS my support allocating heaps for each thread.
+
+Latency vs Throughput
+
+Latency is the amount of time to finish an operation. Latency is the delay from input into a system to desired outcome.
+Unit would be second granule.
+
+Throughput is the amount of work we finished in a unit time.
+
+Throughput is a measure of how many units of information a system can process in a given amount of time.
+
+Bandwidth commonly measured in bits/second is the maximum rate that information can be transferred
+
+Throughput is the actual rate that information is transferred.
+Latency the delay between the sender and the receiver decoding it, this is mainly a function of the signals travel time, and processing time at any nodes the information traverses
+
+Throughput impacted by latency?
+
+throughput = bandwith / rtt
+rtt = latency * 2
+
+latency up, throughput down
+latency down, throughput up
+
+Quicksort vs Merge sort
+
+Quick sort
+- in place.
+- average O(nlgn), worst O(n^2)
+
+Merge sort
+- average and worst O(nlgn)
+- extra space O(n)
+
+External sorting is a term for a class of sorting algorithms that can handle massive amounts of data. External sorting is required when the data being sorted do not fit into the main memory of a computing device (usually RAM) and instead they must reside in the slower external memory (usually a hard drive). External sorting typically uses a hybrid sort-merge strategy. In the sorting phase, chunks of data small enough to fit in main memory are read, sorted, and written out to a temporary file. In the merge phase, the sorted subfiles are combined into a single larger file.
+
+The core idea, is that in the sorting phrase, the chunk of data that we need to sort could be loaded to RAM and thus apply sorting to them. Then we can write them back to the temporary file.
+
+Both merge sort and quick sort could be used for external sorting.
+
+Median of streaming data
+
+Given a stream of numbers, how to calculate average, standard deviation, median?
+Median: Max heap + min heap
+Average: Keep track of sum & size
+Standard deviation: Not other way, O(n) best?
+
+Followup:
+- what about largest (smallest) K% elements？
+
+e.g., (n/10)th element
+
+
+
+Design Pattern
+
+A design pattern is a general reusable solution to a commonly occurring problem.
+
+
+Each template is useful for solve a particular set of problems with some feature.
+
+MVC Design Pattern
+
+MVC is a design pattern for implementing user interface. It consists of three parts, Model, View and Controller, where each one of them is called components and has their own functionality.
+Model manages all the data and logic of a software. It is the core component.
+View is an interface responsible for taking all information from model and representing them to user.
+Controller takes all commands from users sends them to model.
+
+In this way, a software is loosely coupled and well organized into modules. We can very easily add new functions and features to it. And it is also very easy to maintain.
+
+What other design patterns have you used?
+
+(Creational)
+Singleton -> Object Pool
+Singleton is a design pattern where you allow only one instance of a class. In some cases, like its private variables don’t change, singleton is useful.
+
+Later, to extend this we could use object pool where we allow multiple instances of a class. This could be useful when we need a couple of object at the same time while it’s expensive to create them. A good example would be service connections. We can use two hash tables to implement this. One for available objects and one for unavailable objects.
+
+Factory -> Abstract Factory
+Factory is a design pattern that allows us to dynamically specify an object’s class without calling constructor.
+
+Prototype, Builder
+(Structural)
+
+Adapter, Facade
+Adapter is a wrapper of old interface. We add it because the current function needs a new interface which is incompatible with the old one.
+
+Facade is just a wrapper that aggregates some functionalities required by clients. By doing this, the whole system is easier to understand, to use and to test.
+
+Composite. From 1point 3acres bbs
+Composite is a design pattern that allows tree structure. It contains either variables we need, or a list objects of itself.
+
+Proxy
+
+(Behavioral)
+
+Iterator
+It’s just a pattern for iterating a data structure. By doing this, we can encapsulate the implementation of our own data structure and just provide the iterator interface.
+
+State, Strategy.
+
+They both keep data as their member variables which can be changed in runtime.

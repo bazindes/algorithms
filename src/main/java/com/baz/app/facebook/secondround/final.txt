@@ -36,12 +36,12 @@
 642 Design Search Autocomplete System 31.4%	Hard:
 18 4Sum 28.3% Medium: O(n^3) O(1), separate problem to 3sum, and then 2sum
 139 Word Break 32.5% Medium: O(n^2) O(n), separate into two words as long as both of them are in dict, break
-560 Subarray Sum Equals K 40.0%	Medium:
-212 Word Search II 25.8% Hard:
+560 Subarray Sum Equals K 40.0%	Medium: O(n) O(n), Hashmap,
+212 Word Search II 25.8% Hard: O(nm) O(nm), Trie + DFS
 297 Serialize and Deserialize Binary Tree 36.5%	Hard: O(n) O(n), recursion
 102 Binary Tree Level Order Traversal 44.5%	Medium: O(n) O(n), BFS
 325 Maximum Size Subarray Sum Equals k 43.4% Medium:
-378 Kth Smallest Element in a Sorted Matrix 46.2% Medium:
+378 Kth Smallest Element in a Sorted Matrix 46.2% Medium: O(nlogk) O(k), minHeap
 
 348 Design Tic-Tac-Toe 46.9% Medium
 4 Median of Two Sorted Arrays 23.8%	Hard 
@@ -72,20 +72,20 @@
 200 Number of Islands 37.9%	Medium 
 3 Longest Substring Without Repeating Characters 25.0%	Medium 
 146 LRU Cache 21.2%	Hard 
-158 Read N Characters Given Read4 II - Call multiple times 24.3%	Hard 
-125 Valid Palindrome 28.4%	Easy 
+158 Read N Characters Given Read4 II - Call multiple times 24.3% Hard
+125 Valid Palindrome 28.4% Easy
 157 Read N Characters Given Read4 28.3%	Easy 
-127 Word Ladder 21.0%	Medium 
-211 Add and Search Word - Data structure design 26.8%	Medium 
-34 Find First and Last Position of Element in Sorted Array 32.0%	Medium 
-111 Minimum Depth of Binary Tree 34.1%	Easy 
-23 Merge k Sorted Lists 30.1%	Hard 
-336 Palindrome Pairs 28.0%	Hard 
-281 Zigzag Iterator 53.8%	Medium 
-124 Binary Tree Maximum Path Sum 27.9%	Hard 
-543 Diameter of Binary Tree 45.1%	Easy 
-22 Generate Parentheses 50.1%	Medium 
-346 Moving Average from Data Stream 62.1%	Easy
+127 Word Ladder 21.0% Medium
+211 Add and Search Word - Data structure design 26.8% Medium
+34 Find First and Last Position of Element in Sorted Array 32.0% Medium
+111 Minimum Depth of Binary Tree 34.1% Easy
+23 Merge k Sorted Lists 30.1% Hard
+336 Palindrome Pairs 28.0% Hard
+281 Zigzag Iterator 53.8% Medium
+124 Binary Tree Maximum Path Sum 27.9% Hard
+543 Diameter of Binary Tree 45.1% Easy
+22 Generate Parentheses 50.1% Medium
+346 Moving Average from Data Stream 62.1% Easy
 
 468 Validate IP Address 20.5%	Medium 
 105 Construct Binary Tree from Preorder and Inorder Traversal 36.4%	Medium 

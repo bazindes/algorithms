@@ -27,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        LongestCommonPrefix longestCommonPrefix = context.getBean(LongestCommonPrefix.class);
-        longestCommonPrefix.test();
+        FindFirstAndLastPositionOfElementInSortedArray findFirstAndLastPositionOfElementInSortedArray = context.getBean(FindFirstAndLastPositionOfElementInSortedArray.class);
+        findFirstAndLastPositionOfElementInSortedArray.test();
+//        LongestCommonPrefix longestCommonPrefix = context.getBean(LongestCommonPrefix.class);
+//        longestCommonPrefix.test();
 //        AddBinary addBinary = context.getBean(AddBinary.class);
 //        addBinary.test();
 //        LongestConsecutiveSequence longestConsecutiveSequence = context.getBean(LongestConsecutiveSequence.class);
