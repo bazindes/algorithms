@@ -44,13 +44,13 @@
 378 Kth Smallest Element in a Sorted Matrix 46.2% Medium: O(nlogk) O(k), minHeap
 
 348 Design Tic-Tac-Toe 46.9% Medium
-4 Median of Two Sorted Arrays 23.8%	Hard 
-278 First Bad Version 27.0%	Easy 
-76 Minimum Window Substring 28.0% Hard
+4 Median of Two Sorted Arrays 23.8%	Hard: O(log(n+m) O(1), binary search
+278 First Bad Version 27.0%	Easy: O(logn) O(n/1), binary search
+76 Minimum Window Substring 28.0% Hard: O(n) O(1), two pointer
 65 Valid Number 13.1% Hard
 32 Longest Valid Parentheses 23.8% Hard
 8 String to Integer (atoi) 14.1% Medium
-215 Kth Largest Element in an Array 42.6% Medium
+215 Kth Largest Element in an Array 42.6% Medium: O(nlogk) O(k), maxHeap
 772 Basic Calculator III 40.7% Hard
 17 Letter Combinations of a Phone Number 38.0% Medium
 567 Permutation in String 36.6%	Medium 
