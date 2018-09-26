@@ -168,6 +168,9 @@
     <bean class="com.baz.app.facebook.easy.LongestCommonPrefix"></bean>
     <bean class="com.baz.app.facebook.medium.FindFirstAndLastPositionOfElementInSortedArray"></bean>
     <bean class="com.baz.app.facebook.medium.ZigZagConversion"></bean>
+    <bean class="com.baz.app.facebook.medium.PermutationInString"></bean>
+    <bean class="com.baz.app.facebook.medium.SetMatrixZeroes"></bean>
+    <bean class="com.baz.app.facebook.easy.MergeBinaryTrees"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

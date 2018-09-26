@@ -27,8 +27,14 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ZigZagConversion zigZagConversion = context.getBean(ZigZagConversion.class);
-        zigZagConversion.test();
+        MergeBinaryTrees mergeBinaryTrees = context.getBean(MergeBinaryTrees.class);
+        mergeBinaryTrees.test();
+//        SetMatrixZeroes setMatrixZeroes = context.getBean(SetMatrixZeroes.class);
+//        setMatrixZeroes.test();
+//        PermutationInString permutationInString = context.getBean(PermutationInString.class);
+//        permutationInString.test();
+//        ZigZagConversion zigZagConversion = context.getBean(ZigZagConversion.class);
+//        zigZagConversion.test();
 //        FindFirstAndLastPositionOfElementInSortedArray findFirstAndLastPositionOfElementInSortedArray = context.getBean(FindFirstAndLastPositionOfElementInSortedArray.class);
 //        findFirstAndLastPositionOfElementInSortedArray.test();
 //        LongestCommonPrefix longestCommonPrefix = context.getBean(LongestCommonPrefix.class);

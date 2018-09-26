@@ -47,21 +47,21 @@
 4 Median of Two Sorted Arrays 23.8%	Hard: O(log(n+m) O(1), binary search
 278 First Bad Version 27.0%	Easy: O(logn) O(n/1), binary search
 76 Minimum Window Substring 28.0% Hard: O(n) O(1), two pointer
-65 Valid Number 13.1% Hard
-32 Longest Valid Parentheses 23.8% Hard
-8 String to Integer (atoi) 14.1% Medium
+65 Valid Number 13.1% Hard: O(1) O(1), mind
+32 Longest Valid Parentheses 23.8% Hard: DP O(n) O(n),
+8 String to Integer (atoi) 14.1% Medium: O(n) O(1),
 215 Kth Largest Element in an Array 42.6% Medium: O(nlogk) O(k), maxHeap
 772 Basic Calculator III 40.7% Hard
-17 Letter Combinations of a Phone Number 38.0% Medium
-567 Permutation in String 36.6%	Medium 
-636 Exclusive Time of Functions 45.3% Medium
-349 Intersection of Two Arrays 49.5% Easy
-295 Find Median from Data Stream 31.4% Hard
-13 Roman to Integer 49.4% Easy
-277 Find the Celebrity 35.3% Medium
+17 Letter Combinations of a Phone Number 38.0% Medium: O(4^n) O(1)
+567 Permutation in String 36.6%	Medium: O(n) O(n), two pointer
+636 Exclusive Time of Functions 45.3% Medium:
+349 Intersection of Two Arrays 49.5% Easy: O(m+n) O(m+n), use set
+295 Find Median from Data Stream 31.4% Hard: build:O(logn) find:O(1) O(n), maxHeap and minHeap
+13 Roman to Integer 49.4% Easy: O(n) O(n), compare current and next char
+277 Find the Celebrity 35.3% Medium: O(n) O(n), first find celebrity, then check
 282 Expression Add Operators 31.0% Hard
-122 Best Time to Buy and Sell Stock II 49.1% Easy
-341 Flatten Nested List Iterator 44.3% Medium
+122 Best Time to Buy and Sell Stock II 49.1% Easy: O(n) O(1)
+341 Flatten Nested List Iterator 44.3% Medium: O(n) O(n), use stack store next
 44 Wildcard Matching 21.6% Hard
 20 Valid Parentheses 34.6% Easy
 
@@ -87,16 +87,16 @@
 22 Generate Parentheses 50.1% Medium
 346 Moving Average from Data Stream 62.1% Easy
 
-468 Validate IP Address 20.5%	Medium 
+468 Validate IP Address 20.5% Medium
 105 Construct Binary Tree from Preorder and Inorder Traversal 36.4%	Medium 
-206 Reverse Linked List 49.2%	Easy 
+206 Reverse Linked List 49.2% Easy
 438 Find All Anagrams in a String 34.3%	Easy 
 259 3Sum Smaller 43.0%	Medium 
-317 Shortest Distance from All Buildings 35.2%	Hard 
+317 Shortest Distance from All Buildings 35.2% Hard
 252 Meeting Rooms 49.7%	Easy 
 99 Recover Binary Search Tree 32.2%	Hard 
-126 Word Ladder II 15.6%	Hard 
-304 Range Sum Query 2D - Immutable 28.7%	Medium 
+126 Word Ladder II 15.6% Hard
+304 Range Sum Query 2D - Immutable 28.7% Medium
 247 Strobogrammatic Number II 41.8%	Medium 
 209 Minimum Size Subarray Sum 33.1%	Medium 
 143 Reorder List 28.0%	Medium 
