@@ -11,6 +11,7 @@ public class LeftMostOnesColIndex {
      * [0, 0, 0, 0, 0]]
      */
 
+    //O(m + n) O(1)
     public int getLeftMostOne(int[][] matrix){
         if(matrix == null || matrix.length == 0) return -1;
 

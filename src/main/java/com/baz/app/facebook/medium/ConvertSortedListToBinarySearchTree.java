@@ -20,6 +20,8 @@ public class ConvertSortedListToBinarySearchTree {
      *    /   /
      *  -10  5
      */
+
+    //O(nlogn) O(1)
     ListNode node;
 
     public TreeNode sortedListToBST(ListNode head) {

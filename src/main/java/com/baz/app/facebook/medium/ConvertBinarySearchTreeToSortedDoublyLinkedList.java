@@ -19,10 +19,28 @@ public class ConvertBinarySearchTreeToSortedDoublyLinkedList {
      *
      */
 
-
+    TreeNode prev = null;
     public TreeNode treeToDoublyList(TreeNode root) {
-
-        return root;
+        if(root == null) return null;
+        TreeNode fake = new TreeNode(0);
+        prev = fake;
+        helper(root);
+        //connect head and tail
+        prev.right = fake.right;
+        fake.right.left = fake;
+        return fake.right;
     }
+
+    private void helper(TreeNode node){
+        if(node == null) return;
+
+        helper(node.left);
+        prev.right = node;
+        node.left = prev;
+        prev = node;
+        helper(node.right);
+
+    }
+
 
 }
