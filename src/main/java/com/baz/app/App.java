@@ -27,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MergeBinaryTrees mergeBinaryTrees = context.getBean(MergeBinaryTrees.class);
-        mergeBinaryTrees.test();
+        RandomPickFromArray randomPickFromArray = context.getBean(RandomPickFromArray.class);
+        randomPickFromArray.test();
+//        MergeBinaryTrees mergeBinaryTrees = context.getBean(MergeBinaryTrees.class);
+//        mergeBinaryTrees.test();
 //        SetMatrixZeroes setMatrixZeroes = context.getBean(SetMatrixZeroes.class);
 //        setMatrixZeroes.test();
 //        PermutationInString permutationInString = context.getBean(PermutationInString.class);

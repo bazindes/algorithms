@@ -27,39 +27,57 @@ public class WordSearchII {
      * You may assume that all inputs are consist of lowercase letters a-z.
      */
 
+    //
     public List<String> findWords(char[][] board, String[] words) {
         List<String> ans = new ArrayList<>();
-        out : for (String s : words){
-            char[]cs = s.toCharArray();
-            for (int i = 0; i < board.length; i++) {
-                for (int j = 0; j < board[0].length; j++) {
-                    if(cs[0] == board[i][j]){
-                        if(bfsHelper(board, cs, new int[]{i, j}, 0)){
-                            ans.add(s);
-                            continue out;
-                        }
-                    }
-                }
+        Trie trie = buildTrie(words);
+
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                dfsHelper(board, i, j, trie, ans);
             }
         }
+
         return ans;
     }
 
-    private boolean bfsHelper(char[][] board, char[] word, int[] pos, int n){
-        if(n == word.length || pos[0] == board.length || pos[1] == board[0].length)
-            return false;
-
-        if(board[pos[0]][pos[1]] == word[n]){
-            if(n + 1 == word.length) return true;
-            return bfsHelper(board, word, new int[]{pos[0] + 1, pos[1]}, n + 1)
-                || bfsHelper(board, word, new int[]{pos[0] - 1, pos[1]}, n + 1)
-                || bfsHelper(board, word, new int[]{pos[0], pos[1] + 1}, n + 1)
-                || bfsHelper(board, word, new int[]{pos[0], pos[1] - 1}, n + 1);
+    private void dfsHelper(char[][] board, int i, int j, Trie trie, List<String> ans){
+        char c = board[i][j];
+        if(c == '#' || trie.next[c - 'a'] == null) return;
+        trie = trie.next[c - 'a'];
+        if(trie.word != null){
+            ans.add(trie.word);
+            trie.word = null;
         }
 
-        return false;
+        board[i][j] = '#';
+        if(i > 0) dfsHelper(board, i - 1, j, trie, ans);
+        if(i < board.length - 1) dfsHelper(board, i + 1, j, trie, ans);
+        if(j > 0) dfsHelper(board, i, j - 1, trie, ans);
+        if(j < board[0].length - 1) dfsHelper(board, i, j + 1, trie, ans);
+
+        board[i][j] = c;
     }
 
+    private Trie buildTrie(String[] words){
+        Trie trie = new Trie();
+        for (String word : words){
+            Trie p = trie;
+            for (int i = 0; i < word.length(); i++) {
+                char c = word.charAt(i);
+                if(p.next[c - 'a'] == null)
+                    p.next[c - 'a'] = new Trie();
+                p = p.next[c - 'a'];
+            }
+            p.word = word;
+        }
+        return trie;
+    }
+
+    class Trie{
+        String word;
+        Trie[] next = new Trie[26];
+    }
 
     public void test(){
         char[][] m = {

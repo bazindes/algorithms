@@ -171,6 +171,7 @@
     <bean class="com.baz.app.facebook.medium.PermutationInString"></bean>
     <bean class="com.baz.app.facebook.medium.SetMatrixZeroes"></bean>
     <bean class="com.baz.app.facebook.easy.MergeBinaryTrees"></bean>
+    <bean class="com.baz.app.facebook.easy.RandomPickFromArray"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

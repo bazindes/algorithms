@@ -63,9 +63,9 @@
 122 Best Time to Buy and Sell Stock II 49.1% Easy: O(n) O(1)
 341 Flatten Nested List Iterator 44.3% Medium: O(n) O(n), use stack store next
 44 Wildcard Matching 21.6% Hard
-20 Valid Parentheses 34.6% Easy
+20 Valid Parentheses 34.6% Easy: O(N) O(N), stack
 
-270 Closest Binary Search Tree Value 41.6% Easy
+270 Closest Binary Search Tree Value 41.6% Easy:
 57 Insert Interval 29.7% Hard
 67 Add Binary 35.6%	Easy 
 680 Valid Palindrome II 32.5% Easy
