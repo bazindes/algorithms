@@ -88,7 +88,7 @@ public class TaskScheduler {
         return ans;
     }
 
-    //O(n) O(1)
+    //O(n) O(n)
     public int leastIntervalUsingPQ(char[] tasks, int n){
         if(tasks == null || tasks.length == 0) return 0;
 
