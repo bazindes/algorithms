@@ -35,3 +35,4 @@ target/
 *.xls
 *.ppt*
 .idea/
+exp/
