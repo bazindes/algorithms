@@ -1,7 +1,6 @@
 package com.baz.app.facebook.hard;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class RemoveInvalidParenthese {
 
@@ -20,7 +19,7 @@ public class RemoveInvalidParenthese {
      * Output: [""]
      */
 
-    //O( 2 ^ (l + r) )  O(n^2)
+    //DFS O( 2 ^ (l + r) )  O(n^2)
     public List<String> removeInvalidParentheses(String s) {
         List<String> list = new ArrayList<>();
         // l indicates how many left parenthesis we need to remove
@@ -79,6 +78,49 @@ public class RemoveInvalidParenthese {
                     helper(sb.toString(), list, l, r - 1, i);
             }
         }
+    }
+
+
+    //BFS O(n * 2^(n-1))
+    public List<String> removeInvalidParentesesBFS(String s){
+        List<String> ans = new ArrayList<>();
+
+        if(s == null || "".equals(s)) return ans;
+        Set<String> visited = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
+
+        //initialize
+        visited.add(s);
+        queue.offer(s);
+
+        boolean found = false;
+
+        while (!queue.isEmpty()){
+            String cur = queue.poll();
+            if (check(cur)){
+                //find an answer, put it into ans
+                ans.add(cur);
+                found = true;
+            }
+
+            if(found) continue;
+
+            //generate all possible states
+            for (int i = 0; i < cur.length(); i++) {
+                //we only can remove parenthesis
+                char c = cur.charAt(i);
+                if(c != '(' && c != ')') continue;
+                String temp = cur.substring(0, i) + cur.substring(i + 1);
+
+                if(!visited.contains(temp)){
+                    queue.offer(temp);
+                    visited.add(temp);
+                }
+
+            }
+        }
+
+        return ans;
     }
 
     private boolean check(String s){
