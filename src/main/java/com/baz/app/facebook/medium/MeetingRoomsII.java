@@ -19,42 +19,28 @@ public class MeetingRoomsII {
 
     //O(nlogn) O(n)
     public int numOfRooms(Interval[] intervals){
-        if(intervals == null || intervals.length == 0) return 0;
-        int[]starts = new int[intervals.length];
-        int[]ends = new int[intervals.length];
-        for(int i=0; i<intervals.length; i++){
-            starts[i] = intervals[i].start;
-            ends[i] = intervals[i].end;
+        // corner case
+        if (intervals == null || intervals.length == 0) return 0;
+
+        int[] start = new int[intervals.length];
+        int[] end = new int[intervals.length];
+        for (int i = 0; i < intervals.length; i++) {
+            start[i] = intervals[i].start;
+            end[i] = intervals[i].end;
         }
-        Arrays.sort(starts);
-        Arrays.sort(ends);
-        Map<Integer, Integer> sts = new HashMap<>();
-        Map<Integer, Integer> es = new HashMap<>();
-        for(int i=0; i<starts.length; i++){
-            sts.put(starts[i], sts.getOrDefault(starts[i] , 0) + 1);
-            es.put(ends[i], es.getOrDefault(ends[i] , 0) + 1);
-        }
-        int[] dp = new int[ends[ends.length - 1] + 1];
-        if(starts[0] == 0) dp[0] = 1;
-        int max = 0;
-        for(int i=1; i<dp.length; i++){
-            dp[i] = dp[i - 1];
-            if(sts.containsKey(i)){
-                int times = sts.get(i);
-                while (times -- > 0){
-                    dp[i] ++;
-                }
-            }
-            if(es.containsKey(i)){
-                int times = es.get(i);
-                while (times -- > 0){
-                    dp[i] --;
-                }
-            }
-            max = Math.max(max, dp[i]);
+        Arrays.sort(start);
+        Arrays.sort(end);
+
+        int endIdx = 0;
+        int res = 0;
+        for (int i = 0; i < intervals.length; i++) {
+            if (start[i] < end[endIdx])  // need a new room
+                res++;
+            else
+                endIdx++;
         }
 
-        return max;
+        return res;
     }
 
     //O(nlogn) O(n)
@@ -62,14 +48,17 @@ public class MeetingRoomsII {
         if(intervals == null || intervals.length == 0) return 0;
 
         PriorityQueue<Integer> minHeap = new PriorityQueue<>(intervals.length);
+        // sort start in ascending order
         Arrays.sort(intervals, (x, y) -> x.start - y.start);
 
         minHeap.add(intervals[0].end);
 
         for (int i = 1; i < intervals.length; i++) {
+            // if before next interval start, the previous one is already ended, poll it out
             if(intervals[i].start >= minHeap.peek()){
                 minHeap.poll();
             }
+            // create new room, and the first ending interval will be the top element
             minHeap.add(intervals[i].end);
         }
 
@@ -77,37 +66,11 @@ public class MeetingRoomsII {
 
     }
 
-    //O(nlogn) O(n)
-    public int numberOfRoomsSorting(Interval[] intervals){
-        if(intervals == null || intervals.length == 0) return 0;
-        int[] starts = new int[intervals.length];
-        int[] ends = new int[intervals.length];
-
-        for (int i = 0; i < intervals.length; i++) {
-            starts[i] = intervals[i].start;
-            ends[i] = intervals[i].end;
-        }
-
-        Arrays.sort(starts);
-        Arrays.sort(ends);
-
-        int begin = 0;
-        int end = 0;
-        int usedRooms = 0;
-        int maxRooms = 0;
-
-        while (begin < intervals.length){
-            if(starts[begin] >= ends[end]){
-                usedRooms -= 1;
-                end ++;
-            }
-            usedRooms ++;
-            begin ++;
-            maxRooms = Math.max(maxRooms, usedRooms);
-        }
-
-        return maxRooms;
-    }
+    /**
+     * 变种：interval变种题, 找出最⼤利润情况下，最合适的价格。⽐如接受价格范围
+     * A[8, 10] B[6, 8] C[12, 14] 此时定价应该为8因为profit为16(A,B接受此价格)最
+     * ⼤。
+     */
 
     public void test(){
         Interval i1 = new Interval(9 ,10);
@@ -115,7 +78,8 @@ public class MeetingRoomsII {
         Interval i3 = new Interval(4 ,17);
         Interval[] intervals = {i1, i2, i3};
 
-        System.out.println(numberOfRoomsSorting(intervals));
+        System.out.println(numOfRooms(intervals));
+        System.out.println(numOfRoomsUsingPQ(intervals));
     }
 
 }

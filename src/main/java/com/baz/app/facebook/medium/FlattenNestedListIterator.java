@@ -56,11 +56,13 @@ public class FlattenNestedListIterator {
     }
 
 
+    // use stack to help
     Stack<NestedInteger> stack;
     public FlattenNestedListIterator(){}
 
     public void set(List<NestedInteger> nestedList) {
         stack = new Stack<>();
+        // initially push every one into stack
         for (int i = nestedList.size() - 1; i >= 0 ; i--) {
             stack.push(nestedList.get(i));
         }
@@ -73,11 +75,14 @@ public class FlattenNestedListIterator {
 
     public boolean hasNext() {
         while (!stack.isEmpty()){
+            // check the top element in stack
             NestedInteger cur = stack.peek();
             if(cur.isInteger()){
                 return true;
             }
+            // otherwise pop it out
             stack.pop();
+            // then push all elements in it's list from the end into stack, in order to make sure the top element is Integer
             for (int i = cur.getList().size() - 1; i >=0 ; i--) {
                 stack.push(cur.getList().get(i));
             }
