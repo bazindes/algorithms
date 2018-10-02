@@ -6,15 +6,15 @@ public class ValidParentheses {
 
     public boolean isValid(String s){
         boolean flag = false;
-        if(s == null || "".equals(s.trim())) return flag;
+        if(s == null || "".equals(s.trim())) return !flag;
         if(s.length() % 2 != 0) return flag;
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
             if(stack.isEmpty())
                 stack.push(helper(s.charAt(i)));
-            else if(stack.peek() == s.charAt(i)) {
+            else if(stack.peek() == s.charAt(i))
                 stack.pop();
-            }else
+            else
                 stack.push(helper(s.charAt(i)));
         }
         return stack.size() == 0;
