@@ -27,8 +27,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        RandomPickFromArray randomPickFromArray = context.getBean(RandomPickFromArray.class);
-        randomPickFromArray.test();
+        ConstructBSTFromGivenPreorderTraversal constructBSTFromGivenPreorderTraversal = context.getBean(ConstructBSTFromGivenPreorderTraversal.class);
+        constructBSTFromGivenPreorderTraversal.test();
+//        MinimumWindowSubString minimumWindowSubString = context.getBean(MinimumWindowSubString.class);
+//        minimumWindowSubString.test();
+//        RandomPickFromArray randomPickFromArray = context.getBean(RandomPickFromArray.class);
+//        randomPickFromArray.test();
 //        MergeBinaryTrees mergeBinaryTrees = context.getBean(MergeBinaryTrees.class);
 //        mergeBinaryTrees.test();
 //        SetMatrixZeroes setMatrixZeroes = context.getBean(SetMatrixZeroes.class);
