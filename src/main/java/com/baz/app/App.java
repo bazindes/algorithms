@@ -27,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        NearestKPoints nearestKPoints = context.getBean(NearestKPoints.class);
-        nearestKPoints.test();
+        InsertIntoACyclicSortedList insertIntoACyclicSortedList = context.getBean(InsertIntoACyclicSortedList.class);
+        insertIntoACyclicSortedList.test();
+//        NearestKPoints nearestKPoints = context.getBean(NearestKPoints.class);
+//        nearestKPoints.test();
 //        ConstructBSTFromGivenPreorderTraversal constructBSTFromGivenPreorderTraversal = context.getBean(ConstructBSTFromGivenPreorderTraversal.class);
 //        constructBSTFromGivenPreorderTraversal.test();
 //        MinimumWindowSubString minimumWindowSubString = context.getBean(MinimumWindowSubString.class);

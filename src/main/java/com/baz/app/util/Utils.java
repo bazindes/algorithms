@@ -121,6 +121,19 @@ public class Utils{
     }
 
     /**
+     * print SingleLinkedList ListNode
+     * */
+    public static void printCyclicLinkedList(ListNode node){
+        ListNode head = node;
+        System.out.print("head:");
+        while(node.next != null && node.next != head){
+            System.out.print(node.val + " -> ");
+            node = node.next;
+        }
+        System.out.print(node.val);
+    }
+
+    /**
      * bfs traverse undirected graph
      * */
     public static void bfsTraverseUndirectedGraph(UndirectedGraphNode start){

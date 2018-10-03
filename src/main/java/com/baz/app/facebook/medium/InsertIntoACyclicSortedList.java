@@ -1,6 +1,7 @@
 package com.baz.app.facebook.medium;
 
 import com.baz.app.util.ListNode;
+import com.baz.app.util.Utils;
 
 import java.util.List;
 
@@ -29,13 +30,46 @@ public class InsertIntoACyclicSortedList {
      */
 
     public ListNode insert(ListNode head, int insertVal) {
-        if(head == null) return head;
+        if(head == null) return new ListNode(insertVal);
         ListNode dummy = head;
-        boolean tar = head.val > insertVal;
-
-
-
+        boolean tar = head.val < insertVal;
+        int prev = head.val;
+        if(tar){
+            while (dummy.next != head && dummy.next.val > prev && dummy.next.val < insertVal){
+                prev = dummy.val;
+                dummy = dummy.next;
+                if(dummy.val > insertVal)
+                    break;
+            }
+        }else {
+            while (dummy.next != head && dummy.next.val >= prev){
+                prev = dummy.val;
+                dummy = dummy.next;
+            }
+            while (dummy.next != head && dummy.next.val < insertVal){
+                dummy = dummy.next;
+                if(dummy.next.val > insertVal)
+                    break;
+            }
+        }
+        ListNode temp = dummy.next;
+        dummy.next = new ListNode(insertVal);
+        dummy.next.next = temp;
         return head;
+    }
+
+
+    public void test(){
+        ListNode head = new ListNode(1);
+        ListNode h1 = new ListNode(3);
+        ListNode h2 = new ListNode(5);
+        head.next = h1;
+        h1.next = h2;
+        h2.next = head;
+        Utils.printCyclicLinkedList(head);
+        System.out.println();
+        Utils.printCyclicLinkedList(insert(head, 6));
+
     }
 
 }
