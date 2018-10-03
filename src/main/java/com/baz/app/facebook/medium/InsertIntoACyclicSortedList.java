@@ -32,9 +32,8 @@ public class InsertIntoACyclicSortedList {
     public ListNode insert(ListNode head, int insertVal) {
         if(head == null) return new ListNode(insertVal);
         ListNode dummy = head;
-        boolean tar = head.val < insertVal;
         int prev = head.val;
-        if(tar){
+        if(head.val < insertVal){
             while (dummy.next != head && dummy.next.val > prev && dummy.next.val < insertVal){
                 prev = dummy.val;
                 dummy = dummy.next;

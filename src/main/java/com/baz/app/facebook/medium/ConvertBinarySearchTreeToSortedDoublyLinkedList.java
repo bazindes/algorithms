@@ -2,6 +2,8 @@ package com.baz.app.facebook.medium;
 
 import com.baz.app.util.TreeNode;
 
+import java.util.Stack;
+
 public class ConvertBinarySearchTreeToSortedDoublyLinkedList {
 
     /**
@@ -19,28 +21,80 @@ public class ConvertBinarySearchTreeToSortedDoublyLinkedList {
      *
      */
 
+    // in-order traversal O(n) O(n)
     TreeNode prev = null;
     public TreeNode treeToDoublyList(TreeNode root) {
         if(root == null) return null;
         TreeNode fake = new TreeNode(0);
         prev = fake;
-        helper(root);
+        // in-order traverse
+        inOrderhelper(root);
         //connect head and tail
         prev.right = fake.right;
-        fake.right.left = fake;
+        fake.right.left = prev;
         return fake.right;
     }
 
-    private void helper(TreeNode node){
+    private void inOrderhelper(TreeNode node){
         if(node == null) return;
-
-        helper(node.left);
+        inOrderhelper(node.left);
+        // assign prev node's right child to current node
         prev.right = node;
+        // assign prev node to current node's left child
         node.left = prev;
+        // assign current node to prev pointer
         prev = node;
-        helper(node.right);
-
+        inOrderhelper(node.right);
     }
+
+    // O(n) O(n)
+    public TreeNode treeToDoublyListIter(TreeNode root){
+        // corner case
+        if(root == null) return null;
+
+        // use a stack to simulate the call stack in a recursive function
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        // use a dummy head to facilitate the convertion
+        TreeNode dummy = new TreeNode(0);
+        TreeNode prev = dummy;
+
+        while (cur != null || !stack.isEmpty()){
+            // still have subtree, go left
+            if(cur != null){
+                stack.push(cur);
+                cur = cur.left;
+            }else {
+                // cur is null hitting bottom of tree, go back
+                TreeNode temp = stack.pop();
+                connect(prev, temp);
+                prev = temp;
+                cur = temp.right;
+            }
+        }
+
+        TreeNode head = dummy.right;
+        connect(prev , head);
+        return head;
+    }
+
+    private void connect(TreeNode n1, TreeNode n2){
+        n1.right = n2;
+        n2.left = n1;
+    }
+
+    /**
+     * Step 1: Divide:
+     * We divide tree into three parts: left subtree, root node, right subtree.
+     * Convert left subtree into a circular doubly linked list as well as the right subtree.
+     * Be careful. You have to make the root node become a circular doubly linked list.
+     *
+     * Step 2: Conquer:
+     * Firstly, connect left circular doubly linked list with the root circular doubly linked list.
+     * Secondly, connect them with the right circular doubly linked list. Here we go!
+     */
+
+
 
 
 }
