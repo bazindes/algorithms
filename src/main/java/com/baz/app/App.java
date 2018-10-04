@@ -27,8 +27,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        StringComparetor stringComparetor = context.getBean(StringComparetor.class);
-        stringComparetor.test();
+        SlidingWindowMaximum slidingWindowMaximum = context.getBean(SlidingWindowMaximum.class);
+        slidingWindowMaximum.test();
+//        StringComparetor stringComparetor = context.getBean(StringComparetor.class);
+//        stringComparetor.test();
 //        TrappingRainWater trappingRainWater = context.getBean(TrappingRainWater.class);
 //        trappingRainWater.test();
 //        LowestCommonAncestorOfABinarySearchTree lowestCommonAncestorOfABinarySearchTree = context.getBean(LowestCommonAncestorOfABinarySearchTree.class);

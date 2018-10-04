@@ -7,26 +7,42 @@ import java.util.PriorityQueue;
 
 public class MergeKSortedList {
 
+    /**
+     * Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+     *
+     * Example:
+     *
+     * Input:
+     * [
+     *   1->4->5,
+     *   1->3->4,
+     *   2->6
+     * ]
+     * Output: 1->1->2->3->4->4->5->6
+     */
+
     public ListNode mergeKLists(ListNode[] lists) {
         return helper(lists, 0, lists.length - 1);
 //        return helper(lists);
     }
 
-    //O(n * k) O(nk)
+    // using PQ, O(nlogk) O(k)
     public ListNode helper(ListNode[] lists){
-        if(lists == null || lists.length == 0){
-            return null;
-        }
+        // corner case
+        if(lists == null || lists.length == 0) return null;
 
+        // use minHeap to help keeping order
         PriorityQueue<ListNode> priorityQueue = new PriorityQueue<>(lists.length , (l1, l2) -> l1.val - l2.val);
         ListNode ans = new ListNode(0);
         ListNode temp = ans;
 
+        // put all heads into pq
         for (ListNode l : lists){
             if(l != null)
                 priorityQueue.add(l);
         }
 
+        // pick one from pq and add it's next to pq till all nodes are in pq
         while (!priorityQueue.isEmpty()){
             temp.next = priorityQueue.poll();
             temp = temp.next;
@@ -38,7 +54,8 @@ public class MergeKSortedList {
         return ans.next;
     }
 
-    //Recursion Solution O(nklogn)
+    //Recursion Solution O(nlogk) O(1)
+    // two lists merge and recursively merge the previous result
     public ListNode helper(ListNode[] lists, int start, int end){
         if(start == end) return lists[start];
         if(start < end){
@@ -51,6 +68,7 @@ public class MergeKSortedList {
         }
     }
 
+    // merge linkedlist in-place
     private ListNode merge(ListNode node1, ListNode node2){
         if(node1 == null) return node2;
         if(node2 == null) return node1;
@@ -62,6 +80,10 @@ public class MergeKSortedList {
             return node2;
         }
     }
+
+    /**
+     * merge之后实现⼀个iterator class， 实现hasNext()和next()
+     */
 
     public void test(){
         ListNode r00 = new ListNode(1);
