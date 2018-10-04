@@ -178,6 +178,7 @@
     <bean class="com.baz.app.facebook.hard.TrappingRainWater"></bean>
     <bean class="com.baz.app.facebook.medium.StringComparetor"></bean>
     <bean class="com.baz.app.facebook.hard.SlidingWindowMaximum"></bean>
+    <bean class="com.baz.app.google.easy.StudentsLine"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>

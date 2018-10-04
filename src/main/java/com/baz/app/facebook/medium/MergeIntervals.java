@@ -30,8 +30,10 @@ public class MergeIntervals {
         // sort list base on start in ascending order
         intervals.sort( (i,j) -> i.start - j.start);
         LinkedList<Interval> list = new LinkedList<>();
+
         // go through all intervals
         for (Interval interval : intervals){
+
             // if the first one, or, previous one's end is smaller than current one
             // add current interval into list directly
             if(list.size() == 0 || list.getLast().end < interval.start){

@@ -11,6 +11,7 @@ import com.baz.app.facebook.easy.*;
 import com.baz.app.facebook.hard.*;
 import com.baz.app.facebook.medium.*;
 import com.baz.app.facebook.medium.Permutations;
+import com.baz.app.google.easy.StudentsLine;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -27,8 +28,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        SlidingWindowMaximum slidingWindowMaximum = context.getBean(SlidingWindowMaximum.class);
-        slidingWindowMaximum.test();
+        StudentsLine studentsLine = context.getBean(StudentsLine.class);
+        studentsLine.test();
+//        SlidingWindowMaximum slidingWindowMaximum = context.getBean(SlidingWindowMaximum.class);
+//        slidingWindowMaximum.test();
 //        StringComparetor stringComparetor = context.getBean(StringComparetor.class);
 //        stringComparetor.test();
 //        TrappingRainWater trappingRainWater = context.getBean(TrappingRainWater.class);
