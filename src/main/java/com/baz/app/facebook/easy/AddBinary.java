@@ -56,6 +56,13 @@ public class AddBinary {
         return sb.reverse().toString();
     }
 
+    /**
+     * LindedList, followup是再给个base 参数
+     * ⾯试官问了⼀下问什么不能把string转换成integer，相加后，再转换成⼆进制
+     * String。 想了⼀下，答道精度问题，如果输⼊的⻓度是100位，那么Long和
+     * Integer都装不下。
+     */
+
     public void test(){
         String a = "11", b = "1";
         System.out.println(addBinary2(a, b));

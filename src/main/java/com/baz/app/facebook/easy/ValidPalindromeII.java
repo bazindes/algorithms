@@ -6,6 +6,21 @@ import java.util.Map;
 import java.util.Set;
 
 public class ValidPalindromeII {
+
+    /**
+     * Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.
+     *
+     * Example 1:
+     * Input: "aba"
+     * Output: True
+     * Example 2:
+     * Input: "abca"
+     * Output: True
+     * Explanation: You could delete the character 'c'.
+     * Note:
+     * The string will only contain lowercase characters a-z. The maximum length of the string is 50000.
+     */
+
     //brute force
     public boolean validPalindrome(String s){
         for (int i = 0; i < s.length(); i++) {
@@ -28,10 +43,11 @@ public class ValidPalindromeII {
         return helper(s, left + 1, right, true) || helper(s, left, right-1, true);
     }
 
-    //improvement
+    //improvement O(n) O(1)
     public boolean validPalindrome2(String s){
         int i = 0;
         int j = s.length() - 1;
+        // first find the different char
         while (i < j){
             if(s.charAt(i) != s.charAt(j)) break;
             i ++;
@@ -45,12 +61,9 @@ public class ValidPalindromeII {
         int end = s.length() - 1;
         int start = 0;
         while (start < end){
-            if(start == i){
-                start ++;
-            }
-            if(i == end){
-                end --;
-            }
+            // jump over ith char
+            if(start == i) start ++;
+            if(i == end) end --;
             if(s.charAt(start++) != s.charAt(end--)) return false;
         }
         return true;

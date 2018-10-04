@@ -22,7 +22,6 @@ public class BinarySearchTreeIterator {
     private Stack<TreeNode> stack;
 
     public BinarySearchTreeIterator(){}
-
     public BinarySearchTreeIterator(TreeNode root) {
         stack = new Stack<>();
         TreeNode cur = root;
@@ -41,6 +40,7 @@ public class BinarySearchTreeIterator {
     }
 
     /** @return the next smallest number */
+    // O(1) O(h)
     public int next() {
         TreeNode cur = stack.pop();
         TreeNode node = cur;

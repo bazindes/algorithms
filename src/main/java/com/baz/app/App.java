@@ -27,8 +27,14 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        InsertIntoACyclicSortedList insertIntoACyclicSortedList = context.getBean(InsertIntoACyclicSortedList.class);
-        insertIntoACyclicSortedList.test();
+        StringComparetor stringComparetor = context.getBean(StringComparetor.class);
+        stringComparetor.test();
+//        TrappingRainWater trappingRainWater = context.getBean(TrappingRainWater.class);
+//        trappingRainWater.test();
+//        LowestCommonAncestorOfABinarySearchTree lowestCommonAncestorOfABinarySearchTree = context.getBean(LowestCommonAncestorOfABinarySearchTree.class);
+//        lowestCommonAncestorOfABinarySearchTree.test();
+//        InsertIntoACyclicSortedList insertIntoACyclicSortedList = context.getBean(InsertIntoACyclicSortedList.class);
+//        insertIntoACyclicSortedList.test();
 //        NearestKPoints nearestKPoints = context.getBean(NearestKPoints.class);
 //        nearestKPoints.test();
 //        ConstructBSTFromGivenPreorderTraversal constructBSTFromGivenPreorderTraversal = context.getBean(ConstructBSTFromGivenPreorderTraversal.class);

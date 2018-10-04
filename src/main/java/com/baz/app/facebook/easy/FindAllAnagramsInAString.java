@@ -27,37 +27,50 @@ public class FindAllAnagramsInAString {
      * The substring with start index = 2 is "ab", which is an anagram of "ab".
      */
 
+    // sliding window (two pointers) O(N) O(N)
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> ans = new ArrayList<>();
         if(s == null || "".equals(s) || p == null || "".equals(p) || p.length() > s.length()) return ans;
+        // use map to track chars in p
         Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < p.length(); i++) {
+            // key is distinct char, value is times of current char appears
             map.put(p.charAt(i) , map.getOrDefault(p.charAt(i) , 0) + 1);
         }
+
         int len = p.length();
+        // two pointers indicate window's left boundary and right boundary
         int left = 0;
         int right = 0;
+        // counter indicates whether our window contains all chars or not
         int counter = map.size();
 
         while (right < s.length()){
+            // pick out current char
             char cur = s.charAt(right);
+            // check whether cur in map or not, if in, we find one so decrease counter
             if(map.containsKey(cur)){
+                // update map
                 map.put(cur, map.get(cur) - 1);
                 if(map.get(cur) == 0)
                     counter --;
             }
+            // move right boundary of window forward
             right ++;
 
+            // when counter equals to 0, it means that we have all chars in p in our current window,
+            // then we'll try to make the window smaller by moving left pointer
             while (counter == 0){
+                // check whether the char to remove is in map or not, if in, we need to increase counter
                 char temp = s.charAt(left);
                 if(map.containsKey(temp)){
+                    // update map
                     map.put(temp, map.get(temp) + 1);
-                    if(map.get(temp) > 0){
+                    if(map.get(temp) > 0)
                         counter ++;
-                        if(right - left == len)
-                            ans.add(left);
-                    }
                 }
+                // check whether there is an answer before increase left
+                if(right - left == len) ans.add(left);
                 left ++;
             }
         }

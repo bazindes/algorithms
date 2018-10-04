@@ -71,16 +71,20 @@ public class BinaryTreeVerticalOrderTraversal {
         List<List<Integer>> ans = new ArrayList<>();
         if(root == null) return ans;
 
+        // use map to track vertical level, see root as 0, when we go left we decrease level by 1, go right increase level by 1
         Map<Integer, List<Integer>> map = new HashMap<>();
+        // use two queue to do BFS
         Queue<TreeNode> nodes = new LinkedList<>();
         Queue<Integer> cols = new LinkedList<>();
-
+        // initial queue
         nodes.offer(root);
         cols.offer(0);
 
+        // keep tracking level range
         int min = 0;
         int max = 0;
 
+        // BFS
         while (!nodes.isEmpty()){
             TreeNode cur = nodes.poll();
             Integer curCol = cols.poll();
@@ -91,17 +95,22 @@ public class BinaryTreeVerticalOrderTraversal {
             map.get(curCol).add(cur.val);
 
             if(cur.left != null){
+                // go left, decrease vertical level
                 nodes.offer(cur.left);
                 cols.offer(curCol - 1);
+                // tracking left bound
                 min = Math.min(min, curCol - 1);
             }
             if(cur.right != null){
+                // go right, increase vertical level
                 nodes.offer(cur.right);
                 cols.offer(curCol + 1);
+                // tracking right bound
                 max = Math.max(max, curCol + 1);
             }
         }
 
+        // fill up result list
         for (int i = min; i <= max; i++) {
             ans.add(map.get(i));
         }

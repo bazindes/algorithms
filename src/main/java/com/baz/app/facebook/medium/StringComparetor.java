@@ -20,23 +20,24 @@ public class StringComparetor {
      */
 
     //O(min(m,n)) O(1)
+    // if s1 greater return 1, s2 greater return -1, equal return 0
     public int compare(String s1, String s2) {
-        if (s1 == null && s2 == null)
-            return 0;
         // null would be put as last
-        if (s1 == null)
-            return 1;
-        if (s2 == null)
-            return -1;
+        if (s1 == null && s2 == null) return 0;
+        if (s1 == null || s2 == null) return s1 == null ? 1 : -1;
 
-        int i = 0, j = 0;
-        int len1 = s1.length(), len2 = s2.length();
+        // use two pointers tracking chars of both input strings
+        int i = 0;
+        int j = 0;
+        int len1 = s1.length();
+        int len2 = s2.length();
         while (i < len1 && j < len2) {
             char c1 = s1.charAt(i);
             char c2 = s2.charAt(j);
-            if (Character.isDigit(c1) &&
-                    Character.isDigit(c2)) {
+            // both are number, we need move two pointers same time and calculate the value
+            if (Character.isDigit(c1) && Character.isDigit(c2)) {
                 int val1 = 0, val2 = 0;
+                // calculate continuous digits
                 while (i < len1 && Character.isDigit(s1.charAt(i))) {
                     // assume no overflow
                     val1 = val1 * 10 + (s1.charAt(i) - '0');
@@ -47,23 +48,36 @@ public class StringComparetor {
                     val2 = val2 * 10 + (s2.charAt(j) - '0');
                     j++;
                 }
-                if (val1 < val2)
-                    return -1;
-                if (val1 > val2)
-                    return 1;
+                if (val1 < val2) return -1;
+                if (val1 > val2) return 1;
             } else {
-                if (c1 < c2)
-                    return -1;
-                if (c2 > c1)
-                    return 1;
+                // otherwise one of them are char, so just compare its ASCII value
+                if (c1 < c2) return -1;
+                if (c2 > c1) return 1;
                 i++;
                 j++;
             }
         }
-        if (i == len1 && j == len2)
-            return 0;
-        return i == len1 ? -1 : 1;
 
+        // if all chars are same and both pointers reach the end of strings
+        if (i == len1 && j == len2) return 0;
+        // other wise, the longer one is bigger
+        return i == len1 ? -1 : 1;
+    }
+
+    public void test(){
+        String s = "aaa009";
+        String p = "aaa10";
+        System.out.println(compare(s, p));
+        s = "aaa009";
+        p = "aaa010";
+        System.out.println(compare(s, p));
+        s = "aaa";
+        p = "aab";
+        System.out.println(compare(s, p));
+        s = "a";
+        p = "b";
+        System.out.println(compare(s, p));
     }
 
 }

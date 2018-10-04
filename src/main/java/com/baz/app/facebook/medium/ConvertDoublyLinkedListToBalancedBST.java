@@ -58,7 +58,7 @@ public class ConvertDoublyLinkedListToBalancedBST {
 
     /**
      * Method 2 (Tricky)
-     * The method 1 constructs the tree from root to leaves. In this method, we construct from leaves to root.
+     * In this method, we construct from leaves to root.
      * The idea is to insert nodes in BST in the same order as the appear in Doubly Linked List,
      * so that the tree can be constructed in O(n) time complexity.
      *

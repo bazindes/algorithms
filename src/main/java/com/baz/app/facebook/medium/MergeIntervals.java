@@ -27,17 +27,34 @@ public class MergeIntervals {
 
     //O(nlogn) O(n)(O(1))
     public List<Interval> merge(List<Interval> intervals) {
+        // sort list base on start in ascending order
         intervals.sort( (i,j) -> i.start - j.start);
         LinkedList<Interval> list = new LinkedList<>();
+        // go through all intervals
         for (Interval interval : intervals){
+            // if the first one, or, previous one's end is smaller than current one
+            // add current interval into list directly
             if(list.size() == 0 || list.getLast().end < interval.start){
                 list.add(interval);
             }else {
+                // otherwise, merge
+                // trick: we don't need create new one, we can update previous one
                 list.getLast().end = Math.max(interval.end, list.getLast().end);
             }
         }
         return list;
     }
+
+
+    /**
+     * followup是如果有⼀个⾮常⻓怎么办
+     * 变种：given two sorted arrays of intervals, return the intersection.
+     * ex.
+     * a = [(1 5), (8, 10), (15 20)] sorted
+     * b = [(2 6), (45 100)] sorted
+     * return [(2, 5)]
+     * 我⽤了两个pointer指着a和b然后⽤了⼏个case对⽐
+     */
 
     public void test(){
         Interval i0 = new Interval(1,3);
