@@ -15,35 +15,44 @@ public class StudentsLine {
         // corner case
         if(nums == null || nums.length == 0) return -1;
         // at least 1 line
-        int prevMax = nums[0];
-        int count = 1;
+        List<Integer> groups = new ArrayList<>();
+        groups.add(nums[0]);
 
         for (int i = 1; i< nums.length; i ++){
-            if(nums[i] > prevMax) count ++;
-            prevMax = Math.max(prevMax, nums[i]);
+            if(groups.get(groups.size() - 1) < nums[i])
+                groups.add(nums[i]);
+            else
+                bsHelper(groups, nums[i]);
         }
 
-        return count;
+        return groups.size();
     }
 
-    private int bsHelper(List<Integer> nums, int tar){
+    private void bsHelper(List<Integer> nums, int tar){
         int lo = 0;
         int hi = nums.size() - 1;
         while (lo < hi){
             int mid = lo + (hi - lo) / 2;
-            if(nums.get(mid) == tar) return mid;
-            else if(nums.get(mid) > tar)
+            if(nums.get(mid) == tar) {
+                lo = mid;
+                break;
+            } else if(nums.get(mid) > tar){
                 hi = mid - 1;
-            else
+            } else{
                 lo = mid + 1;
+            }
         }
-        return -1;
+        nums.set(lo, tar);
     }
 
     public void test(){
         int[] nums = {7,8,4,9,1,6,5,7};
         System.out.println(count(nums));
         nums = new int[]{5, 4, 3, 6, 1};
+        System.out.println(count(nums));
+        nums = new int[]{3,1,2,5,3};
+        System.out.println(count(nums));
+        nums = new int[]{1,2,3,4,5};
         System.out.println(count(nums));
     }
 

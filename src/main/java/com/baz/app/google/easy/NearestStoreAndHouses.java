@@ -46,7 +46,7 @@ public class NearestStoreAndHouses {
     }
 
     public void test(){
-        int[] s = {2,5,20,11};
+        int[] s = {2,3,5,8,20,12};
         int[] h = {1,3,10,13};
         Utils.printArray(findStores(h, s));
     }
