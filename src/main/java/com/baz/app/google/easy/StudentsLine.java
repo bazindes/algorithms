@@ -1,5 +1,8 @@
 package com.baz.app.google.easy;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StudentsLine {
 
     /**
@@ -12,20 +15,35 @@ public class StudentsLine {
         // corner case
         if(nums == null || nums.length == 0) return -1;
         // at least 1 line
-        int c = 1;
         int prevMax = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            if(nums[i] < prevMax) continue;
-            else {
-                prevMax = nums[i];
-                c ++;
-            }
+        int count = 1;
+
+        for (int i = 1; i< nums.length; i ++){
+            if(nums[i] > prevMax) count ++;
+            prevMax = Math.max(prevMax, nums[i]);
         }
-        return c;
+
+        return count;
+    }
+
+    private int bsHelper(List<Integer> nums, int tar){
+        int lo = 0;
+        int hi = nums.size() - 1;
+        while (lo < hi){
+            int mid = lo + (hi - lo) / 2;
+            if(nums.get(mid) == tar) return mid;
+            else if(nums.get(mid) > tar)
+                hi = mid - 1;
+            else
+                lo = mid + 1;
+        }
+        return -1;
     }
 
     public void test(){
         int[] nums = {7,8,4,9,1,6,5,7};
+        System.out.println(count(nums));
+        nums = new int[]{5, 4, 3, 6, 1};
         System.out.println(count(nums));
     }
 
