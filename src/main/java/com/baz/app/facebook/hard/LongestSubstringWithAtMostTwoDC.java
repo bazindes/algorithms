@@ -1,33 +1,29 @@
 package com.baz.app.facebook.hard;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
-public class LongestSubstringWithAtMostKDistinctCharacters {
+public class LongestSubstringWithAtMostTwoDC {
 
     /**
-     * Given a string, find the length of the longest substring T that contains at most k distinct characters.
+     * Given a string s , find the length of the longest substring t  that contains at most 2 distinct characters.
      *
      * Example 1:
      *
-     * Input: s = "eceba", k = 2
+     * Input: "eceba"
      * Output: 3
-     * Explanation: T is "ece" which its length is 3.
+     * Explanation: t is "ece" which its length is 3.
      * Example 2:
      *
-     * Input: s = "aa", k = 1
-     * Output: 2
-     * Explanation: T is "aa" which its length is 2.
+     * Input: "ccaabbb"
+     * Output: 5
+     * Explanation: t is "aabbb" which its length is 5.
      */
 
-    //two pointers O(n) O(n)
-    public int lengthOfLongestSubstringKDistinct(String s, int k) {
+    public int lengthOfLongestSubstringTwoDistinct(String s) {
         // corner case
-        if(s == null || "".equals(s) || k == 0) return 0;
-        if(k > s.length()) return s.length();
-
+        if(s == null || "".equals(s)) return 0;
+        if(s.length() < 3) return s.length();
         // ans keep tracking max length
         int ans = 0;
         // map keep tracking two things
@@ -45,11 +41,11 @@ public class LongestSubstringWithAtMostKDistinctCharacters {
             // move forward
             right ++;
             // check if current window contains at most k distinct chars, keep tracking max length
-            if(map.size() <= k)
+            if(map.size() <= 2)
                 ans = Math.max(ans, right - left);
 
             // otherwise we need to move left pointer in order to let map at most contains k distinct chars
-            while (left < s.length() && map.size() > k){
+            while (left < s.length() && map.size() > 2){
                 // find left most char
                 char temp = s.charAt(left);
                 if(map.containsKey(temp)){
@@ -66,16 +62,6 @@ public class LongestSubstringWithAtMostKDistinctCharacters {
         }
 
         return ans;
-    }
-
-    public void test(){
-        String s = "eceba";
-        System.out.println(lengthOfLongestSubstringKDistinct(s, 2));
-        s = "aa";
-        System.out.println(lengthOfLongestSubstringKDistinct(s, 2));
-        System.out.println(lengthOfLongestSubstringKDistinct(s, 1));
-        s = "abaccc";
-        System.out.println(lengthOfLongestSubstringKDistinct(s, 2));
     }
 
 }
