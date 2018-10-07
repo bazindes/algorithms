@@ -51,4 +51,60 @@ public class NearestStoreAndHouses {
         Utils.printArray(findStores(h, s));
     }
 
+    public int[] solution(int[] stores, int[] houses) {
+        // write your code in Java SE 8
+        // corner case, not specified in question, assume to return null
+        if(stores == null || stores.length == 0 || houses == null || houses.length == 0) return null;
+
+        // my thought is go through houses to find nearest stores
+        // ans indicates results
+        int[] ans = new int[houses.length];
+        // corner case
+        if(stores.length == 1){
+            if(houses.length == 1) return stores;
+            Arrays.fill(ans, stores[0]);
+            return ans;
+        }
+        // 1. sort the store, in order to use binary search
+        Arrays.sort(stores);
+        // 2. go through all houses, try to find nearest one using binary search
+        for(int i = 0; i < houses.length; i ++){
+            int index = bsHelper(stores, houses[i]);
+            // if(index == 0){
+            //     ans[i] = Math.abs(houses[i] - stores[index]) < Math.abs(houses[i] - stores[index + 1]) ? stores[index] : stores[index + 1];
+            // }else{
+            //     ans[i] = Math.abs(houses[i] - stores[index]) < Math.abs(houses[i] - stores[index - 1]) ? stores[index] : stores[index - 1];
+            // }
+            if(index == stores.length - 1){
+                ans[i] = Math.abs(houses[i] - stores[index]) < Math.abs(houses[i] - stores[index - 1]) ? stores[index] : stores[index - 1];
+            }else{
+                ans[i] = Math.abs(houses[i] - stores[index]) < Math.abs(houses[i] - stores[index + 1]) ? stores[index] : stores[index + 1];
+            }
+        }
+
+        // time complexity: O(mlogn) n is length of stores, m is length of houses
+        // space complexity: O(m) for ans array
+        return ans;
+
+    }
+
+    private int bsHelper(int[] stores, int loc){
+        // corner case, -1 means not found
+        if(stores == null || stores.length == 0) return -1;
+        int lo = 0;
+        int hi = stores.length - 1;
+        while(lo < hi){
+            int mid = lo + (hi - lo) / 2;
+            if(stores[mid] == loc){
+                return mid;
+            }
+            if(stores[mid] > loc){
+                hi = mid - 1;
+            }else{
+                lo = mid + 1;
+            }
+        }
+        return lo;
+    }
+
 }

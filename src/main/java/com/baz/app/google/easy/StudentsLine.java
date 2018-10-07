@@ -56,4 +56,60 @@ public class StudentsLine {
         System.out.println(count(nums));
     }
 
+
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        // corner case, no students
+        if(A == null || A.length == 0) return 0;
+
+        // general code
+        // use list to store created rows
+        List<Integer> rows = new ArrayList<>();
+
+        // simulate students arrive one by one
+        for(int i = 0; i < A.length; i ++){
+            // if the first one, create a new row
+            if(i == 0){
+                rows.add(A[i]);
+            }else{
+                // otherwise, check the previous rows, look for one row that all students in this row are taller than current student, pick the minimum height one in order to create less row,
+                // since we stored previous rows in ascending order, we can use binary search to find the minimum height in each row, and we only need to track the minimum height in each row since only when the next student is not taller than previous students in one row, we can put next student in that row
+                // if the previous students are smaller than next one, create new row
+                if(rows.get(rows.size() - 1) < A[i]){
+                    rows.add(A[i]);
+                }else{
+                    // otherwise find one row to insert current student
+                    bsHelper2(rows, A[i]);
+                }
+
+            }
+        }
+
+        // how many rows created
+        return rows.size();
+
+    }
+
+    // binary search helper, binary search the smallest number in rows which is greater than tar, then change it to tar
+    private void bsHelper2(List<Integer> rows, int tar){
+        if(rows == null || rows.size() == 0) return;
+        int lo = 0;
+        int hi = rows.size() - 1;
+        // search for smallest one
+        while(lo < hi){
+            int mid = lo + (hi - lo) / 2;
+            // if the previous students in one row are taller than next one, seach in left side
+            if(rows.get(mid) >= tar){
+                hi = mid - 1;
+            }else{
+                // otherwise, seach in right side
+                lo = mid + 1;
+            }
+        }
+        // update rows, keep tracking the smallest height in each row
+        rows.set(lo, tar);
+    }
+
+
+
 }
