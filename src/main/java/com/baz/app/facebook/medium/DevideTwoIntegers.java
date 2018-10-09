@@ -25,8 +25,8 @@ public class DevideTwoIntegers {
         int sign = 1;
         if( (dividend < 0 && divisor > 0) || (dividend > 0 && divisor < 0) )
             sign = -1;
-        long dd = Math.abs(dividend);
-        long ds = Math.abs(divisor);
+        long dd = Math.abs((long) dividend);
+        long ds = Math.abs((long) divisor);
         //Take care the edge cases.
         if(ds == 0) return Integer.MAX_VALUE;
         if(dd == 0 || dd < ds) return 0;

@@ -181,6 +181,7 @@
     <bean class="com.baz.app.facebook.medium.StringComparetor"></bean>
     <bean class="com.baz.app.facebook.hard.SlidingWindowMaximum"></bean>
     <bean class="com.baz.app.facebook.hard.LongestSubstringWithAtMostKDistinctCharacters"></bean>
+    <bean class="com.baz.app.facebook.medium.UniquePathII"></bean>
 
     <bean class="com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray"></bean>
     <bean class="com.baz.app.TwoSigma.hard.RegularExpressionMatching"></bean>
