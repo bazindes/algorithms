@@ -29,8 +29,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        UniquePathII uniquePathII = context.getBean(UniquePathII.class);
-        uniquePathII.test();
+        LeftMostOnesColIndex leftMostOnesColIndex = context.getBean(LeftMostOnesColIndex.class);
+        leftMostOnesColIndex.test();
+//        UniquePathII uniquePathII = context.getBean(UniquePathII.class);
+//        uniquePathII.test();
 //        LongestSubstringWithAtMostKDistinctCharacters longestSubstringWithAtMostKDistinctCharacters = context.getBean(LongestSubstringWithAtMostKDistinctCharacters.class);
 //        longestSubstringWithAtMostKDistinctCharacters.test();
 //        NearestStoreAndHouses nearestStoreAndHouses = context.getBean(NearestStoreAndHouses.class);

@@ -30,4 +30,40 @@ public class LeftMostOnesColIndex {
         return j + 1;
     }
 
+    // O(nlogm)
+    // traverse per line, use binary search to find left most 1
+    public int getLeftMostOneBS(int[][] matrix){
+        if(matrix == null || matrix.length == 0) return -1;
+
+        int m = matrix.length;
+        int ans = m;
+        for (int[] i : matrix){
+            ans = Math.min(ans, bsHelper(i));
+        }
+
+        return ans;
+    }
+
+    private int bsHelper(int[] nums){
+        int lo = 0;
+        int hi = nums.length - 1;
+        while (lo <= hi){
+            int mid = lo + (hi - lo) / 2;
+            if(nums[mid] == 1)
+                hi = mid - 1;
+            else
+                lo = mid + 1;
+        }
+        return lo;
+    }
+
+
+    public void test(){
+        int [][] m = {{0, 0, 1, 1, 1},
+                      {0, 0, 1, 1, 1},
+                      {0, 0, 0, 1, 1},
+                      {0, 1, 1, 1, 1}};
+        System.out.println(getLeftMostOne(m));
+        System.out.println(getLeftMostOneBS(m));
+    }
 }
