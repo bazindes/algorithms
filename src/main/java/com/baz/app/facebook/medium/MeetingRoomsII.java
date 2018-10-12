@@ -70,6 +70,12 @@ public class MeetingRoomsII {
      * 变种：interval变种题, 找出最⼤利润情况下，最合适的价格。⽐如接受价格范围
      * A[8, 10] B[6, 8] C[12, 14] 此时定价应该为8因为profit为16(A,B接受此价格)最
      * ⼤。
+     *
+     * [size=18.6667px]就一题 莉蔻兒毋伞
+     * [size=18.6667px]但是给的时间段是string
+     * 比如"10a - 10:30a
+     * 直接蒙蔽 在string这里搞了半天搞到最后
+     * 请问有没有人电面题目没搞出来 但是还是过了的？
      */
 
     public void test(){

@@ -49,7 +49,9 @@ public class BasicCalculator {
             }else if(c == ')'){
                 ans += sign * cur;
                 cur = 0;
+                // sign
                 ans *= stack.pop();
+                // number
                 ans += stack.pop();
             }
         }

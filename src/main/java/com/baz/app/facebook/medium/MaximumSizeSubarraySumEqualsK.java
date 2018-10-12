@@ -51,4 +51,13 @@ public class MaximumSizeSubarraySumEqualsK {
         return len;
     }
 
+    /**
+     * 题目是，一个排好序的array，找出所有满足的最大值和最小值相加为定值k的subset的数量。
+     * follow-up是找出max+min <= k 的子集的数量。因为答案中有计算2^n，所以问了这个怎么实现比较快。
+     * 最后一个follow-up是问如果这个array非常长的时候，怎么用多线程来实现算法，完全没思路，山歌虽然说没关系，但是已经跪了。
+     * For a given vector of integers and integer K, find the number of non-empty subsets S such that min(S) + max(S) <= K
+     * For example, for K = 10 and vector [2, 4, 5, 7],
+     * the solution is 5 and these are all the subsets that satisfy the requirements: [2], [4], [2, 4], [2, 4, 5], [2, 5].
+     */
+
 }

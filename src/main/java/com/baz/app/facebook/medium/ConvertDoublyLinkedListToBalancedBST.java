@@ -71,34 +71,33 @@ public class ConvertDoublyLinkedListToBalancedBST {
      */
 
     DoubleLinkedListNode head;
-    /* The main function that constructs balanced BST and
-       returns root of it.
+    /* The main function that constructs balanced BST and returns root of it.
        n  --> No. of nodes in the Doubly Linked List */
     DoubleLinkedListNode sortedListToBSTRecur(int n) {
         /* Base Case */
-        if (n <= 0)
-            return null;
+        if (n <= 0) return null;
 
         /* Recursively construct the left subtree */
         DoubleLinkedListNode prev = sortedListToBSTRecur(n / 2);
 
-        /* head_ref now refers to middle node,
-           make middle node as root of BST*/
+        /* head_ref now refers to middle node, make middle node as root of BST*/
         DoubleLinkedListNode root = head;
 
         // Set pointer to left subtree
         root.prev = prev;
 
-        /* Change head pointer of Linked List for parent
-           recursive calls */
+        /* Change head pointer of Linked List for parent recursive calls */
         head = head.next;
 
-        /* Recursively construct the right subtree and link it
-           with root. The number of nodes in right subtree  is
-           total nodes - nodes in left subtree - 1 (for root) */
-        root.prev = sortedListToBSTRecur(n - n / 2 - 1);
+        /* Recursively construct the right subtree and link it with root.
+        The number of nodes in right subtree is total nodes - nodes in left subtree - 1 (for root) */
+        root.next = sortedListToBSTRecur(n - n / 2 - 1);
 
         return root;
     }
 
+
+    public void test(){
+
+    }
 }

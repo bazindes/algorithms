@@ -43,8 +43,7 @@ public class ConvertSortedListToBinarySearchTree {
         TreeNode temp = new TreeNode(node.val);
         temp.left = left;
         node = node.next;
-        TreeNode right = helper(mid + 1, end);
-        temp.right = right;
+        temp.right = helper(mid + 1, end);
         return temp;
     }
 
