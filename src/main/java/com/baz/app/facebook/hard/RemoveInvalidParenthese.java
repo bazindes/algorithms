@@ -138,12 +138,46 @@ public class RemoveInvalidParenthese {
         String s = "()())()";
         removeInvalidParentheses(s).forEach( s1 -> System.out.print(s1 + " "));
         System.out.println();
+        System.out.println(removeInvalidParentesesBFS2(s));
         s = "(a)())()";
         removeInvalidParentheses(s).forEach( s1 -> System.out.print(s1 + " "));
         System.out.println();
         s = ")(";
         removeInvalidParentheses(s).forEach( s1 -> System.out.print(s1 + " "));
         System.out.println();
+    }
+
+    public String removeInvalidParentesesBFS2(String s){
+        if(s == null || "".equals(s)) return s;
+        Set<String> visited = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
+
+        //initialize
+        visited.add(s);
+        queue.offer(s);
+
+        while (!queue.isEmpty()){
+            String cur = queue.poll();
+            if (check(cur)){
+                //find an answer, put it into ans
+                return cur;
+            }
+
+            //generate all possible states
+            for (int i = 0; i < cur.length(); i++) {
+                //we only can remove parenthesis
+                char c = cur.charAt(i);
+                if(c != '(' && c != ')') continue;
+                String temp = cur.substring(0, i) + cur.substring(i + 1);
+                if(!visited.contains(temp)){
+                    queue.offer(temp);
+                    visited.add(temp);
+                }
+
+            }
+        }
+
+        return s;
     }
 
 }
