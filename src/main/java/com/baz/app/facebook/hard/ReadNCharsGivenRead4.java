@@ -20,11 +20,6 @@ public class ReadNCharsGivenRead4 {
      The read function will only be called once for each test case.
      */
 
-    /**
-     * @param buf Destination buffer
-     * @param n   Maximum number of characters to read
-     * @return    The number of characters read
-     */
     private int buffPtr = 0;
     private int buffCnt = 0;
     private char[] buffer = new char[4];
