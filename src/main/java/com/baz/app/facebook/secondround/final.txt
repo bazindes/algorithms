@@ -27,7 +27,7 @@
 518 Coin Change 2 37.6%	Medium: O(nm) O(nm/m), DP, dp[i][j] = dp[i-1][j] + (j>coins[i-1]?dp[i][j-coins[i-1]]:0)
 29 Divide Two Integers 15.7% Medium: O(logn) O(logn), recursive , take care of edge case and overflow
 114 Flatten Binary Tree to Linked List 38.4% Medium: O(n) O(n), recursion set right child to prev, set left child to null, set cur to prev
-*** 301 Remove Invalid Parentheses 36.5% Hard:
+*** 301 Remove Invalid Parentheses 36.5% Hard: DFS, BFS,
 1 Two Sum 38.8%	Easy: O(n) O(n), use map store (val, index)
 98 Validate Binary Search Tree 24.4% Medium: O(n) O(n), iterative or recursion
 395 Longest Substring with At Least K Repeating Characters 36.2% Medium: D&C O(nlogn)
@@ -68,7 +68,7 @@
 270 Closest Binary Search Tree Value 41.6% Easy:
 57 Insert Interval 29.7% Hard
 67 Add Binary 35.6%	Easy 
-680 Valid Palindrome II 32.5% Easy
+680 Valid Palindrome II 32.5% Easy:
 200 Number of Islands 37.9%	Medium 
 3 Longest Substring Without Repeating Characters 25.0%	Medium 
 146 LRU Cache 21.2%	Hard 

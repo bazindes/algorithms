@@ -41,7 +41,7 @@ public class LowestCommonAncestorOfABinaryTree {
         TreeNode left = lcaRecursive(root.left, p , q);
         TreeNode right = lcaRecursive(root.right, p, q);
 
-        if(p != null && q != null)
+        if(left != null && right != null)
             return root;
 
         return left != null ? left : right;
