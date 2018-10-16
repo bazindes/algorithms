@@ -1,5 +1,9 @@
 package com.baz.app.facebook.medium;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 public class RandomPickWithWeight {
 
     /**
@@ -27,5 +31,32 @@ public class RandomPickWithWeight {
      * The input is two lists: the subroutines called and their arguments. Solution's constructor has one argument,
      * the array w. pickIndex has no arguments. Arguments are always wrapped with a list, even if there aren't any.
      */
+
+    List<Integer> sums = new ArrayList<>();
+    int total = 0;
+    Random r = new Random();
+
+    // O(n)
+    public RandomPickWithWeight(int[] w) {
+        for(int i : w){
+            total += i;
+            sums.add(total);
+        }
+    }
+
+    // O(logn)
+    public int pickIndex() {
+        int tar = r.nextInt(total);
+        int lo = 0;
+        int hi = sums.size() - 1;
+        while(lo != hi){
+            int mid = (lo + hi) / 2;
+            if(tar >= sums.get(mid))
+                lo = mid + 1;
+            else
+                hi = mid;
+        }
+        return lo;
+    }
 
 }

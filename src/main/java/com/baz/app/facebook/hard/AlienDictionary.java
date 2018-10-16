@@ -12,42 +12,19 @@ public class AlienDictionary {
      *
      * Example 1:
      *
-     * Input:
-     * [
-     *   "wrt",
-     *   "wrf",
-     *   "er",
-     *   "ett",
-     *   "rftt"
-     * ]
-     *
+     * Input: [ "wrt", "wrf", "er", "ett", "rftt" ]
      * Output: "wertf"
      *
      * Example 2:
-     *
-     * Input:
-     * [
-     *   "z",
-     *   "x"
-     * ]
-     *
+     * Input: ["z", "x"]
      * Output: "zx"
      *
      * Example 3:
-     *
-     * Input:
-     * [
-     *   "z",
-     *   "x",
-     *   "z"
-     * ]
-     *
+     * Input: [ "z", "x", "z" ]
      * Output: ""
      *
      * Explanation: The order is invalid, so return "".
-     *
      * Note:
-     *
      *     You may assume all letters are in lowercase.
      *     You may assume that if a is a prefix of b, then a must appear before b in the given dictionary.
      *     If the order is invalid, return an empty string.
@@ -56,9 +33,7 @@ public class AlienDictionary {
 
     /**
      * The key to this problem is:
-     *
      *     A topological ordering is possible if and only if the graph has no directed cycles
-     *
      * Let's build a graph and perform a DFS. The following states made things easier.
      *
      *     visited[i] = -1. Not even exist.

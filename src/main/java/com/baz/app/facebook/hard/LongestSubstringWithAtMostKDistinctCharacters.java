@@ -68,6 +68,12 @@ public class LongestSubstringWithAtMostKDistinctCharacters {
         return ans;
     }
 
+    /**
+     * 变型：⼤概就是给⼀个bool数组e.g. [F,T,F,T,T,F,T,T,T,F]，你有k个把F变成T的机
+     * 会，怎样变才能使某⼀节（连续）T⻓度最⻓。
+     * (487 Max Consecutive Ones II)
+     */
+
     public void test(){
         String s = "eceba";
         System.out.println(lengthOfLongestSubstringKDistinct(s, 2));

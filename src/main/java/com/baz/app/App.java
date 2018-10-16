@@ -29,8 +29,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        RemoveInvalidParenthese removeInvalidParenthese = context.getBean(RemoveInvalidParenthese.class);
-        removeInvalidParenthese.test();
+        MaxConsecutiveOnesII maxConsecutiveOnesII = context.getBean(MaxConsecutiveOnesII.class);
+        maxConsecutiveOnesII.test();
+//        RemoveInvalidParenthese removeInvalidParenthese = context.getBean(RemoveInvalidParenthese.class);
+//        removeInvalidParenthese.test();
 //        LeftMostOnesColIndex leftMostOnesColIndex = context.getBean(LeftMostOnesColIndex.class);
 //        leftMostOnesColIndex.test();
 //        UniquePathII uniquePathII = context.getBean(UniquePathII.class);
