@@ -61,6 +61,16 @@ public class DevideTwoIntegers {
         return mul + helper(dd - sum, ds);
     }
 
+    private long bsHelper(long dd, long ds){
+        if(dd < ds) return 0;
+
+        long pro = ds;
+        while (pro * pro <= dd){
+            pro *= pro;
+        }
+        return pro;
+    }
+
 
     public void test(){
         System.out.println(divide(10 , 3));

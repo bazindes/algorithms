@@ -23,20 +23,29 @@ public class DecodeWays {
     public int numDecodingways(String s){
         if(s == null || "".equals(s)) return 0;
         int len = s.length();
+        // pre indicates how many ways we've already have
         int pre = 1;
+        // cur indicates, at current position, how many ways we can decode the string
         int cur = s.charAt(0) == '0' ? 0 : 1;
+        // temporary storage
         int temp;
         for (int i = 1; i < len && cur != 0; i++) {
+            // temporary store cur for prev pointer
             temp = cur;
+            // check the situation that we can decode current string in different ways
             if(s.charAt( i - 1) == '1' || (s.charAt(i - 1) == '2' && s.charAt(i) <= '6')){
+                // only one, same with previous
                 if(s.charAt(i) == '0'){
                     cur = pre;
+                // otherwise, add them up
                 }else {
                     cur += pre;
                 }
+            // 00, 30, 40, ..., 90, these numbers can't be decode
             }else if(s.charAt(i) == '0'){
                 cur = 0;
             }
+            // set prev pointer to current
             pre = temp;
         }
 
