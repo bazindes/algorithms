@@ -6,9 +6,11 @@ import com.baz.app.util.Utils;
 import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class SerializeAndDeserializeBinaryTree {
 
+    // DFS O(n) O(n)
     public String serialize(TreeNode root){
         final String spliter = ",";
         final String NN = "X";
@@ -46,6 +48,47 @@ public class SerializeAndDeserializeBinaryTree {
             node.right = deHelper(s, sp, nn);
         }
         return node;
+    }
+
+    // BFS O(n) O(n)
+    public String serializeBFS(TreeNode root) {
+        if (root == null) return "";
+        Queue<TreeNode> q = new LinkedList<>();
+        StringBuilder res = new StringBuilder();
+        q.add(root);
+        while (!q.isEmpty()) {
+            TreeNode node = q.poll();
+            if (node == null) {
+                res.append("null ");
+                continue;
+            }
+            res.append(node.val + " ");
+            q.add(node.left);
+            q.add(node.right);
+        }
+        return res.toString();
+    }
+
+    public TreeNode deserializeBFS(String data) {
+        if ("".equals(data)) return null;
+        Queue<TreeNode> q = new LinkedList<>();
+        String[] values = data.split(" ");
+        TreeNode root = new TreeNode(Integer.parseInt(values[0]));
+        q.add(root);
+        for (int i = 1; i < values.length; i++) {
+            TreeNode parent = q.poll();
+            if (!values[i].equals("null")) {
+                TreeNode left = new TreeNode(Integer.parseInt(values[i]));
+                parent.left = left;
+                q.add(left);
+            }
+            if (!values[++i].equals("null")) {
+                TreeNode right = new TreeNode(Integer.parseInt(values[i]));
+                parent.right = right;
+                q.add(right);
+            }
+        }
+        return root;
     }
 
     public void test(){
