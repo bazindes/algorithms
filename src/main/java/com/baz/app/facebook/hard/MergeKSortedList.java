@@ -3,6 +3,7 @@ package com.baz.app.facebook.hard;
 import com.baz.app.util.ListNode;
 import com.baz.app.util.Utils;
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class MergeKSortedList {
@@ -33,6 +34,7 @@ public class MergeKSortedList {
 
         // use minHeap to help keeping order
         PriorityQueue<ListNode> priorityQueue = new PriorityQueue<>(lists.length , (l1, l2) -> l1.val - l2.val);
+
         ListNode ans = new ListNode(0);
         ListNode temp = ans;
 

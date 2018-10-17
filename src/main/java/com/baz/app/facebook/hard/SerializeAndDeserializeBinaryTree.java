@@ -11,43 +11,42 @@ import java.util.Queue;
 public class SerializeAndDeserializeBinaryTree {
 
     // DFS O(n) O(n)
+    private final String spliter = ",";
+    private final String NN = "X";
+
     public String serialize(TreeNode root){
-        final String spliter = ",";
-        final String NN = "X";
         StringBuilder sb = new StringBuilder();
-        seHelper(root, sb, spliter, NN);
+        seHelper(root, sb);
         return sb.toString();
     }
 
-    private void seHelper(TreeNode node, StringBuilder sb, String sp, String nn){
+    private void seHelper(TreeNode node, StringBuilder sb){
         if(node == null){
-            sb.append(nn).append(sp);
+            sb.append(NN).append(spliter);
         }else {
-            sb.append(node.val).append(sp);
-            seHelper(node.left, sb, sp, nn);
-            seHelper(node.right, sb, sp, nn);
+            sb.append(node.val).append(spliter);
+            seHelper(node.left, sb);
+            seHelper(node.right, sb);
         }
     }
 
     public TreeNode deserialize(String data){
-        final String spliter = ",";
-        final String NN = "X";
         String[] cs = data.split(spliter);
-        Deque<String> q = new LinkedList<>();
+        Queue<String> q = new LinkedList<>();
         q.addAll(Arrays.asList(cs));
-        return deHelper(q, spliter, NN);
+        return deHelper(q);
     }
 
-    private TreeNode deHelper(Deque<String> s, String sp, String nn){
-        String cur = s.remove();
-        if(nn.equals(cur)) return null;
-        TreeNode node = null;
-        if( !nn.equals(cur) ){
-            node = new TreeNode(Integer.parseInt(cur));
-            node.left = deHelper(s, sp, nn);
-            node.right = deHelper(s, sp, nn);
+    private TreeNode deHelper(Queue<String> s){
+        String cur = s.poll();
+        if(NN.equals(cur)) return null;
+        TreeNode temp = null;
+        if( !NN.equals(cur) ){
+            temp = new TreeNode(Integer.parseInt(cur));
+            temp.left = deHelper(s);
+            temp.right = deHelper(s);
         }
-        return node;
+        return temp;
     }
 
     // BFS O(n) O(n)

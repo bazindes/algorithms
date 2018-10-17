@@ -30,7 +30,7 @@ public class MovingAverageFromDataStream {
     int sum = 0;
 
     public double next2(int val){
-        if(count == size){
+        if(count == queue.size()){
             sum = sum - (int)queue.remove();
             sum += val;
             queue.add(val);
