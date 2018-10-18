@@ -21,7 +21,7 @@ public class DecodeWays {
 
     //DP O(n) O(1)
     public int numDecodingways(String s){
-        if(s == null || "".equals(s)) return 0;
+        if( "".equals(s)) return 1;
         int len = s.length();
         // pre indicates how many ways we've already have
         int pre = 1;

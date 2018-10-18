@@ -221,3 +221,14 @@ By doing this, we can encapsulate the implementation of our own data structure a
 State, Strategy.
 
 They both keep data as their member variables which can be changed in runtime.
+
+
+hashmap saves key -> weights
+int total saves total weights
+string pick() :
+     localTtl = total; 
+     int randNum = rand() % total
+     for k,v in hashmap:
+          if randNum < v:
+              return k
+          randNum -= v
