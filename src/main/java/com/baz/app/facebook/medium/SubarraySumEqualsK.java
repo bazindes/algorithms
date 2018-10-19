@@ -21,6 +21,8 @@ public class SubarraySumEqualsK {
         int ans = 0;
         int sum = 0;
         Map<Integer, Integer> map = new HashMap<>();
+        //when nums[x] == k that is current sum itself is equal to target without any subtractions.
+        // For this solution, we can either increment count by 1 whenever sum == k below or make an entry as a special case in our map
         map.put(0 , 1);
 
         for (int i = 0; i < nums.length; i++) {
