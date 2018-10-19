@@ -16,6 +16,7 @@ public class SubarraySumEqualsK {
      * The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].
      */
 
+    // O(n) O(n)
     public int subarraySum(int[] nums, int k) {
         if(nums == null || nums.length == 0) return 0;
         int ans = 0;
@@ -34,6 +35,20 @@ public class SubarraySumEqualsK {
         }
 
         return ans;
+    }
+
+    // O(n^2) O(1)
+    public int subarraySum2(int[] nums, int k) {
+        int count = 0;
+        for (int start = 0; start < nums.length; start++) {
+            int sum=0;
+            for (int end = start; end < nums.length; end++) {
+                sum+=nums[end];
+                if (sum == k)
+                    count++;
+            }
+        }
+        return count;
     }
 
 }

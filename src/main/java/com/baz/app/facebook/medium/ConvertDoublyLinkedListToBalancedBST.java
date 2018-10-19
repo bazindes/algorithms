@@ -6,7 +6,9 @@ import com.baz.app.util.TreeNode;
 public class ConvertDoublyLinkedListToBalancedBST {
 
     /**
-     * Given a Doubly Linked List which has data members sorted in ascending order. Construct a Balanced Binary Search Tree which has same data members as the given Doubly Linked List. The tree must be constructed in-place (No new node should be allocated for tree conversion)
+     * Given a Doubly Linked List which has data members sorted in ascending order.
+     * Construct a Balanced Binary Search Tree which has same data members as the given Doubly Linked List.
+     * The tree must be constructed in-place (No new node should be allocated for tree conversion)
      * Examples:
      *
      * Input:  Doubly Linked List 1  2  3
