@@ -1,6 +1,6 @@
 package com.baz.app.google;
 
-import com.baz.app.google.easy.StudentAttendanceRecordI;
+import com.baz.app.lc.easy.StudentAttendanceRecordI;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

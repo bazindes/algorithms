@@ -1,6 +1,6 @@
 package com.baz.app.google;
 
-import com.baz.app.google.easy.DiameterOfBinaryTree;
+import com.baz.app.lc.easy.DiameterOfBinaryTree;
 import com.baz.app.util.TreeNode;
 import org.junit.Test;
 
@@ -20,7 +20,7 @@ public class DiameterOfBinaryTreeTest {
         l1.left = l2;
         l1.right = r2;
         DiameterOfBinaryTree diameterOfBinaryTree = new DiameterOfBinaryTree();
-        int re = diameterOfBinaryTree.dp(r);
+        int re = diameterOfBinaryTree.recusion(r);
 
         assertEquals(3, re);
     }

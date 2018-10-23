@@ -1,13 +1,5 @@
 package com.baz.app;
-import com.baz.app.TwoSigma.easy.IntersectionOfTwoArrays;
-import com.baz.app.TwoSigma.hard.MedianOfTwoSortedArray;
-import com.baz.app.TwoSigma.medium.FriendCircles;
-import com.baz.app.TwoSigma.medium.LongestChain;
-import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
-import com.baz.app.TwoSigma.medium.WordLadder;
-import com.baz.app.easy.SortLinkedList;
-import com.baz.app.easy.SumOfTwoIntegers;
-import com.baz.app.medium.MaxConsecutiveOnesII;
+import com.baz.app.lc.medium.MaxConsecutiveOnesII;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

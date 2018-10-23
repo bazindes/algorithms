@@ -36,3 +36,5 @@ target/
 *.ppt*
 .idea/
 exp/
+venv/include/
+venv/lib/
