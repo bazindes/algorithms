@@ -2,43 +2,78 @@ package com.baz.app.template;
 
 public class BitManipulation {
 
-//    Wiki
-//    Bit manipulation is the act of algorithmically manipulating bits or other pieces of data shorter than a word. Computer programming tasks that require bit manipulation include low-level device control, error detection and correction algorithms, data compression, encryption algorithms, and optimization. For most other tasks, modern programming languages allow the programmer to work directly with abstractions instead of bits that represent those abstractions. Source code that does bit manipulation makes use of the bitwise operations: AND, OR, XOR, NOT, and bit shifts.
-//
-//    Bit manipulation, in some cases, can obviate or reduce the need to loop over a data structure and can give many-fold speed ups, as bit manipulations are processed in parallel, but the code can become more difficult to write and maintain.
-//
-//            Details
-//            Basics
-//    At the heart of bit manipulation are the bit-wise operators & (and), | (or), ~ (not) and ^ (exclusive-or, xor) and shift operators a << b and a >> b.
-//
-//    There is no boolean operator counterpart to bitwise exclusive-or, but there is a simple explanation. The exclusive-or operation takes two inputs and returns a 1 if either one or the other of the inputs is a 1, but not if both are. That is, if both inputs are 1 or both inputs are 0, it returns 0. Bitwise exclusive-or, with the operator of a caret, ^, performs the exclusive-or operation on each pair of bits. Exclusive-or is commonly abbreviated XOR.
-//
-//    Set union A | B
-//    Set intersection A & B
-//    Set subtraction A & ~B
-//    Set negation ALL_BITS ^ A or ~A
-//    Set bit A |= 1 << bit
-//    Clear bit A &= ~(1 << bit)
-//    Test bit (A & 1 << bit) != 0
-//    Extract last bit A&-A or A&~(A-1) or x^(x&(x-1))
-//    Remove last bit A&(A-1)
-//    Get all 1-bits ~0
-//    Examples
-//    Count the number of ones in the binary representation of the given number
-//
-//    int count_one(int n) {
-//        while(n) {
-//            n = n&(n-1);
-//            count++;
-//        }
-//        return count;
-//    }
-//    Is power of four (actually map-checking, iterative and recursive methods can do the same)
-//
-//    bool isPowerOfFour(int n) {
-//        return !(n&(n-1)) && (n&0x55555555);
-//        //check the 1-bit location;
-//    }
+    /*
+    Wiki
+    Bit manipulation is the act of algorithmically manipulating bits or other pieces of data shorter than a word.
+    Computer programming tasks that require bit manipulation include low-level device control,
+        error detection and correction algorithms, data compression, encryption algorithms, and optimization.
+    For most other tasks, modern programming languages allow the programmer to work directly
+        with abstractions instead of bits that represent those abstractions.
+    Source code that does bit manipulation makes use of the bitwise operations: AND, OR, XOR, NOT, and bit shifts.
+
+    Bit manipulation, in some cases, can obviate or reduce the need to loop over a data structure and can give many-fold speed ups,
+    as bit manipulations are processed in parallel, but the code can become more difficult to write and maintain.
+
+    Details
+    Basics
+    At the heart of bit manipulation are
+        the bit-wise operators & (and), | (or), ~ (not) and ^ (exclusive-or, xor) and shift operators a << b and a >> b.
+
+    There is no boolean operator counterpart to bitwise exclusive-or, but there is a simple explanation.
+    The exclusive-or operation takes two inputs and returns a 1 if either one or the other of the inputs is a 1, but not if both are.
+    That is, if both inputs are 1 or both inputs are 0, it returns 0. Bitwise exclusive-or, with the operator of a caret, ^,
+    performs the exclusive-or operation on each pair of bits. Exclusive-or is commonly abbreviated XOR.
+
+    Set union A | B
+    Set intersection A & B
+    Set subtraction A & ~B
+    Set negation ALL_BITS ^ A or ~A
+    Set bit A |= 1 << bit
+    Clear bit A &= ~(1 << bit)
+    Test bit (A & 1 << bit) != 0
+    Extract last bit A&-A or A&~(A-1) or x^(x&(x-1))
+    Remove last bit A&(A-1)
+    Get all 1-bits ~0
+    */
+
+    /**
+     Examples
+     Count the number of ones in the binary representation of the given number
+     * 0000 - 0
+     * 0001 - 1
+     * 0010 - 2
+     * 0011 - 3
+     * 0100 - 4
+     * 0101 - 5
+     * 0110 - 6
+     * 0111 - 7
+     * 1000 - 8
+     * 1001 - 9
+     * 1010 - 10
+     * 1011 - 11
+     * 1100 - 12
+     *
+     * n = 7
+     *     7 & 6 => 0110(6)
+     *     6 & 5 => 0100(4)
+     *     4 & 3 => 0000(0)
+     *     -> count = 3
+     */
+    int count = 0;
+    int count_one(int n) {
+        while(n != 0) {
+            n = n & (n-1);
+            count ++;
+        }
+        return count;
+    }
+
+    // Is power of four (actually map-checking, iterative and recursive methods can do the same)
+    boolean isPowerOfFour(int n) {
+        return ! ((n & (n - 1)) == 1) && ((n & 0x55555555) == 1);
+        //check the 1-bit location;
+    }
+
 //^ tricks
 //    Use ^ to remove even exactly same numbers and save the odd, or save the distinct bits and remove the same.
 //
