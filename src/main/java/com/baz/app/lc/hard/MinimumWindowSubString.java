@@ -1,7 +1,6 @@
 package com.baz.app.lc.hard;
 
 import com.baz.app.Interface.Facebook.Facebook;
-import com.baz.app.TwoSigma.easy.IntersectionOfTwoArrays;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -190,4 +190,6 @@
     <bean class="com.baz.app.lc.medium.FriendCircles"></bean>
     <bean class="com.baz.app.lc.easy.IntersectionOfTwoArrays"></bean>
     <bean class="com.baz.app.lc.medium.LongestChain"></bean>
+
+    <bean class="com.baz.app.dps.Factory.ShapeFactory"></bean>
 </beans>

@@ -1,4 +1,5 @@
 package com.baz.app;
+import com.baz.app.dps.Factory.ShapeFactory;
 import com.baz.app.lc.medium.MaxConsecutiveOnesII;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,8 +17,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        MaxConsecutiveOnesII maxConsecutiveOnesII = context.getBean(MaxConsecutiveOnesII.class);
-        maxConsecutiveOnesII.test();
+        ShapeFactory shapeFactory = context.getBean(ShapeFactory.class);
+        shapeFactory.test(shapeFactory);
+//        MaxConsecutiveOnesII maxConsecutiveOnesII = context.getBean(MaxConsecutiveOnesII.class);
+//        maxConsecutiveOnesII.test();
 //        RemoveInvalidParenthese removeInvalidParenthese = context.getBean(RemoveInvalidParenthese.class);
 //        removeInvalidParenthese.test();
 //        LeftMostOnesColIndex leftMostOnesColIndex = context.getBean(LeftMostOnesColIndex.class);
