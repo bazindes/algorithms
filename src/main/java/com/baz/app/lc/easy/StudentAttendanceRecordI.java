@@ -1,10 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.google.Google;
-import org.springframework.stereotype.Component;
-
-import java.util.HashSet;
-import java.util.Set;
+import com.baz.app.Interface.Google.Google;
 
 public class StudentAttendanceRecordI implements Google {
 

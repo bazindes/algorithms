@@ -1,9 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.google.Google;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.baz.app.Interface.Google.Google;
 
 public class SimilarRGBColor implements Google {
 

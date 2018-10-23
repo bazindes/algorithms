@@ -1,10 +1,9 @@
 package com.baz.app.lc.medium;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class PermutationInString implements Facebook {
 

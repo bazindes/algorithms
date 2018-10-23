@@ -1,8 +1,7 @@
 package com.baz.app.lc.hard;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 import com.baz.app.util.Interval;
-import com.baz.app.util.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

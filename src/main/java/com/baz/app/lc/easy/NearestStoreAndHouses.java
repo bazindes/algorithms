@@ -1,6 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.google.Google;
+import com.baz.app.Interface.Google.Google;
 import com.baz.app.util.Utils;
 
 import java.util.Arrays;

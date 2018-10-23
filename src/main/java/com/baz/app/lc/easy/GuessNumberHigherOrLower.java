@@ -1,6 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.google.Google;
+import com.baz.app.Interface.Google.Google;
 
 public class GuessNumberHigherOrLower implements Google {
     int pick = 0;

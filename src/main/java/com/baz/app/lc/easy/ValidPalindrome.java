@@ -1,6 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 
 public class ValidPalindrome implements Facebook {
     //my approach O(n)

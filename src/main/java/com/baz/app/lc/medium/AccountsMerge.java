@@ -1,8 +1,7 @@
 package com.baz.app.lc.medium;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 import com.baz.app.util.DisjointSetUnion;
-import com.baz.app.util.ListNode;
 
 import java.util.*;
 

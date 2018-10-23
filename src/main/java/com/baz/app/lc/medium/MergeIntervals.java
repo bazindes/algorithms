@@ -1,10 +1,9 @@
 package com.baz.app.lc.medium;
 
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 import com.baz.app.util.Interval;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;

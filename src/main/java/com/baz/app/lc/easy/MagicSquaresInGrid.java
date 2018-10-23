@@ -1,9 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.google.Google;
-
-import java.util.HashSet;
-import java.util.Set;
+import com.baz.app.Interface.Google.Google;
 
 public class MagicSquaresInGrid implements Google {
 

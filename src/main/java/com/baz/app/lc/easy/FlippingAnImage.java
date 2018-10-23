@@ -1,11 +1,7 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.google.Google;
+import com.baz.app.Interface.Google.Google;
 import com.baz.app.util.Utils;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class FlippingAnImage implements Google {
     public int [][] flipAndInvertImage(int [][]A){

@@ -1,6 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 import com.baz.app.util.ListNode;
 
 public class MergeTwoSortedList implements Facebook {

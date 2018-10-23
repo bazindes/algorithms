@@ -1,11 +1,9 @@
 package com.baz.app.lc.hard;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class LongestSubstringWithAtMostKDistinctCharacters implements Facebook {
 

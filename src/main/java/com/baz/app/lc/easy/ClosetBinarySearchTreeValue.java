@@ -1,8 +1,7 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 import com.baz.app.util.TreeNode;
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class ClosetBinarySearchTreeValue implements Facebook {
 

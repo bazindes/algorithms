@@ -1,6 +1,6 @@
 package com.baz.app.lc.hard;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 
 import java.util.Stack;
 

@@ -1,11 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.facebook.Facebook;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import com.baz.app.Interface.Facebook.Facebook;
 
 public class ValidPalindromeII implements Facebook {
 

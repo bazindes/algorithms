@@ -1,8 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.google.Google;
-
-import java.util.Arrays;
+import com.baz.app.Interface.Google.Google;
 
 public class NonDecreasingArray implements Google {
 

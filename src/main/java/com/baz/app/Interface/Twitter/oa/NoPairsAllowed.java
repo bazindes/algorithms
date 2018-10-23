@@ -1,7 +1,5 @@
 package com.baz.app.Interface.Twitter.oa;
 
-import java.util.List;
-
 public class NoPairsAllowed {
     private int[] minimalOperations(String[] input) {
         int[] res = new int[input.length];

@@ -1,9 +1,7 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 import com.baz.app.util.ListNode;
-
-import java.util.Stack;
 
 public class PalindromeLinkedList implements Facebook {
     //recursive O(n) O(n)

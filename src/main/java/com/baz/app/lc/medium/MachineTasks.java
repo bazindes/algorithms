@@ -1,6 +1,6 @@
 package com.baz.app.lc.medium;
 
-import com.baz.app.Interface.google.Google;
+import com.baz.app.Interface.Google.Google;
 
 public class MachineTasks implements Google {
 

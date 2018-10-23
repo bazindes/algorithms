@@ -1,7 +1,6 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.facebook.Facebook;
-import org.omg.CORBA.PUBLIC_MEMBER;
+import com.baz.app.Interface.Facebook.Facebook;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,12 +1,8 @@
 package com.baz.app.lc.medium;
 
-import com.baz.app.Interface.facebook.Facebook;
-import com.baz.app.util.ListNode;
+import com.baz.app.Interface.Facebook.Facebook;
 import com.baz.app.util.TreeNode;
-import com.baz.app.util.Utils;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 public class BinarySearchTreeIterator implements Facebook {

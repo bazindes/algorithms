@@ -1,10 +1,9 @@
 package com.baz.app.lc.easy;
 
-import com.baz.app.Interface.google.Google;
+import com.baz.app.Interface.Google.Google;
 import com.baz.app.util.DoubleLinkedListNode;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class NumberOfConnectedComponents implements Google {

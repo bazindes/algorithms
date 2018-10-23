@@ -1,7 +1,6 @@
 package com.baz.app.lc.medium;
 
-import com.baz.app.Interface.facebook.Facebook;
-import org.omg.CORBA.PRIVATE_MEMBER;
+import com.baz.app.Interface.Facebook.Facebook;
 
 import java.util.Arrays;
 

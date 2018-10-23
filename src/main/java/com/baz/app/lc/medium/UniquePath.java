@@ -1,6 +1,6 @@
 package com.baz.app.lc.medium;
 
-import com.baz.app.Interface.facebook.Facebook;
+import com.baz.app.Interface.Facebook.Facebook;
 
 public class UniquePath implements Facebook {
 
