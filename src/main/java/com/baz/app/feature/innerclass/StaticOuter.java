@@ -1,4 +1,4 @@
-package com.baz.app.java8.innerclass;
+package com.baz.app.feature.innerclass;
 
 class StaticOuter {
     private static int x = 24;

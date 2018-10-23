@@ -1,4 +1,4 @@
-package com.baz.app.java8.innerclass;
+package com.baz.app.feature.innerclass;
 
 class Hello {
     public Runnable r = new Runnable() {

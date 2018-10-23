@@ -1,4 +1,4 @@
-package com.baz.app.Twitter.oa;
+package com.baz.app.Interface.Twitter.oa;
 
 import java.util.HashMap;
 import java.util.Map;

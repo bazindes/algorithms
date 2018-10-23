@@ -1,6 +1,4 @@
-package com.baz.app.Twitter.oa;
-
-import com.sun.tools.corba.se.idl.InterfaceGen;
+package com.baz.app.Interface.Twitter.oa;
 
 import java.util.ArrayList;
 import java.util.HashMap;

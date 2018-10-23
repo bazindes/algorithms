@@ -1,4 +1,4 @@
-package com.baz.app.Twitter.oa;
+package com.baz.app.Interface.Twitter.oa;
 
 public class PrimesInSubtree {
     private int[] primeQuery(int number, int[] starts, int[] ends, int[] values, int[] queries) {

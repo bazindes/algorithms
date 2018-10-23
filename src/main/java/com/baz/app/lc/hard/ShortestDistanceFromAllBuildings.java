@@ -1,7 +1,6 @@
 package com.baz.app.lc.hard;
 
 import com.baz.app.Interface.facebook.Facebook;
-import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.LinkedList;
 import java.util.Queue;
