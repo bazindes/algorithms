@@ -7,12 +7,7 @@ import com.baz.app.TwoSigma.medium.ReverseLinkedListII;
 import com.baz.app.TwoSigma.medium.WordLadder;
 import com.baz.app.easy.SortLinkedList;
 import com.baz.app.easy.SumOfTwoIntegers;
-import com.baz.app.facebook.easy.*;
-import com.baz.app.facebook.hard.*;
-import com.baz.app.facebook.medium.*;
-import com.baz.app.facebook.medium.Permutations;
-import com.baz.app.google.easy.NearestStoreAndHouses;
-import com.baz.app.google.easy.StudentsLine;
+import com.baz.app.medium.MaxConsecutiveOnesII;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
