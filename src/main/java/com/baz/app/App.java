@@ -1,5 +1,7 @@
 package com.baz.app;
 import com.baz.app.dps.Factory.ShapeFactory;
+import com.baz.app.lc.easy.MostCommonWord_819;
+import com.baz.app.lc.medium.ArrayNesting_565;
 import com.baz.app.lc.medium.MaxConsecutiveOnesII;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -17,8 +19,12 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ShapeFactory shapeFactory = context.getBean(ShapeFactory.class);
-        shapeFactory.test(shapeFactory);
+        ArrayNesting_565 arrayNesting_565 = context.getBean(ArrayNesting_565.class);
+        arrayNesting_565.test();
+//        MostCommonWord_819 mostCommonWord_819 = context.getBean(MostCommonWord_819.class);
+//        mostCommonWord_819.test();
+//        ShapeFactory shapeFactory = context.getBean(ShapeFactory.class);
+//        shapeFactory.test(shapeFactory);
 //        MaxConsecutiveOnesII maxConsecutiveOnesII = context.getBean(MaxConsecutiveOnesII.class);
 //        maxConsecutiveOnesII.test();
 //        RemoveInvalidParenthese removeInvalidParenthese = context.getBean(RemoveInvalidParenthese.class);
