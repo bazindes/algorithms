@@ -21,67 +21,55 @@ public class MinimumWindowSubString implements Facebook {
      * If there is such window, you are guaranteed that there will always be only one unique minimum window in S.
      */
 
+
+
     //two pointer O(n) O(n)
     public String minWindow(String s, String t) {
+
+        if(s == null || t == null || "".equals(s) || "".equals(t)) return "";
         // use map to track: for each distinct char in t, what are they and how many times they appeared in t
         // key is the char, value is frequency
-        Map<Character , Integer> toFind = new HashMap<>();
-        for (int i = 0; i < t.length(); i++) {
-            toFind.put(t.charAt(i), toFind.getOrDefault(t.charAt(i) , 0) + 1);
+        Map<Character, Integer> map = new HashMap<>();
+        for(int i=0; i<t.length(); i++){
+            map.put(t.charAt(i) , map.getOrDefault(t.charAt(i) , 0) + 1);
         }
 
         // left: the starting index of result String
         int left = 0;
-        // len: the length of result String
-        int len = Integer.MAX_VALUE;
-        // count: how many chars we've already find both in s and t
+        int minLeft = 0;
+        int minLen = Integer.MAX_VALUE;
         int count = 0;
-        // i: left boundary, j: right boundary
-        int i = 0;
-        for (int j = 0; j < s.length(); j++) {
-            // pick out one char from s
-            char cur = s.charAt(j);
-            // check whether current char is in t
-            if(toFind.containsKey(cur)){
-                // update toFind map
-                toFind.put(cur, toFind.get(cur) - 1);
-                // after update, if val >= 0 means that, previously, we need to remove at least one of current char
-                // so we increase count by 1
-                if(toFind.get(cur) >= 0){
+        for(int i=0; i<s.length(); i++){
+            char cur = s.charAt(i);
+            if(map.containsKey(cur)){
+                map.put(cur, map.get(cur) - 1);
+                if(map.get(cur) >= 0){
                     count ++;
                 }
-                // then, we need to check, if the count equals to length of t, means we've already found all of characters in t
-                // move left pointer in order to find minimum
-                while (i < j && count == t.length()){
-                    // check if current substring is shorter or not
-                    if(j - i + 1 < len){
-                        // update len and left
-                        len = j - i + 1;
-                        left = i;
-                    }
 
-                    // then, move left pointer to right in order to find minimum len
-                    char temp = s.charAt(i);
-                    if(toFind.containsKey(temp)){
-                        toFind.put(temp , toFind.get(temp) + 1);
-                        // means we need find another char which is same with temp
-                        if(toFind.get(temp) > 0){
+                while(count == t.length()){
+                    char temp = s.charAt(left);
+                    if(i - left + 1 < minLen){
+                        minLeft = left;
+                        minLen = i - left + 1;
+                    }
+                    if(map.containsKey(temp)){
+                        map.put(temp, map.get(temp) + 1);
+                        if(map.get(temp) > 0){
                             count --;
                         }
                     }
-                    // move left pointer
-                    i ++;
+                    left ++;
                 }
             }
         }
 
-        // check corner case
-        if (len > s.length()){
+        if(minLen > s.length())
             return "";
-        }
-
-        return s.substring(left, left + len);
+        return s.substring(minLeft , minLen + minLeft);
     }
+
+
 
     /**
      * follow up
