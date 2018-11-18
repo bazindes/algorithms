@@ -31,6 +31,7 @@ public class HouseRobber implements Google {
      */
     public int robOptimize(int[] nums){
         if(nums == null) return 0;
+        //
         int rob = nums[0];
         int notRob = 0;
         if(nums.length == 1) return rob;
