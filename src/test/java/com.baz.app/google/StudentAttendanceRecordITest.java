@@ -1,23 +1,23 @@
-package com.baz.app.google;
+// package com.baz.app.google;
 
-import com.baz.app.lc.easy.StudentAttendanceRecordI;
-import org.junit.Test;
+// import com.baz.app.lc.easy.StudentAttendanceRecordI;
+// import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+// import static org.junit.Assert.assertEquals;
 
-public class StudentAttendanceRecordITest {
+// public class StudentAttendanceRecordITest {
 
 
-    @Test
-    public void test(){
+//     @Test
+//     public void test(){
 
-        StudentAttendanceRecordI studentAttendanceRecordI = new StudentAttendanceRecordI();
+//         StudentAttendanceRecordI studentAttendanceRecordI = new StudentAttendanceRecordI();
 
-        String record1 = "PPALLP";
-        String record2 = "PPALLL";
+//         String record1 = "PPALLP";
+//         String record2 = "PPALLL";
 
-        assertEquals( true , studentAttendanceRecordI.checkRecord(record1));
-        assertEquals( false , studentAttendanceRecordI.checkRecord(record2));
+//         assertEquals( true , studentAttendanceRecordI.checkRecord(record1));
+//         assertEquals( false , studentAttendanceRecordI.checkRecord(record2));
 
-    }
-}
+//     }
+// }
