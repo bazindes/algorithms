@@ -192,6 +192,7 @@
     <bean class="com.baz.app.lc.medium.LongestChain"></bean>
     <bean class="com.baz.app.lc.easy.MostCommonWord_819"></bean>
     <bean class="com.baz.app.lc.medium.ArrayNesting_565"></bean>
+    <bean class="com.baz.app.lc.medium.SwapAdjacentinLRString_777"></bean>
 
     <bean class="com.baz.app.dps.Factory.ShapeFactory"></bean>
 </beans>

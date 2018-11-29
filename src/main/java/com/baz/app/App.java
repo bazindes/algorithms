@@ -3,6 +3,7 @@ import com.baz.app.dps.Factory.ShapeFactory;
 import com.baz.app.lc.easy.MostCommonWord_819;
 import com.baz.app.lc.medium.ArrayNesting_565;
 import com.baz.app.lc.medium.MaxConsecutiveOnesII;
+import com.baz.app.lc.medium.SwapAdjacentinLRString_777;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -19,8 +20,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        ArrayNesting_565 arrayNesting_565 = context.getBean(ArrayNesting_565.class);
-        arrayNesting_565.test();
+        SwapAdjacentinLRString_777 swapAdjacentinLRString_777 = context.getBean(SwapAdjacentinLRString_777.class);
+        swapAdjacentinLRString_777.test();
+//        ArrayNesting_565 arrayNesting_565 = context.getBean(ArrayNesting_565.class);
+//        arrayNesting_565.test();
 //        MostCommonWord_819 mostCommonWord_819 = context.getBean(MostCommonWord_819.class);
 //        mostCommonWord_819.test();
 //        ShapeFactory shapeFactory = context.getBean(ShapeFactory.class);
