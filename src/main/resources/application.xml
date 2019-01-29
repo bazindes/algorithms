@@ -194,6 +194,7 @@
     <bean class="com.baz.app.lc.medium.ArrayNesting_565"></bean>
     <bean class="com.baz.app.lc.medium.SwapAdjacentinLRString_777"></bean>
     <bean class="com.baz.app.lc.medium.GeneralizedAbbreviation_320"></bean>
+    <bean class="com.baz.app.lc.easy.UniqueEmailAddresses_919"></bean>
 
     <bean class="com.baz.app.dps.Factory.ShapeFactory"></bean>
 </beans>

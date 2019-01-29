@@ -7,6 +7,7 @@ import com.baz.app.lc.medium.MaxConsecutiveOnesII;
 import com.baz.app.lc.medium.SwapAdjacentinLRString_777;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.baz.app.lc.easy.UniqueEmailAddresses_919;
 
 /**
 * <h1>Main Class</h1>
@@ -21,8 +22,10 @@ class App{
 
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-        GeneralizedAbbreviation_320 generalizedAbbreviation_320 = context.getBean(GeneralizedAbbreviation_320.class);
-        generalizedAbbreviation_320.test();
+        UniqueEmailAddresses_919 uniqueEmailAddresses_919 = context.getBean(UniqueEmailAddresses_919.class);
+        uniqueEmailAddresses_919.test();
+        // GeneralizedAbbreviation_320 generalizedAbbreviation_320 = context.getBean(GeneralizedAbbreviation_320.class);
+        // generalizedAbbreviation_320.test();
 //        SwapAdjacentinLRString_777 swapAdjacentinLRString_777 = context.getBean(SwapAdjacentinLRString_777.class);
 //        swapAdjacentinLRString_777.test();
 //        ArrayNesting_565 arrayNesting_565 = context.getBean(ArrayNesting_565.class);
