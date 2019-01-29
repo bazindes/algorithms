@@ -36,7 +36,7 @@ Each emails[i] contains exactly one '@' character.
      * 
     */
 
-
+    // O(n) O(n)
     public int numUniqueEmails(String[] emails) {
         if(emails == null || emails.length == 0) return 0;
         Set<String> set = new HashSet<>();
