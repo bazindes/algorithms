@@ -3,7 +3,10 @@ package com.baz.app.lc.easy;
 import java.util.HashSet;
 import java.util.Set;
 
-public class UniqueEmailAddresses_919 {
+import com.baz.app.Interface.Amazon.Amazon;
+import com.baz.app.Interface.Google.Google;
+
+public class UniqueEmailAddresses_919 implements Google, Amazon{
     /** 
      * Every email consists of a local name and a domain name, separated by the @ sign.
 
